@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python pobierz_zdjecia.py)",
+      "Bash(python -c \":*)"
+    ]
+  }
+}

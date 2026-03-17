@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8"/>
+<title>Test galerii</title>
+<style>
+  body { font-family: Arial; background:#111; color:#eee; padding:20px; }
+  img  { width:200px; height:150px; object-fit:cover; margin:5px; border:2px solid #555; }
+  .ok  { color: #4f4; }
+  .err { color: #f44; }
+  #log { background:#000; padding:15px; border-radius:6px; white-space:pre; font-family:monospace; font-size:13px; max-height:300px; overflow:auto; }
+</style>
+</head>
+<body>
+<h2>Test diagnostyczny galerii Grot-Stal</h2>
+<div id="log">Ładowanie...</div>
+<div id="imgs"></div>
+
+<script src="js/gallery-data.js"></script>
+<script>
+const log = document.getElementById('log');
+const imgs = document.getElementById('imgs');
+let txt = '';
+
+// 1. Czy galleryData istnieje?
+if (typeof galleryData === 'undefined') {
+  txt += '[BŁĄD] galleryData nie istnieje – problem z gallery-data.js\n';
+} else if (!Array.isArray(galleryData)) {
+  txt += '[BŁĄD] galleryData nie jest tablicą\n';
+} else {
+  txt += '[OK] galleryData załadowana: ' + galleryData.length + ' wpisów\n\n';
+
+  // 2. Pokaż pierwsze 5 zdjęć jako test
+  txt += 'Testuję pierwsze 5 zdjęć:\n';
+  galleryData.slice(0, 5).forEach((item, i) => {
+    txt += '  [' + i + '] src="' + item.src + '"\n';
+    const img = document.createElement('img');
+    img.src = item.src;
+    img.alt = item.title;
+    img.onload  = () => {
+      txt += '      -> ZAŁADOWANE (' + img.naturalWidth + 'x' + img.naturalHeight + ')\n';
+      log.textContent = txt;
+    };
+    img.onerror = () => {
+      txt += '      -> BŁĄD ŁADOWANIA!\n';
+      log.textContent = txt;
+    };
+    imgs.appendChild(img);
+  });
+}
+
+log.textContent = txt;
+</script>
+</body>
+</html>
