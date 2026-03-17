@@ -131,7 +131,7 @@ input,textarea,select { font-family:inherit; }
 
 .hero-h1 {
   font-family:var(--font-h);
-  font-size:clamp(3.2rem,8vw,6.5rem);
+  font-size:clamp(2.2rem,8vw,6.5rem);
   font-weight:800; line-height:1; text-transform:uppercase;
   color:var(--white); letter-spacing:.01em; margin-bottom:24px;
 }
@@ -203,7 +203,7 @@ input,textarea,select { font-family:inherit; }
   color:var(--accent); margin-bottom:10px;
 }
 .section-title {
-  font-family:var(--font-h); font-size:clamp(2rem,5vw,3.2rem);
+  font-family:var(--font-h); font-size:clamp(1.6rem,5vw,3.2rem);
   font-weight:800; text-transform:uppercase; color:var(--navy);
   letter-spacing:.02em; line-height:1.1;
 }

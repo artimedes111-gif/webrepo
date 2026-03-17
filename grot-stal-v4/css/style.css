@@ -967,10 +967,17 @@ ul  { list-style: none; }
     padding: 16px 24px 32px;
     border-bottom: 1px solid var(--border);
     transform: translateY(-110%);
-    transition: transform .35s var(--ease-out);
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform .35s var(--ease-out), visibility 0s .35s;
     z-index: 99;
   }
-  .nav-links.open { transform: translateY(0); }
+  .nav-links.open {
+    transform: translateY(0);
+    visibility: visible;
+    pointer-events: all;
+    transition: transform .35s var(--ease-out), visibility 0s 0s;
+  }
   .nav-a { padding: 14px 0; font-size: 1rem; border-radius: 0; border-bottom: 1px solid var(--border); }
   .nav-a::after { bottom: 0; left: 0; right: 0; }
   .nav-cta { margin-top: 12px; text-align: center; border-radius: var(--r); }
