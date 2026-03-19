@@ -6,6 +6,9 @@
       "Bash(cp -r \"c:/Users/t490-/OneDrive/Desktop/VSS/grot-stal/images\" \"c:/Users/t490-/OneDrive/Desktop/VSS/grot-stal-v3/images\")",
       "Bash(cp -r \"c:/Users/t490-/OneDrive/Desktop/VSS/grot-stal/images\" \"c:/Users/t490-/OneDrive/Desktop/VSS/grot-stal-v4/images\")",
       "Read(//c/Users/t490-/OneDrive/Desktop/VSS/**)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\t490-\\OneDrive\\Desktop\\VSS\\fitpro"
     ]
   }
 }

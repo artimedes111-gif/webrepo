@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hubert – Personal Trainer | FitPro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAWIGACJA
+  ════════════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+      <a href="#" class="logo" aria-label="FitPro strona główna">
+        <span class="logo-fit">FIT</span><span class="logo-pro">PRO</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#o-mnie">O mnie</a></li>
+        <li><a href="#oferta">Oferta</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#opinie">Opinie</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+
+      <a href="#kontakt" class="btn btn-primary nav-cta">Umów sesję</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         HERO
+    ════════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero-content container">
+
+        <div class="hero-text hero-animate-left">
+          <div class="hero-badge">
+            <span class="badge-line"></span>
+            <span>CERTIFIED PERSONAL TRAINER</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="c-dim1">Zmień</span>
+            <span class="c-dim2">swoje</span>
+            <span class="c-accent">ciało.</span>
+          </h1>
+          <p class="hero-desc">
+            Indywidualny trening personalny dopasowany do Twoich celów.<br />
+            Bez schematów. Bez wymówek.
+          </p>
+          <div class="hero-actions">
+            <a href="#kontakt" class="btn btn-primary">Zacznij teraz</a>
+            <a href="#galeria" class="btn btn-ghost">
+              <span class="play-icon">▶</span> Zobacz galerię
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap hero-animate-right">
+          <img src="images/hero.jpg" alt="Hubert – Personal Trainer" class="hero-img" />
+          <div class="hero-overlay-left"></div>
+          <div class="hero-overlay-bottom"></div>
+          <div class="hero-badge-rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-label">4.9 / GOOGLE REVIEWS</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pasek statystyk -->
+      <div class="stats-bar">
+        <div class="container stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">250+</span>
+            <span class="stat-label">Klientów</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">8</span>
+            <span class="stat-label">lat Doświadczenia</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Poleca</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4.9★</span>
+            <span class="stat-label">Ocena Google</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         O MNIE
+    ════════════════════════════════════════════ -->
+    <section class="about section-pad" id="o-mnie">
+      <div class="container about-grid">
+
+        <div class="about-img-wrap reveal">
+          <img src="images/about.jpg" alt="Hubert – portret trenera" class="about-img" />
+        </div>
+
+        <div class="about-text reveal">
+          <span class="section-badge">O TRENERZE</span>
+          <h2 class="about-name c-accent">Hubert</h2>
+          <p class="about-title">Personal Trainer &amp; Kulturysta</p>
+
+          <ul class="qualifications">
+            <li><span class="check">✓</span> Instruktor fitness</li>
+            <li><span class="check">✓</span> Dyplomowany trener Kulturystyki</li>
+            <li><span class="check">✓</span> Specjalista Core Stability</li>
+            <li><span class="check">✓</span> Dyplomowany Dietetyk</li>
+            <li><span class="check">✓</span> Technik Fizjoterapii i Masażysta</li>
+          </ul>
+
+          <p class="about-bio">
+            Ze sportem związany od dziecka, swoją sportową przygodę zaczął od piłki nożnej.
+            Stale podnosił kwalifikacje poprzez uczestnictwo w licznych szkoleniach i warsztatach.
+            W pracy z klientami stawia na indywidualne podejście i miłą atmosferę. Podczas treningów,
+            oprócz czynników technicznych bierze pod uwagę przede wszystkim czynnik ludzki —
+            słucha, obserwuje i angażuje się w 100%.
+          </p>
+
+          <blockquote class="about-motto">
+            "Pozwól aby Twój cel, stał się także moim celem"
+          </blockquote>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         OFERTA
+    ════════════════════════════════════════════ -->
+    <section class="offer section-pad" id="oferta">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">CO OFERUJĘ</span>
+          <h2 class="section-title">Moja <span class="c-accent">oferta</span></h2>
+        </div>
+
+        <div class="offer-grid">
+
+          <div class="offer-card reveal">
+            <div class="offer-icon">💪</div>
+            <h3 class="offer-card-title">Trening Siłowy</h3>
+            <p class="offer-card-desc">
+              Indywidualny plan treningowy dopasowany do Twojego poziomu i celów.
+              Budowa masy, siły lub wytrzymałości.
+            </p>
+            <a href="#kontakt" class="btn btn-outline">Dowiedz się więcej</a>
+          </div>
+
+          <div class="offer-card offer-card--featured reveal">
+            <div class="offer-badge-top">Najpopularniejsze</div>
+            <div class="offer-icon">🔥</div>
+            <h3 class="offer-card-title">Redukcja &amp; Spalanie</h3>
+            <p class="offer-card-desc">
+              Skuteczne spalanie tkanki tłuszczowej z zachowaniem masy mięśniowej.
+              Trening i dieta w parze.
+            </p>
+            <a href="#kontakt" class="btn btn-outline">Dowiedz się więcej</a>
+          </div>
+
+          <div class="offer-card reveal">
+            <div class="offer-icon">🥗</div>
+            <h3 class="offer-card-title">Dieta &amp; Fizjoterapia</h3>
+            <p class="offer-card-desc">
+              Kompleksowe wsparcie żywieniowe, jadłospis i rehabilitacja.
+              Całościowe podejście do zdrowia.
+            </p>
+            <a href="#kontakt" class="btn btn-outline">Dowiedz się więcej</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         GALERIA
+    ════════════════════════════════════════════ -->
+    <section class="gallery section-pad" id="galeria">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">ZDJĘCIA</span>
+          <h2 class="section-title">Galeria</h2>
+        </div>
+
+        <div class="gallery-grid reveal">
+          <div class="gallery-item" data-src="images/gallery-1.jpg">
+            <img src="images/gallery-1.jpg" alt="Galeria zdjęć – 1" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-zoom">🔍</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-src="images/gallery-2.jpg">
+            <img src="images/gallery-2.jpg" alt="Galeria zdjęć – 2" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-zoom">🔍</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-src="images/gallery-3.jpg">
+            <img src="images/gallery-3.jpg" alt="Galeria zdjęć – 3" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-zoom">🔍</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-src="images/gallery-4.jpg">
+            <img src="images/gallery-4.jpg" alt="Galeria zdjęć – 4" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-zoom">🔍</span>
+            </div>
+          </div>
+          <div class="gallery-item" data-src="images/gallery-5.jpg">
+            <img src="images/gallery-5.jpg" alt="Galeria zdjęć – 5" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="gallery-zoom">🔍</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         OPINIE
+    ════════════════════════════════════════════ -->
+    <section class="reviews section-pad" id="opinie">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-badge">OPINIE KLIENTÓW</span>
+          <h2 class="section-title">
+            Co mówią <span class="c-accent">klienci</span>
+            <span class="google-badge">4.9/5 na Google</span>
+          </h2>
+        </div>
+
+        <div class="reviews-grid">
+
+          <div class="review-card reveal">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Hubert to niesamowity trener. Dzięki jego programowi schudłam 12 kg w 3 miesiące
+              i to bez głodówek. Podejście indywidualne, zawsze dostosowuje plan do moich możliwości."
+            </p>
+            <div class="review-author">
+              <span class="review-name">Anna K.</span>
+              <span class="review-date">Styczeń 2025</span>
+            </div>
+          </div>
+
+          <div class="review-card reveal">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Polecam każdemu! Zaczynałem od zera, po 6 miesiącach mam wymarzoną sylwetkę.
+              Hubert świetnie motywuje i zawsze wyjaśnia po co dane ćwiczenie robimy."
+            </p>
+            <div class="review-author">
+              <span class="review-name">Marcin W.</span>
+              <span class="review-date">Luty 2025</span>
+            </div>
+          </div>
+
+          <div class="review-card reveal">
+            <div class="review-stars">★★★★★</span>
+            <p class="review-text">
+              "Profesjonalizm na najwyższym poziomie. Oprócz treningu siłowego pomógł mi z
+              dietą i fizjoterapią kolana. Kompleksowe podejście, którego nie znalazłem nigdzie indziej."
+            </p>
+            <div class="review-author">
+              <span class="review-name">Tomasz B.</span>
+              <span class="review-date">Marzec 2025</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         KONTAKT
+    ════════════════════════════════════════════ -->
+    <section class="contact section-pad" id="kontakt">
+      <div class="container contact-grid">
+
+        <div class="contact-form-wrap reveal">
+          <span class="section-badge">NAPISZ DO MNIE</span>
+          <h2 class="section-title">Zacznij <span class="c-accent">dziś</span></h2>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Imię i nazwisko</label>
+              <input type="text" id="name" name="name" placeholder="Jan Kowalski" />
+              <span class="form-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="jan@example.com" />
+              <span class="form-error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input type="tel" id="phone" name="phone" placeholder="+48 000 000 000" />
+              <span class="form-error" id="phone-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Wiadomość</label>
+              <textarea id="message" name="message" rows="5" placeholder="Opisz swój cel treningowy..."></textarea>
+              <span class="form-error" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Wyślij wiadomość</button>
+            <div class="form-success" id="form-success" aria-live="polite">
+              Dziękuję! Odezwę się wkrótce. 💪
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-info reveal">
+          <span class="section-badge">DANE KONTAKTOWE</span>
+          <h3 class="contact-info-title">Skontaktuj się <span class="c-accent">bezpośrednio</span></h3>
+
+          <ul class="contact-details">
+            <li class="contact-detail-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <span class="contact-label">Telefon</span>
+                <a href="tel:+48000000000" class="contact-value">+48 000 000 000</a>
+              </div>
+            </li>
+            <li class="contact-detail-item">
+              <span class="contact-icon">✉️</span>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:hubert@fitpro.pl" class="contact-value">hubert@fitpro.pl</a>
+              </div>
+            </li>
+            <li class="contact-detail-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <span class="contact-label">Miasto</span>
+                <span class="contact-value">Twoje miasto</span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="contact-social">
+            <p class="contact-social-label">Obserwuj mnie</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
+              <a href="#" class="social-link" aria-label="Facebook">Facebook</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#" class="logo footer-logo" aria-label="FitPro">
+        <span class="logo-fit">FIT</span><span class="logo-pro">PRO</span>
+      </a>
+
+      <ul class="footer-nav">
+        <li><a href="#o-mnie">O mnie</a></li>
+        <li><a href="#oferta">Oferta</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#opinie">Opinie</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+
+      <p class="footer-copy">
+        &copy; 2025 Hubert &mdash; Personal Trainer. Wszelkie prawa zastrzeżone.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Podgląd zdjęcia">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Zamknij">&times;</button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Poprzednie">&#8592;</button>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Następne">&#8594;</button>
+    <img src="" alt="" class="lightbox-img" id="lightbox-img" />
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
