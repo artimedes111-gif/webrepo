@@ -379,6 +379,10 @@ ul {
   backdrop-filter: blur(8px);
 }
 
+.hero-badge-rating--mobile {
+  display: none;
+}
+
 .rating-stars {
   color: var(--accent);
   font-size: 1rem;
@@ -1147,10 +1151,24 @@ a.contact-value:hover {
     order: -1;
   }
 
-  .hero-badge-rating {
-    top: auto;
-    bottom: 14px;
-    right: 14px;
+  /* badge w obrazku — ukryty na mobile */
+  .hero-image-wrap .hero-badge-rating {
+    display: none;
+  }
+
+  /* badge mobilny — przy h1 */
+  .hero-badge-rating--mobile {
+    display: flex;
+    position: static;
+    flex-shrink: 0;
+    align-self: center;
+    padding: 8px 12px;
+  }
+
+  .hero-title-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
   }
 
   .hero-title {
