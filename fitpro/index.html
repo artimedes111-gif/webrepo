@@ -303,8 +303,11 @@
           <span class="section-badge">NAPISZ DO MNIE</span>
           <h2 class="section-title">Zacznij <span class="c-accent">dziś</span></h2>
 
-          <form class="contact-form" id="contact-form" novalidate name="kontakt" netlify>
+          <form class="contact-form" id="contact-form" novalidate name="kontakt" netlify data-netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="kontakt" />
+            <p class="hidden">
+              <label>Nie wypełniaj tego pola: <input name="bot-field"></label>
+            </p>
             <div class="form-group">
               <label for="name">Imię i nazwisko</label>
               <input type="text" id="name" name="name" placeholder="Jan Kowalski" />

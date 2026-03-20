@@ -64,6 +64,8 @@ ul {
   padding: 0 24px;
 }
 
+.hidden { display: none; }
+
 .section-pad {
   padding: 96px 0;
 }
