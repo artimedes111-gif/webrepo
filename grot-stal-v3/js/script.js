@@ -173,13 +173,44 @@ document.addEventListener('DOMContentLoaded', function () {
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      if (($('#fname',form).value||'').trim() &&
-          ($('#femail',form).value||'').trim() &&
-          ($('#fmsg',form).value||'').trim() &&
-          $('#frodo',form).checked) {
-        form.style.display = 'none';
-        ok.style.display = 'block';
+
+      // Walidacja pól wymaganych
+      if (!($('#fname',  form).value || '').trim() ||
+          !($('#femail', form).value || '').trim() ||
+          !($('#fmsg',   form).value || '').trim() ||
+          !$('#frodo', form).checked) {
+        return;
       }
+
+      var btn = form.querySelector('[type="submit"]');
+      var btnOriginal = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Wysyłanie...';
+
+      var body = new FormData();
+      body.append('name',    ($('#fname',    form).value || '').trim());
+      body.append('phone',   ($('#fphone',   form).value || '').trim());
+      body.append('email',   ($('#femail',   form).value || '').trim());
+      body.append('subject', ($('#fsubject', form).value || '').trim());
+      body.append('message', ($('#fmsg',     form).value || '').trim());
+
+      fetch('send_mail.php', { method: 'POST', body: body })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          if (data.success) {
+            form.style.display = 'none';
+            ok.style.display = 'block';
+          } else {
+            alert('Błąd wysyłki. Spróbuj ponownie.');
+            btn.disabled = false;
+            btn.textContent = btnOriginal;
+          }
+        })
+        .catch(function () {
+          alert('Błąd wysyłki. Spróbuj ponownie.');
+          btn.disabled = false;
+          btn.textContent = btnOriginal;
+        });
     });
   }
 
