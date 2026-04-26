@@ -36,8 +36,8 @@
    RESET
    ============================================= */
 *,*::before,*::after { box-sizing:border-box; margin:0; padding:0 }
-html { scroll-behavior:smooth; -webkit-text-size-adjust:100% }
-body { font-family:var(--sans); background:var(--bg); color:var(--text); line-height:1.6; overflow-x:hidden }
+html { scroll-behavior:smooth; -webkit-text-size-adjust:100%; overflow-x:hidden; max-width:100% }
+body { font-family:var(--sans); background:var(--bg); color:var(--text); line-height:1.6; overflow-x:hidden; max-width:100% }
 img { max-width:100%; display:block }
 a { color:inherit; text-decoration:none }
 ul,ol { list-style:none }
@@ -487,7 +487,7 @@ address { font-style:normal }
 .about__counter {
   position: absolute;
   bottom: 0;
-  right: 16px;
+  right: 0;
   background: var(--gold);
   color: #111;
   padding: 18px 22px;
@@ -1145,7 +1145,7 @@ address { font-style:normal }
 
   .about__grid { grid-template-columns: 1fr 1fr; gap: 72px }
   .about__photo { aspect-ratio: 3/4 }
-  .about__counter { right: -16px }
+  .about__counter { right: 0 }
 
   .services__header { flex-direction: row; align-items: flex-end; justify-content: space-between }
 
