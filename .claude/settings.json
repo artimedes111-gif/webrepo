@@ -5,7 +5,18 @@
       "Bash(python -c \":*)",
       "Bash(cp -r \"c:/Users/t490-/OneDrive/Desktop/VSS/grot-stal/images\" \"c:/Users/t490-/OneDrive/Desktop/VSS/grot-stal-v3/images\")",
       "Bash(cp -r \"c:/Users/t490-/OneDrive/Desktop/VSS/grot-stal/images\" \"c:/Users/t490-/OneDrive/Desktop/VSS/grot-stal-v4/images\")",
-      "Read(//c/Users/t490-/OneDrive/Desktop/VSS/**)"
+      "Read(//c/Users/t490-/OneDrive/Desktop/VSS/**)",
+      "Bash(npx --yes live-server --port=5502 --no-browser)",
+      "PowerShell(python --version 2>&1)",
+      "PowerShell(python3 --version 2>&1)",
+      "PowerShell(python --version)",
+      "PowerShell(Start-Process python -ArgumentList \"-m http.server 5502 --directory `\"c:\\\\Users\\\\t490-\\\\OneDrive\\\\Desktop\\\\VSS\\\\33BarberShop`\"\" -WindowStyle Hidden)",
+      "PowerShell(Invoke-WebRequest \"http://localhost:5502\" -UseBasicParsing -TimeoutSec 3)",
+      "PowerShell(Start-Process \"http://127.0.0.1:5502\")",
+      "WebFetch(domain:webflow.com)",
+      "WebFetch(domain:belysh.webflow.io)",
+      "Bash(curl -s \"https://webflow.com/templates/html/saloun-website-template\")",
+      "WebFetch(domain:cdn.prod.website-files.com)"
     ],
     "additionalDirectories": [
       "c:\\Users\\t490-\\OneDrive\\Desktop\\VSS\\fitpro"
