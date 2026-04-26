@@ -1131,6 +1131,19 @@ address { font-style:normal }
 .pp-section ul { list-style: disc; padding-left: 20px }
 
 /* =============================================
+   MOBILE — przyciski hero przyklejone do dołu
+   ============================================= */
+@media (max-width: 767px) {
+  .hero__content {
+    align-self: stretch;
+  }
+  .hero__actions {
+    margin-top: auto;
+    padding-bottom: 8px;
+  }
+}
+
+/* =============================================
    RESPONSIVE — 768px
    ============================================= */
 @media (min-width: 768px) {
