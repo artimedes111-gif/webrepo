@@ -1,0 +1,224 @@
+
+============================================================
+  DEVICE: FW-SN310  [10.0.0.1]  vendor: stormshield
+============================================================
+
+Timestamp : 2026-05-15 14:34:37
+
+
+------------------------------------------------------------
+  CMD: SYSTEM PROPERTY
+------------------------------------------------------------
+
+SYSTEM PROPERTY
+101 code=00a01000 msg="Begin" format="section"
+Type="Firewall"
+Model="SN310"
+ModelSize="S"
+MachineType="arm"
+Version="4.8.14"
+ASQVersion="9.8.0"
+SerialNumber="SN310A41KL548A7"
+MTUmax=8996
+LACP=0
+Bridge=4
+Ethernet=8
+VLAN=14
+WIFI=0
+Dialup=0
+PPTP=0
+Serial=0
+Loopback=1
+Agg=0
+Gretun=0
+Gretap=0
+Ipsec=1
+MaxIf=136
+MaxAlias=16
+MgmtIf=0
+Watchdog=1
+Led=0
+Clone=1
+HADialup=1
+Raid=0
+Antiviral=1
+HighAvail=1
+Usb=1
+SwitchPort=8
+CryptoCard=0
+TPM=0
+TpmInit=0
+TpmPCR=N/A
+NTP=1
+Report=30
+PostprocMaxSize=253710
+Amazon=0
+ProxyCache=0
+SSLVpnMaxClients=20
+UpdatePasswd=0
+AdminPasswdLastChange="2023-05-31 08:26:33"
+Init=1
+STP=0
+cryptoDr=0
+FWAdmin=0
+Bypass=0
+FanMonitor=0
+PowerMonitor=0
+DnsCacheMax=1000000
+ServerdSessionsMax=20
+AutoSizing=0
+AutoSizingModel=""
+AutoSizingCurMem=0
+AutoSizingMinMem=0
+AutoSizingMaxMem=0
+PaygEnrolled=0
+PaygWebcode=""
+PaygCustomerId=""
+PaygExpiration=""
+CurCPU=2
+MaxCPU=0
+SandBoxingReportUrl=
+RedundantPSU=0
+SmartInfo=0
+FileVerification=1
+SMCCapabilities=HANetworkActivation,NetworkActivation,Rollback
+WebservicesCustomItemsMax=10000
+SecurityPortalURL=https://security.stormshield.eu/
+LightIPsecMonitoring=1
+SecureBootDefault=0
+SecureBoot=0
+BIOSVendor=""
+BIOSVersion=""
+BIOSReleaseDate=""
+BIOSRevision=""
+100 code=00a00100 msg="Ok"
+SRPClient> 
+
+------------------------------------------------------------
+  CMD: SYSTEM INFORMATION
+------------------------------------------------------------
+
+SYSTEM INFORMATION
+205 code=06200a00 msg="Private data access right required"
+SRPClient> 
+
+------------------------------------------------------------
+  CMD: SYSTEM STATUS
+------------------------------------------------------------
+
+SYSTEM STATUS
+101 code=00a01000 msg="Begin" format="section"
+NeedReboot=0
+100 code=00a00100 msg="Ok"
+SRPClient> 
+
+------------------------------------------------------------
+  CMD: MONITOR HEALTH
+------------------------------------------------------------
+
+MONITOR HEALTH
+101 code=00a01000 msg="Begin" format="section"
+[SN310A41KL548A7]
+hamode=None
+halink=N/A
+power=N/A
+fan=N/A
+cpu=Good
+cpu_temp=Good
+mem=Good
+disk=N/A
+raid=N/A
+cert=Good
+crl=Good
+tpm=N/A
+passwd=Minor
+router=N/A
+ntp=Good
+[MAIN]
+status=Minor
+100 code=00a00100 msg="Ok"
+SRPClient> 
+
+------------------------------------------------------------
+  CMD: MONITOR INTERFACE
+------------------------------------------------------------
+
+MONITOR INTERFACE
+101 code=00a01000 msg="Begin" format="section_line"
+name=VLAN52_WIFI_TAB,vlan13 addr=10.0.52.1/255.255.255.0 type=Vlan color=000000 throughput=1000000000,368,1792,0 throughput_out=1000000000,680,4416,0 packet=42,2,0,0,42,0 byte=2968,0,2968,0 byte_out=7478,0,7478,0 tcpconn=0 udpconn=7 tcpconncount=0 udpconncount=11 state=1 plugged=1 protected=1 fullduplex=1
+name=sslvpn_udp,sslvpn1 addr=10.0.151.1/255.255.255.255 type=sslvpn color=000000 throughput=0,15680,21008,0 throughput_out=0,19376,25504,0 packet=42,0,0,35,7,0 byte=6573,6104,469,0 byte_out=6243,5253,990,0 tcpconn=1 udpconn=1 tcpconncount=4 udpconncount=3 state=1 plugged=0 protected=1
+name=VLAN100_MGM,vlan12 addr=10.0.100.1/255.255.255.0 type=Vlan color=CC99FF throughput=1000000000,20440,188280,0 throughput_out=1000000000,17376,1378840,0 packet=3176,28,0,2175,729,272 byte=341590,203528,117375,20687 byte_out=647484,555944,71836,19704 tcpconn=68 udpconn=89 tcpconncount=81 udpconncount=118 state=1 plugged=1 protected=1 fullduplex=1
+name=VLAN60_CCTV,vlan11 addr=10.0.60.1/255.255.255.0 type=Vlan color=CC99FF throughput=1000000000,0,0,0 throughput_out=1000000000,0,0,0 packet=0,0,0,0,0,0 byte=0,0,0,0 byte_out=0,0,0,0 tcpconn=0 udpconn=0 tcpconncount=0 udpconncount=0 state=1 plugged=1 protected=1 fullduplex=1
+name=VLAN51_WIFI_GUE,vlan10 addr=10.0.51.1/255.255.255.0 type=Vlan color=CC99FF throughput=1000000000,2264,2088192,0 throughput_out=1000000000,3024,6547400,0 packet=5408,1,0,1198,4173,37 byte=1554170,308457,1242605,3108 byte_out=4848199,521533,4323278,3108 tcpconn=50 udpconn=93 tcpconncount=101 udpconncount=163 state=1 plugged=1 protected=1 fullduplex=1
+name=VLAN50_WIFI_COR,vlan9 addr=10.0.50.1/255.255.255.0 type=Vlan color=CC99FF throughput=1000000000,56,491456,0 throughput_out=1000000000,48,1141776,0 packet=973,28,0,891,82,0 byte=326079,319489,6590,0 byte_out=751204,739960,11244,0 tcpconn=61 udpconn=34 tcpconncount=36 udpconncount=34 state=1 plugged=1 protected=1 fullduplex=1
+name=VLAN40_CNC,vlan8 addr=10.0.40.1/255.255.255.0 type=Vlan color=CC99FF throughput=1000000000,872,185832,0 throughput_out=1000000000,792,7464448,0 packet=815,16,0,759,12,44 byte=209931,205493,742,3696 byte_out=4009138,4003496,1946,3696 tcpconn=33 udpconn=13 tcpconncount=18 udpconncount=13 state=1 plugged=1 protected=1 fullduplex=1
+name=VLAN30_PHONES,vlan7 addr=10.0.30.1/255.255.255.0 type=Vlan color=CC99FF throughput=1000000000,2912,17056,0 throughput_out=1000000000,0,18864,0 packet=243,0,0,0,243,0 byte=31793,0,31793,0 byte_out=17131,0,17131,0 tcpconn=0 udpconn=171 tcpconncount=0 udpconncount=189 state=1 plugged=1 protected=1 fullduplex=1
+name=VLAN24_MAG,vlan6 addr=10.0.24.1/255.255.255.0 type=Vlan color=CC99FF throughput=1000000000,0,0,0 throughput_out=1000000000,0,0,0 packet=0,0,0,0,0,0 byte=0,0,0,0 byte_out=0,0,0,0 tcpconn=0 udpconn=0 tcpconncount=0 udpconncount=0 state=1 plugged=1 protected=1 fullduplex=1
+name=VLAN23_TECH,vlan5 addr=10.0.23.1/255.255.255.0 type=Vlan color=CC99FF throughput=1000000000,0,0,0 throughput_out=1000000000,0,0,0 packet=0,0,0,0,0,0 byte=0,0,0,0 byte_out=0,0,0,0 tcpconn=0 udpconn=0 tcpconncount=0 udpconncount=0 state=1 plugged=1 protected=1 fullduplex=1
+name=VLAN22_LAB,vlan4 addr=10.0.22.1/255.255.255.0 type=Vlan color=CC99FF throughput=1000000000,0,0,0 throughput_out=1000000000,0,0,0 packet=0,0,0,0,0,0 byte=0,0,0,0 byte_out=0,0,0,0 tcpconn=0 udpconn=0 tcpconncount=0 udpconncount=0 state=1 plugged=1 protected=1 fullduplex=1
+name=VLAN21_HR,vlan3 addr=10.0.21.1/255.255.255.0 type=Vlan color=CC99FF throughput=1000000000,0,0,0 throughput_out=1000000000,0,0,0 packet=0,0,0,0,0,0 byte=0,0,0,0 byte_out=0,0,0,0 tcpconn=0 udpconn=0 tcpconncount=0 udpconncount=0 state=1 plugged=1 protected=1 fullduplex=1
+name=VLAN20_OFFICE,vlan2 addr=10.0.20.1/255.255.255.0 type=Vlan color=CC99FF throughput=1000000000,0,0,0 throughput_out=1000000000,0,0,0 packet=0,0,0,0,0,0 byte=0,0,0,0 byte_out=0,0,0,0 tcpconn=0 udpconn=0 tcpconncount=0 udpconncount=0 state=1 plugged=1 protected=1 fullduplex=1
+name=VLAN15_PRINTER,vlan1 addr=10.0.15.1/255.255.255.0 type=Vlan color=CC99FF throughput=1000000000,0,0,0 throughput_out=1000000000,0,0,0 packet=0,0,0,0,0,0 byte=0,0,0,0 byte_out=0,0,0,0 tcpconn=0 udpconn=0 tcpconncount=0 udpconncount=0 state=1 plugged=1 protected=1 fullduplex=1
+name=VLAN10_SERVER,vlan0 addr=10.0.0.1/255.255.255.0 type=Vlan color=CC99FF throughput=1000000000,241272,17460072,0 throughput_out=1000000000,37366608,91217784,0 packet=23652,242,0,22729,887,36 byte=6260513,6106960,151202,2351 byte_out=108474297,108348262,120283,2632 tcpconn=197 udpconn=297 tcpconncount=438 udpconncount=340 state=1 plugged=1 protected=1 fullduplex=1
+name=sslvpn,sslvpn0 addr=10.0.150.1/255.255.255.255 type=sslvpn color=000000 throughput=0,0,0,0 throughput_out=0,0,0,0 packet=0,0,0,0,0,0 byte=0,0,0,0 byte_out=0,0,0,0 tcpconn=0 udpconn=0 tcpconncount=0 udpconncount=0 state=1 plugged=0 protected=1
+name=LAN-8,Ethernet7 type=Ethernet color=CC99FF throughput=0,0,0,0 throughput_out=0,0,0,0 packet=0,0,0,0,0,0 byte=0,0,0,0 byte_out=0,0,0,0 tcpconn=0 udpconn=0 tcpconncount=0 udpconncount=0 state=0 plugged=0 protected=0
+name=LAN-7,Ethernet6 type=Ethernet color=000000 throughput=0,0,0,0 throughput_out=0,0,0,0 packet=0,0,0,0,0,0 byte=0,0,0,0 byte_out=0,0,0,0 tcpconn=0 udpconn=0 tcpconncount=0 udpconncount=0 state=0 plugged=0 protected=0
+name=LAN-6,Ethernet5 type=Ethernet color=000000 throughput=0,0,0,0 throughput_out=0,0,0,0 packet=0,0,0,0,0,0 byte=0,0,0,0 byte_out=0,0,0,0 tcpconn=0 udpconn=0 tcpconncount=0 udpconncount=0 state=0 plugged=0 protected=0
+name=LAN-5,Ethernet4 type=Ethernet color=000000 throughput=0,0,0,0 throughput_out=0,0,0,0 packet=0,0,0,0,0,0 byte=0,0,0,0 byte_out=0,0,0,0 tcpconn=0 udpconn=0 tcpconncount=0 udpconncount=0 state=0 plugged=0 protected=0
+name=LAN-4,Ethernet3 type=Ethernet color=000000 throughput=0,0,0,0 throughput_out=0,0,0,0 packet=0,0,0,0,0,0 byte=0,0,0,0 byte_out=0,0,0,0 tcpconn=0 udpconn=0 tcpconncount=0 udpconncount=0 state=0 plugged=0 protected=0
+name=LAN-3,Ethernet2 type=Ethernet color=FF8040 throughput=0,0,0,0 throughput_out=0,0,0,0 packet=0,0,0,0,0,0 byte=0,0,0,0 byte_out=0,0,0,0 tcpconn=0 udpconn=0 tcpconncount=0 udpconncount=0 state=0 plugged=0 protected=0
+name=LAN-2,Ethernet1 type=Ethernet color=408080 throughput=1000000000,0,0,0 throughput_out=1000000000,0,0,0 packet=0,0,0,0,0,0 byte=0,0,0,0 byte_out=0,0,0,0 tcpconn=0 udpconn=0 tcpconncount=0 udpconncount=0 state=0 plugged=1 protected=0 fullduplex=1
+name=WAN-1,Ethernet0 addr=185.22.8.199/255.255.252.0 type=Ethernet color=800040 throughput=1000000000,37404072,91848528,0 throughput_out=1000000000,288056,1195992,0 packet=92464,1955,0,82102,10071,291 byte=118562887,109860714,8678641,23532 byte_out=4201912,2911400,1262638,24234 tcpconn=81 udpconn=0 tcpconncount=17 udpconncount=1 state=1 plugged=1 protected=0 fullduplex=1
+name=ipsec,ipsec type=ipsec color=000000 throughput=0,0,0,0 throughput_out=0,0,0,0 packet=0,0,0,0,0,0 byte=0,0,0,0 byte_out=0,0,0,0 tcpconn=0 udpconn=0 tcpconncount=0 udpconncount=0 state=1 plugged=0 protected=0
+100 code=00a00100 msg="Ok"
+SRPClient> 
+
+------------------------------------------------------------
+  CMD: MONITOR ROUTE
+------------------------------------------------------------
+
+MONITOR ROUTE
+101 code=00a01000 msg="Begin" format="section_line"
+route_type="DefaultRoute" ipv=4 router_name="Firewall_WAN-1_router" gateway_name="Firewall_WAN-1_router" gateway_addr="185.22.8.1" gateway_type="Principal" last_check="" state="UNDEF" state_last_change="" active=1 active_last_change="2026-05-11 18:19:14" sys_default_gateway=1 sys_default_gateway_last_change="2026-05-11 18:19:14" latency=0 jitter=0 loss_rate=0.0 unreachable_rate=0.0 rtid=0 usage_prct=100.0
+100 code=00a00100 msg="Ok"
+SRPClient> 
+
+------------------------------------------------------------
+  CMD: MONITOR GETIKESA
+------------------------------------------------------------
+
+MONITOR GETIKESA
+101 code=00a01000 msg="Begin" format="section_line"
+100 code=00a00100 msg="Ok"
+SRPClient> 
+
+------------------------------------------------------------
+  CMD: MONITOR CERT
+------------------------------------------------------------
+
+MONITOR CERT
+101 code=00a01000 msg="Begin" format="section_line"
+name="SSL proxy default authority" cn="SN310A30JE379A7" notbefore="Feb  2 20:41:06 2021 GMT" notafter="Oct  6 20:41:06 2030 GMT" elapsed=1927.46 remain=1605.54 revoked=no tpm=Unknown status=Good context="SSLProtocol, PKI" code=0
+name="sslvpn-full-default-authority:openvpnclient" cn="openvpnclient" notbefore="Feb  9 20:41:16 2021 GMT" notafter="Feb  7 20:41:16 2031 GMT" elapsed=1920.46 remain=1729.54 revoked=no tpm=Unknown status=Good context="VPNSSLFull" code=0
+name="sslvpn-full-default-authority:openvpnserver" cn="openvpnserver.com" notbefore="Feb  9 20:41:13 2021 GMT" notafter="Feb  7 20:41:13 2031 GMT" elapsed=1920.46 remain=1729.54 revoked=no tpm=Unknown status=Good context="LDAP, Authentication, SSLVPN-XSERVER, VPNSSLFull" code=0
+100 code=00a00100 msg="Ok"
+SRPClient> 
+
+------------------------------------------------------------
+  CMD: LOG INFO
+------------------------------------------------------------
+
+LOG INFO
+200 code=02200100 msg="Need log file name"
+SRPClient> 
+
+------------------------------------------------------------
+  CMD: LOG DOWNLIMIT lines=100
+------------------------------------------------------------
+
+LOG DOWNLIMIT lines=100
+205 code=06200a00 msg="Private data access right required"
+SRPClient> 
+
+============================================================
+Czas wykonania: 5.9s  |  Status: OK

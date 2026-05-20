@@ -1,0 +1,4 @@
+NET AUDIT SUMMARY  2026-05-15 12:30:41
+============================================================
+
+FW-SN310                                 10.0.0.1           stormshield  AUTH_ERROR  (0.5s)  >> Bledna autoryzacja (username/password)

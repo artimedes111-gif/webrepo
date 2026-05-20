@@ -1,0 +1,1699 @@
+
+============================================================
+  DEVICE: SW01-PoE-48P-BIURO-1  [10.0.100.11]  vendor: cisco
+============================================================
+
+Timestamp : 2026-05-15 12:23:55
+
+
+------------------------------------------------------------
+  CMD: show log
+------------------------------------------------------------
+
+Syslog logging: enabled (0 messages dropped, 0 messages rate-limited, 0 flushes, 0 overruns, xml disabled, filtering disabled)
+
+No Active Message Discriminator.
+
+
+
+No Inactive Message Discriminator.
+
+
+    Console logging: level debugging, 1466 messages logged, xml disabled,
+                     filtering disabled
+    Monitor logging: level debugging, 0 messages logged, xml disabled,
+                     filtering disabled
+    Buffer logging:  level debugging, 1466 messages logged, xml disabled,
+                    filtering disabled
+    Exception Logging: size (4096 bytes)
+    Count and timestamp logging messages: disabled
+    File logging: disabled
+    Persistent logging: disabled
+
+No active filter modules.
+
+    Trap logging: level informational, 1436 message lines logged
+        Logging Source-Interface:       VRF Name:
+
+Log Buffer (1000000 bytes):
+
+*Mar  1 00:01:11.831: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+*Mar  1 00:01:13.459: %SPANTREE-5-EXTENDED_SYSID: Extended SysId enabled for type vlan
+*Mar  1 00:01:17.191: %PNP-6-PNP_DISCOVERY_STARTED: PnP Discovery started
+*Mar  1 00:01:21 UTC: %SYS-5-LOG_CONFIG_CHANGE: Buffer logging: level debugging, xml disabled, filtering disabled, size (1000000)
+*Mar  1 00:01:21 UTC: %AAAA-4-CLI_DEPRECATED: WARNING: Command has been added to the configuration using a type 5 password. However, type 5 passwords will soon be deprecated. Migrate to a strong password type
+*Mar  1 01:01:21 CET: %SYS-6-CLOCKUPDATE: System clock has been updated from 00:01:21 UTC Mon Mar 1 1993 to 01:01:21 CET Mon Mar 1 1993, configured from console by vty0.
+*Mar  1 01:01:21 CET: %SYS-6-CLOCKUPDATE: System clock has been updated from 01:01:21 CET Mon Mar 1 1993 to 01:01:21 CET Mon Mar 1 1993, configured from console by vty0.
+*Mar  1 01:01:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan100, changed state to down
+*Mar  1 01:01:23 CET: %SYS-5-CONFIG_I: Configured from memory by console
+*Mar  1 01:01:24 CET: %LINK-5-CHANGED: Interface FastEthernet0/1, changed state to administratively down
+*Mar  1 01:01:24 CET: %LINK-5-CHANGED: Interface FastEthernet0/2, changed state to administratively down
+*Mar  1 01:01:24 CET: %LINK-5-CHANGED: Interface FastEthernet0/3, changed state to administratively down
+*Mar  1 01:01:24 CET: %LINK-5-CHANGED: Interface FastEthernet0/4, changed state to administratively down
+*Mar  1 01:01:24 CET: %LINK-5-CHANGED: Interface Vlan1, changed state to administratively down
+*Mar  1 01:01:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+*Mar  1 01:01:25 CET: %LINK-3-UPDOWN: Interface FastEthernet0/21, changed state to up
+*Mar  1 01:01:25 CET: %LINK-3-UPDOWN: Interface FastEthernet0/38, changed state to up
+*Mar  1 01:01:25 CET: %LINK-3-UPDOWN: Interface FastEthernet0/42, changed state to up
+*Mar  1 01:01:26 CET: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 15.2(7)E5, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2021 by Cisco Systems, Inc.
+Compiled Mon 13-Sep-21 09:52 by mcpre
+*Mar  1 01:01:26 CET: %SSH-5-ENABLED: SSH 2.0 has been enabled
+*Mar  1 01:01:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+*Mar  1 01:01:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/8, changed state to up
+*Mar  1 01:01:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+*Mar  1 01:01:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+*Mar  1 01:01:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/21, changed state to up
+*Mar  1 01:01:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+*Mar  1 01:01:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/27, changed state to up
+*Mar  1 01:01:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+*Mar  1 01:01:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+*Mar  1 01:01:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/38, changed state to up
+*Mar  1 01:01:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+*Mar  1 01:01:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+*Mar  1 01:01:27 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to up
+*Mar  1 01:01:27 CET: %LINK-3-UPDOWN: Interface FastEthernet0/8, changed state to up
+*Mar  1 01:01:27 CET: %LINK-3-UPDOWN: Interface FastEthernet0/27, changed state to up
+*Mar  1 01:01:28 CET: %LINK-3-UPDOWN: Interface FastEthernet0/7, changed state to up
+*Mar  1 01:01:28 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+*Mar  1 01:01:28 CET: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to up
+*Mar  1 01:01:28 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+*Mar  1 01:01:28 CET: %LINK-3-UPDOWN: Interface FastEthernet0/37, changed state to up
+*Mar  1 01:01:28 CET: %LINK-3-UPDOWN: Interface FastEthernet0/41, changed state to up
+*Mar  1 01:01:28 CET: %LINK-3-UPDOWN: Interface GigabitEthernet0/4, changed state to up
+*Mar  1 01:01:28 CET: %ILPOWER-7-DETECT: Interface Fa0/19: Power Device detected: IEEE PD
+*Mar  1 01:01:28 CET: %ILPOWER-7-DETECT: Interface Fa0/27: Power Device detected: IEEE PD
+*Mar  1 01:01:28 CET: %ILPOWER-7-DETECT: Interface Fa0/28: Power Device detected: IEEE PD
+*Mar  1 01:01:29 CET: %ILPOWER-7-DETECT: Interface Fa0/10: Power Device detected: IEEE PD
+*Mar  1 01:01:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan100, changed state to up
+*Mar  1 01:01:30 CET: %ILPOWER-7-DETECT: Interface Fa0/33: Power Device detected: IEEE PD
+*Mar  1 01:01:30 CET: %ILPOWER-7-DETECT: Interface Fa0/35: Power Device detected: IEEE PD
+*Mar  1 01:01:30 CET: %ILPOWER-7-DETECT: Interface Fa0/39: Power Device detected: IEEE PD
+*Mar  1 01:01:30 CET: %ILPOWER-7-DETECT: Interface Fa0/44: Power Device detected: IEEE PD
+*Mar  1 01:01:30 CET: %ILPOWER-7-DETECT: Interface Fa0/45: Power Device detected: IEEE PD
+*Mar  1 01:01:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/4, changed state to up
+*Mar  1 01:01:30 CET: %ILPOWER-5-POWER_GRANTED: Interface Fa0/19: Power granted
+*Mar  1 01:01:30 CET: %ILPOWER-5-POWER_GRANTED: Interface Fa0/28: Power granted
+*Mar  1 01:01:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/27, changed state to down
+*Mar  1 01:01:31 CET: %ILPOWER-5-POWER_GRANTED: Interface Fa0/10: Power granted
+*Mar  1 01:01:31 CET: %ILPOWER-5-POWER_GRANTED: Interface Fa0/33: Power granted
+*Mar  1 01:01:31 CET: %ILPOWER-5-POWER_GRANTED: Interface Fa0/35: Power granted
+*Mar  1 01:01:31 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/39: PD removed
+*Mar  1 01:01:31 CET: %ILPOWER-5-POWER_GRANTED: Interface Fa0/44: Power granted
+*Mar  1 01:01:31 CET: %ILPOWER-5-POWER_GRANTED: Interface Fa0/45: Power granted
+*Mar  1 01:01:31 CET: %PNP-6-PNP_BEST_UDI_UPDATE: Best UDI [PID:WS-C2960+48PST-L,VID:V02,SN:FOC2025W3WS] identified via (master-registry)
+*Mar  1 01:01:31 CET: %PNP-6-PNP_CDP_UPDATE: Device UDI [PID:WS-C2960+48PST-L,VID:V02,SN:FOC2025W3WS] identified for CDP
+*Mar  1 01:01:31 CET: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Startup Config Present)
+*Mar  1 01:01:32 CET: %LINK-3-UPDOWN: Interface FastEthernet0/27, changed state to down
+*Mar  1 01:01:32 CET: %ILPOWER-7-DETECT: Interface Fa0/27: Power Device detected: IEEE PD
+*Mar  1 01:01:33 CET: %ILPOWER-5-POWER_GRANTED: Interface Fa0/27: Power granted
+*Apr 20 05:37:43 CET: %ILPOWER-7-DETECT: Interface Fa0/39: Power Device detected: IEEE PD
+*Apr 20 05:37:44 CET: %ILPOWER-5-POWER_GRANTED: Interface Fa0/39: Power granted
+*Apr 20 05:37:44 CET: %LINK-3-UPDOWN: Interface FastEthernet0/28, changed state to up
+*Apr 20 05:37:45 CET: %LINK-3-UPDOWN: Interface FastEthernet0/45, changed state to up
+*Apr 20 05:37:45 CET: %LINK-3-UPDOWN: Interface FastEthernet0/19, changed state to up
+*Apr 20 05:37:45 CET: %LINK-3-UPDOWN: Interface FastEthernet0/27, changed state to up
+*Apr 20 05:37:45 CET: %LINK-3-UPDOWN: Interface FastEthernet0/35, changed state to up
+*Apr 20 05:37:45 CET: %LINK-3-UPDOWN: Interface FastEthernet0/10, changed state to up
+*Apr 20 05:37:45 CET: %LINK-3-UPDOWN: Interface FastEthernet0/44, changed state to up
+*Apr 20 05:37:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/28, changed state to up
+*Apr 20 05:37:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/19, changed state to up
+*Apr 20 05:37:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/27, changed state to up
+*Apr 20 05:37:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/35, changed state to up
+*Apr 20 05:37:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+Apr 20 05:37:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/44, changed state to up
+Apr 20 05:37:48 CET: %LINK-3-UPDOWN: Interface FastEthernet0/39, changed state to up
+Apr 20 05:37:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/28, changed state to down
+Apr 20 05:37:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/39, changed state to up
+Apr 20 05:37:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/28, changed state to up
+Apr 20 05:37:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/45, changed state to up
+Apr 20 05:37:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/28, changed state to down
+Apr 20 05:37:54 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to down
+Apr 20 05:37:55 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/44, changed state to down
+Apr 20 05:37:55 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/28, changed state to up
+Apr 20 05:37:56 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+Apr 20 05:37:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/44, changed state to up
+Apr 20 05:38:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to down
+Apr 20 05:38:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/44, changed state to down
+Apr 20 05:38:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to up
+Apr 20 05:38:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/44, changed state to up
+Apr 20 05:38:16 CET: %LINK-3-UPDOWN: Interface FastEthernet0/33, changed state to up
+Apr 20 05:38:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/33, changed state to up
+Apr 20 05:38:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/45, changed state to down
+Apr 20 05:38:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/33, changed state to down
+Apr 20 05:38:22 CET: %LINK-3-UPDOWN: Interface FastEthernet0/33, changed state to down
+Apr 20 05:38:25 CET: %LINK-3-UPDOWN: Interface FastEthernet0/33, changed state to up
+Apr 20 05:38:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/45, changed state to up
+Apr 20 05:38:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/33, changed state to up
+Apr 20 05:41:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 05:41:48 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to down
+Apr 20 05:42:16 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to up
+Apr 20 05:42:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 05:42:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 05:42:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 05:51:23 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+Apr 20 05:51:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+Apr 20 05:51:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 20 05:51:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 20 05:53:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 20 05:53:08 CET: %LINK-3-UPDOWN: Interface FastEthernet0/7, changed state to down
+Apr 20 05:53:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 20 05:53:12 CET: %LINK-3-UPDOWN: Interface FastEthernet0/7, changed state to up
+Apr 20 05:53:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 20 05:53:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 20 05:58:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 20 05:58:05 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 20 05:58:08 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 20 05:58:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 20 05:58:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 20 05:58:14 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 20 05:58:17 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 20 05:58:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 20 06:01:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 06:01:39 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to down
+Apr 20 06:02:03 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to up
+Apr 20 06:02:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 06:02:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 06:02:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 06:13:38 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 20 06:13:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 20 06:14:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 20 06:14:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 20 06:14:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 20 06:14:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 20 06:31:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to down
+Apr 20 06:31:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+Apr 20 06:31:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to down
+Apr 20 06:31:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+Apr 20 06:31:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to down
+Apr 20 06:31:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+Apr 20 06:31:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to down
+Apr 20 06:31:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to up
+Apr 20 06:40:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 06:40:23 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to down
+Apr 20 06:40:48 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to up
+Apr 20 06:40:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 06:40:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 06:40:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 06:56:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 20 06:56:03 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+Apr 20 06:56:05 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+Apr 20 06:56:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 20 06:56:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 20 06:56:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 20 07:05:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 20 07:05:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 20 07:16:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+Apr 20 07:16:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+Apr 20 07:35:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 07:35:24 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to down
+Apr 20 07:35:34 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to up
+Apr 20 07:35:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 07:36:01 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 20 07:36:02 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 20 07:36:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 07:36:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 07:36:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 07:36:29 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to down
+Apr 20 07:36:56 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to up
+Apr 20 07:36:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 07:37:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 07:37:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 07:44:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 07:44:36 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to down
+Apr 20 07:45:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 07:45:05 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to up
+Apr 20 07:45:56 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 07:45:57 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to down
+Apr 20 07:46:00 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to up
+Apr 20 07:46:03 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to down
+Apr 20 07:47:19 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 20 07:47:19 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to up
+Apr 20 07:47:20 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 20 07:47:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 07:47:59 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 07:48:00 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to down
+Apr 20 08:22:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 20 08:22:25 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 20 08:34:24 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to up
+Apr 20 08:34:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 08:34:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 08:34:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 09:13:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 09:13:05 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to down
+Apr 20 09:13:08 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to up
+Apr 20 09:13:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 09:19:10 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 20 09:19:11 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 20 09:19:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 09:19:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 09:21:08 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 20 09:21:09 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 20 09:21:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 09:21:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 09:21:42 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 20 09:21:43 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 20 09:21:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 09:21:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 09:22:21 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 20 09:22:22 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 20 09:22:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 09:22:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 10:09:33 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 20 10:09:33 CET: %ILPOWER-5-POWER_GRANTED: Interface Fa0/26: Power granted
+Apr 20 10:09:33 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 20 10:09:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 10:09:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 10:09:49 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 20 10:09:50 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 20 10:09:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 10:09:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 10:37:02 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 20 10:37:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 20 10:45:10 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 20 10:45:10 CET: %ILPOWER-5-POWER_GRANTED: Interface Fa0/26: Power granted
+Apr 20 10:45:11 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 20 10:45:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 10:45:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 10:45:23 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 20 10:45:23 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 20 10:45:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 10:45:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 10:46:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 20 10:46:59 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 20 10:47:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 20 10:47:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 20 10:57:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 20 10:57:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 20 10:59:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 20 10:59:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 20 10:59:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 20 10:59:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 20 11:06:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 20 11:06:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 20 11:06:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 20 11:06:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 20 11:06:55 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 20 11:06:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 20 11:53:13 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 20 11:53:14 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 20 11:53:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 20 11:53:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 20 12:23:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+Apr 20 12:23:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+Apr 20 12:56:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 20 12:56:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 20 12:56:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 20 12:56:12 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 20 12:56:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 20 12:56:21 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 20 12:56:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 20 12:56:29 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 20 12:56:33 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 20 12:56:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 20 13:05:55 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 20 13:05:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 20 13:06:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 20 13:06:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 20 13:59:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 20 13:59:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 20 13:59:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 20 13:59:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 20 14:00:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+Apr 20 14:00:20 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+Apr 20 14:00:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 20 14:00:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 20 14:00:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 20 14:00:29 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 20 14:49:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 20 14:49:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 20 15:03:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 20 15:03:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 20 15:34:43 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 20 15:34:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 20 15:59:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 20 15:59:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 20 16:00:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 20 16:00:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 20 16:31:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 20 16:31:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 20 16:58:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 20 16:58:05 CET: %LINK-3-UPDOWN: Interface FastEthernet0/42, changed state to down
+Apr 20 16:58:07 CET: %LINK-3-UPDOWN: Interface FastEthernet0/42, changed state to up
+Apr 20 16:58:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 21 05:31:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 21 05:31:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 21 05:46:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 21 05:46:13 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+Apr 21 05:46:16 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+Apr 21 05:46:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 21 05:46:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 21 05:46:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 21 05:52:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 21 05:52:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 21 05:52:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 21 05:52:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 21 05:53:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 21 05:53:09 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 21 05:53:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 21 05:53:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 21 05:53:59 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+Apr 21 05:54:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+Apr 21 05:56:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 21 05:56:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 21 05:56:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 21 05:56:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 21 06:06:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 21 06:06:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 21 06:49:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 21 06:49:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 21 09:19:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 21 09:19:31 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to down
+Apr 21 09:19:55 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to up
+Apr 21 09:19:56 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 21 09:19:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 21 09:20:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 21 10:25:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 21 10:25:34 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 21 11:16:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+Apr 21 11:16:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+Apr 21 11:58:51 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 21 11:58:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 21 12:00:59 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 21 12:01:01 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 21 12:01:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 21 12:01:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 21 13:48:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 21 13:48:49 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+Apr 21 13:48:51 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+Apr 21 13:48:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 21 13:49:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 21 13:49:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 21 13:59:56 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+Apr 21 13:59:57 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+Apr 21 14:00:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 21 14:00:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 21 14:00:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 21 14:00:22 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 21 14:28:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 21 14:28:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 21 14:37:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 21 14:37:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 21 15:01:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 21 15:01:26 CET: %LINK-3-UPDOWN: Interface FastEthernet0/7, changed state to down
+Apr 21 15:01:28 CET: %LINK-3-UPDOWN: Interface FastEthernet0/7, changed state to up
+Apr 21 15:01:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 21 15:24:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+Apr 21 15:24:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+Apr 21 17:57:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 21 17:57:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 21 17:59:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 21 17:59:30 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 22 05:39:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 22 05:39:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 22 05:49:54 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+Apr 22 05:49:55 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+Apr 22 05:53:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 22 05:53:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 22 05:53:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 22 05:53:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 22 05:56:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 22 05:56:19 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 22 05:56:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 22 05:56:20 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+Apr 22 05:56:23 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+Apr 22 05:56:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 22 05:56:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 22 05:56:28 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 22 05:56:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 22 05:56:31 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 22 05:56:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 22 05:56:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 22 06:08:02 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 22 06:08:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 22 06:11:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 22 06:11:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 22 06:11:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 22 06:11:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 22 07:03:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 22 07:03:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 22 10:43:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 22 10:43:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 22 10:43:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 22 10:43:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 22 10:44:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 22 10:44:58 CET: %LINK-3-UPDOWN: Interface FastEthernet0/7, changed state to down
+Apr 22 10:45:01 CET: %LINK-3-UPDOWN: Interface FastEthernet0/7, changed state to up
+Apr 22 10:45:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 22 12:46:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+Apr 22 12:47:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+Apr 22 12:58:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+Apr 22 12:58:47 CET: %LINK-3-UPDOWN: Interface FastEthernet0/41, changed state to down
+Apr 22 12:58:55 CET: %LINK-3-UPDOWN: Interface FastEthernet0/41, changed state to up
+Apr 22 12:58:56 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+Apr 22 13:55:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 22 13:55:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 22 13:56:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 22 13:56:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 22 14:00:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+Apr 22 14:00:26 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+Apr 22 14:00:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 22 14:01:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 22 14:01:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 22 14:01:05 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 22 14:05:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 22 14:05:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 22 14:35:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 22 14:35:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 22 15:03:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 22 15:03:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 22 16:28:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 22 16:28:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 22 16:31:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 22 16:31:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 22 16:31:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 22 16:31:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 22 16:52:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 22 16:52:10 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 23 05:34:47 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 23 05:34:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 23 05:36:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 23 05:36:54 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 23 05:37:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 23 05:37:08 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 23 05:37:10 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 23 05:37:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 23 05:51:13 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+Apr 23 05:51:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+Apr 23 05:57:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 23 05:57:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 23 05:57:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 23 05:57:11 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+Apr 23 05:57:13 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+Apr 23 05:57:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 23 05:57:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 23 05:57:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 23 05:57:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 23 05:57:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 23 05:58:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 23 05:58:41 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 23 05:58:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 23 05:58:45 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 23 05:58:47 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 23 05:58:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 23 06:30:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 23 06:30:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 23 06:35:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 23 06:35:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 23 11:19:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 23 11:19:28 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 23 12:16:46 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 23 12:16:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 23 12:16:56 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 23 12:16:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 23 12:17:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 23 12:17:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 23 12:19:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 23 12:19:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 23 13:58:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 23 13:58:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 23 13:59:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 23 13:59:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 23 14:00:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+Apr 23 14:00:12 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+Apr 23 14:00:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 23 14:00:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 23 14:00:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 23 14:00:30 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 23 14:24:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 23 14:24:14 CET: %LINK-3-UPDOWN: Interface FastEthernet0/37, changed state to down
+Apr 23 14:24:18 CET: %LINK-3-UPDOWN: Interface FastEthernet0/37, changed state to up
+Apr 23 14:24:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 23 16:46:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 23 16:46:59 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 23 16:47:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 23 16:47:04 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 24 05:37:42 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 24 05:37:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 24 05:45:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 24 05:45:25 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+Apr 24 05:45:27 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+Apr 24 05:45:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 24 05:45:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 24 05:45:42 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 24 05:48:57 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+Apr 24 05:48:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+Apr 24 05:52:41 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 24 05:52:42 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 24 05:52:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 24 05:52:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 24 05:53:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 24 05:53:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 24 05:58:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 24 05:58:02 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 24 05:58:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 24 05:58:10 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 24 05:58:14 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 24 05:58:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 24 06:06:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 24 06:06:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 24 13:55:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 24 13:55:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 24 13:55:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 24 13:55:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 24 14:00:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+Apr 24 14:00:09 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+Apr 24 14:02:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 24 14:02:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 24 14:02:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 24 14:02:26 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 24 14:08:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 24 14:08:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 24 15:01:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 24 15:01:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 24 15:01:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 24 15:01:33 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 24 15:21:42 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 24 15:21:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 27 04:16:49 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 27 04:16:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 27 04:16:59 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 27 04:17:01 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 27 04:17:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 27 04:17:16 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 27 04:17:23 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 27 04:17:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 27 04:52:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 27 04:52:49 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 27 04:52:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 27 04:52:56 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 27 04:53:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 27 04:53:02 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+Apr 27 04:53:03 CET: %LINK-3-UPDOWN: Interface FastEthernet0/7, changed state to down
+Apr 27 04:53:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+Apr 27 04:53:07 CET: %LINK-3-UPDOWN: Interface FastEthernet0/7, changed state to up
+Apr 27 04:53:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 27 04:53:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 27 04:53:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 27 04:57:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 27 04:57:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 27 04:57:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 27 04:57:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 27 04:57:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 27 04:57:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 27 05:02:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+Apr 27 05:02:24 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+Apr 27 05:02:31 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+Apr 27 05:02:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+Apr 27 05:02:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+Apr 27 05:02:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 27 05:02:41 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+Apr 27 05:02:42 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+Apr 27 05:02:48 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+Apr 27 05:02:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 27 05:02:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 27 05:02:59 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 27 05:03:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 27 05:03:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 27 05:03:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 27 05:03:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 27 05:03:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+Apr 27 05:03:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+Apr 27 05:47:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 27 05:47:08 CET: %LINK-3-UPDOWN: Interface FastEthernet0/37, changed state to down
+Apr 27 05:47:15 CET: %LINK-3-UPDOWN: Interface FastEthernet0/37, changed state to up
+Apr 27 05:47:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 27 05:47:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 27 05:47:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 27 05:48:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 27 05:48:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 27 05:49:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 27 05:49:41 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+Apr 27 05:49:46 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+Apr 27 05:49:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 27 05:56:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 27 05:56:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 27 14:00:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 27 14:00:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+Apr 27 14:00:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 27 14:00:25 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+Apr 27 14:00:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 27 14:00:30 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 27 14:01:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 27 14:01:45 CET: %LINK-3-UPDOWN: Interface FastEthernet0/42, changed state to down
+Apr 27 14:01:47 CET: %LINK-3-UPDOWN: Interface FastEthernet0/42, changed state to up
+Apr 27 14:01:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 27 14:01:56 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 27 14:01:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 27 14:02:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 27 14:02:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 27 14:22:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+Apr 27 14:22:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+Apr 27 14:33:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 27 14:33:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 27 14:44:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 27 14:44:59 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 27 14:45:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 27 14:45:08 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 27 15:02:01 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 27 15:02:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 28 05:32:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 28 05:32:31 CET: %LINK-3-UPDOWN: Interface FastEthernet0/42, changed state to down
+Apr 28 05:32:34 CET: %LINK-3-UPDOWN: Interface FastEthernet0/42, changed state to up
+Apr 28 05:32:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 28 05:50:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 28 05:50:34 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+Apr 28 05:50:36 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+Apr 28 05:50:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 28 05:50:43 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 28 05:50:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 28 05:54:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 28 05:54:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 28 05:54:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 28 05:55:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 28 05:56:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 28 05:56:04 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 28 05:56:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 28 05:56:12 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 28 05:56:15 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 28 05:56:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 28 05:56:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 28 05:56:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 28 05:56:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 28 05:56:33 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 28 05:56:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 28 05:56:42 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 28 05:56:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 28 05:56:46 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 28 05:56:50 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 28 05:56:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 28 06:00:15 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+Apr 28 06:00:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+Apr 28 06:01:22 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 28 06:01:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 28 06:04:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 28 06:04:13 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 28 06:04:15 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 28 06:04:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 28 06:04:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 28 06:04:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 28 07:07:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 28 07:08:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 28 07:55:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+Apr 28 07:55:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+Apr 28 07:59:55 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 28 07:59:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 28 08:00:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 28 08:00:06 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 28 09:31:29 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 28 09:31:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 28 09:31:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 28 09:31:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 28 09:31:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 28 09:31:58 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 28 09:32:05 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 28 09:32:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 28 09:45:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 28 09:45:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 28 09:51:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 28 09:51:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 28 11:52:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 28 11:52:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 28 11:52:54 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 28 11:52:56 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 28 14:00:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+Apr 28 14:00:23 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+Apr 28 14:01:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 28 14:01:04 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 28 14:01:06 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 28 14:01:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 28 14:01:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 28 14:01:10 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 28 14:02:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 28 14:02:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 28 14:03:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 28 14:03:42 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 28 14:11:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+Apr 28 14:11:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+Apr 28 15:37:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 28 15:37:33 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 28 15:37:36 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 28 15:37:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 28 15:37:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 28 15:37:41 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 28 15:45:54 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 28 15:45:56 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 29 05:37:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 29 05:37:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 29 05:45:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 29 05:45:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 29 05:51:19 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+Apr 29 05:51:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+Apr 29 05:52:55 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 29 05:52:56 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+Apr 29 05:53:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 29 05:53:03 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+Apr 29 05:53:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 29 05:53:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 29 05:55:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 29 05:55:10 CET: %LINK-3-UPDOWN: Interface FastEthernet0/7, changed state to down
+Apr 29 05:55:15 CET: %LINK-3-UPDOWN: Interface FastEthernet0/7, changed state to up
+Apr 29 05:55:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 29 05:55:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 29 05:55:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 29 05:56:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 29 05:56:25 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 29 05:56:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 29 05:56:33 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 29 05:56:37 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 29 05:56:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 29 06:00:59 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 29 06:01:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 29 06:01:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 29 06:01:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 29 06:01:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 29 06:01:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 29 07:03:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+Apr 29 07:03:10 CET: %LINK-3-UPDOWN: Interface FastEthernet0/41, changed state to down
+Apr 29 07:03:12 CET: %LINK-3-UPDOWN: Interface FastEthernet0/41, changed state to up
+Apr 29 07:03:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+Apr 29 09:44:31 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 162c.6a00.dddc in vlan 51 is flapping between port Gi0/4 and port Fa0/33
+Apr 29 11:59:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 29 11:59:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 29 11:59:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 29 11:59:36 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+Apr 29 11:59:38 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+Apr 29 11:59:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 29 13:46:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/38, changed state to down
+Apr 29 13:46:16 CET: %LINK-3-UPDOWN: Interface FastEthernet0/38, changed state to down
+Apr 29 13:48:54 CET: %LINK-3-UPDOWN: Interface FastEthernet0/38, changed state to up
+Apr 29 13:48:55 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/38, changed state to up
+Apr 29 14:00:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+Apr 29 14:00:11 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+Apr 29 14:00:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 29 14:00:25 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 29 14:00:28 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 29 14:00:31 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 29 14:06:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 29 14:06:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 29 14:53:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 29 14:53:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 29 15:01:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 29 15:01:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 29 16:13:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 29 16:13:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 29 16:13:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 29 16:13:49 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 29 23:16:35 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 29 23:16:36 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 29 23:16:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 29 23:16:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 29 23:24:58 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 29 23:24:59 CET: %ILPOWER-5-POWER_GRANTED: Interface Fa0/26: Power granted
+Apr 29 23:24:59 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 29 23:25:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 29 23:25:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 29 23:28:39 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 29 23:28:39 CET: %ILPOWER-5-POWER_GRANTED: Interface Fa0/26: Power granted
+Apr 29 23:28:40 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 29 23:28:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 29 23:28:43 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 29 23:31:17 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 29 23:31:18 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 29 23:31:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 29 23:31:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 30 01:46:36 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 30 01:46:37 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 30 01:46:38 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 30 01:46:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 30 01:46:39 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 30 01:46:39 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to down
+Apr 30 01:46:43 CET: %LINK-3-UPDOWN: Interface FastEthernet0/26, changed state to up
+Apr 30 01:46:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 30 05:36:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 30 05:36:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+Apr 30 05:46:44 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 30 05:46:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 30 05:46:54 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 30 05:46:56 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 30 05:47:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 30 05:47:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 30 05:49:59 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 30 05:50:00 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+Apr 30 05:50:06 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+Apr 30 05:50:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 30 05:50:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 30 05:50:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 30 05:52:58 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+Apr 30 05:52:59 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+Apr 30 05:54:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 30 05:54:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 30 05:54:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 30 05:54:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 30 05:55:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 30 05:55:19 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+Apr 30 05:55:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 30 05:55:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 30 07:21:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 30 07:21:48 CET: %LINK-3-UPDOWN: Interface FastEthernet0/37, changed state to down
+Apr 30 07:21:55 CET: %LINK-3-UPDOWN: Interface FastEthernet0/37, changed state to up
+Apr 30 07:21:56 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 30 09:53:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 30 09:53:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 30 09:53:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+Apr 30 09:53:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+Apr 30 10:42:17 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 30 10:42:18 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 30 10:42:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 30 10:42:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 30 11:05:26 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 30 11:05:27 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 30 11:05:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 30 11:05:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 30 11:11:20 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 30 11:11:21 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 30 11:11:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 30 11:11:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 30 11:25:26 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 30 11:25:27 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 30 11:25:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 30 11:25:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 30 12:46:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+Apr 30 12:46:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+Apr 30 14:00:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+Apr 30 14:00:13 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+Apr 30 14:00:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 30 14:00:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+Apr 30 14:00:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+Apr 30 14:00:40 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+Apr 30 14:00:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+Apr 30 14:00:55 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+Apr 30 14:14:03 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 30 14:14:04 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 30 14:14:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 30 14:14:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 30 14:29:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+Apr 30 14:30:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+Apr 30 15:25:01 CET: %ILPOWER-7-DETECT: Interface Fa0/26: Power Device detected: IEEE PD
+Apr 30 15:25:01 CET: %ILPOWER-5-POWER_GRANTED: Interface Fa0/26: Power granted
+Apr 30 15:25:02 CET: %ILPOWER-5-IEEE_DISCONNECT: Interface Fa0/26: PD removed
+Apr 30 15:25:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to down
+Apr 30 15:25:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/26, changed state to up
+Apr 30 16:21:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 30 16:21:06 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 30 16:21:09 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+Apr 30 16:21:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+Apr 30 16:21:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+Apr 30 16:21:40 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+Apr 30 16:21:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+Apr 30 16:21:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May  4 05:35:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  4 05:35:47 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+May  4 05:35:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  4 05:35:53 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+May  4 05:35:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  4 05:35:59 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  4 05:51:00 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+May  4 05:51:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+May  4 05:54:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May  4 05:54:13 CET: %LINK-3-UPDOWN: Interface FastEthernet0/7, changed state to down
+May  4 05:54:18 CET: %LINK-3-UPDOWN: Interface FastEthernet0/7, changed state to up
+May  4 05:54:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May  4 05:54:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May  4 05:54:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May  4 05:56:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May  4 05:56:08 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May  4 05:56:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May  4 05:56:16 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May  4 05:56:19 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May  4 05:56:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May  4 07:02:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May  4 07:02:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May  4 08:56:59 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May  4 08:57:01 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May  4 08:57:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May  4 08:57:54 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May  4 13:07:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May  4 13:07:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May  4 13:40:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May  4 13:40:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May  4 13:42:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May  4 13:42:54 CET: %LINK-3-UPDOWN: Interface FastEthernet0/42, changed state to down
+May  4 13:42:57 CET: %LINK-3-UPDOWN: Interface FastEthernet0/42, changed state to up
+May  4 13:42:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May  4 13:57:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  4 13:57:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  4 13:57:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  4 13:57:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  4 14:00:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+May  4 14:00:17 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+May  4 14:00:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May  4 14:00:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May  4 14:00:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May  4 14:00:37 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May  4 14:01:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May  4 14:01:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May  4 14:41:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May  4 14:41:09 CET: %LINK-3-UPDOWN: Interface FastEthernet0/37, changed state to down
+May  4 14:41:12 CET: %LINK-3-UPDOWN: Interface FastEthernet0/37, changed state to up
+May  4 14:41:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May  4 15:01:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May  4 15:01:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May  5 05:26:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May  5 05:26:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May  5 05:31:02 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May  5 05:31:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  5 05:31:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  5 05:31:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  5 05:31:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  5 05:31:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  5 05:51:36 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+May  5 05:51:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+May  5 05:55:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May  5 05:55:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May  5 05:55:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May  5 05:55:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May  5 05:55:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May  5 05:55:26 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May  5 05:55:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May  5 05:55:30 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May  5 05:55:33 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May  5 05:55:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May  5 05:59:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  5 05:59:40 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+May  5 05:59:42 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+May  5 05:59:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  5 05:59:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  5 05:59:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  5 06:59:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  5 06:59:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  5 06:59:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  5 06:59:18 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May  5 07:07:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May  5 07:07:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May  5 08:32:36 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May  5 08:32:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  5 10:26:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May  5 10:26:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May  5 13:58:54 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  5 13:58:56 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  5 13:59:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  5 13:59:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  5 14:00:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May  5 14:00:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May  5 14:00:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+May  5 14:00:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May  5 14:00:22 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+May  5 14:00:22 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May  5 14:36:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May  5 14:36:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May  5 15:01:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May  5 15:01:35 CET: %LINK-3-UPDOWN: Interface FastEthernet0/42, changed state to down
+May  5 15:01:38 CET: %LINK-3-UPDOWN: Interface FastEthernet0/42, changed state to up
+May  5 15:01:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May  5 15:02:59 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May  5 15:03:01 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May  5 15:35:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May  5 15:35:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May  5 16:07:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  5 16:07:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  6 05:21:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May  6 05:21:54 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May  6 05:42:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  6 05:42:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  6 05:42:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  6 05:42:19 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May  6 05:42:22 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May  6 05:42:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  6 05:47:15 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+May  6 05:47:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+May  6 05:50:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  6 05:50:21 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+May  6 05:50:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  6 05:50:28 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+May  6 05:50:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  6 05:50:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  6 05:54:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May  6 05:54:50 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May  6 05:54:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May  6 05:54:58 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May  6 05:55:02 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May  6 05:55:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May  6 05:56:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May  6 05:56:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May  6 05:56:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May  6 05:56:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May  6 06:22:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May  6 06:22:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May  6 06:58:43 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May  6 06:58:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May  6 10:43:42 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May  6 10:43:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May  6 13:54:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  6 13:54:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  6 14:00:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May  6 14:00:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May  6 14:00:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  6 14:00:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+May  6 14:00:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May  6 14:00:23 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+May  6 14:00:23 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May  6 14:00:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  6 14:00:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  6 14:00:43 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  6 14:20:01 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May  6 14:20:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May  6 15:00:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May  6 15:00:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May  6 15:17:43 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May  6 15:17:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May  6 15:52:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  6 15:52:33 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+May  6 15:52:35 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+May  6 15:52:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  6 15:52:42 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  6 15:52:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  6 16:00:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  6 16:00:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  6 16:00:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  6 16:00:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  7 05:29:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  7 05:29:58 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+May  7 05:30:01 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+May  7 05:30:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  7 05:30:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  7 05:30:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  7 05:40:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May  7 05:40:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May  7 05:43:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May  7 05:43:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May  7 05:48:40 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+May  7 05:48:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+May  7 05:54:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May  7 05:54:35 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May  7 05:54:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May  7 05:54:39 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May  7 05:54:43 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May  7 05:54:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May  7 05:55:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May  7 05:55:09 CET: %LINK-3-UPDOWN: Interface FastEthernet0/7, changed state to down
+May  7 05:55:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May  7 05:55:13 CET: %LINK-3-UPDOWN: Interface FastEthernet0/7, changed state to up
+May  7 05:55:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May  7 05:55:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May  7 06:02:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  7 06:02:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  7 06:03:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  7 06:03:03 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May  7 06:03:05 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May  7 06:03:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  7 07:11:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May  7 07:11:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May  7 08:25:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  7 08:25:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  7 08:28:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  7 08:28:26 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May  7 09:01:10 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May  7 09:01:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  7 09:01:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  7 09:01:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  7 09:01:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  7 09:01:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  7 13:01:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/8, changed state to down
+May  7 13:01:29 CET: %LINK-3-UPDOWN: Interface FastEthernet0/8, changed state to down
+May  7 13:14:49 CET: %LINK-3-UPDOWN: Interface FastEthernet0/8, changed state to up
+May  7 13:14:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/8, changed state to up
+May  7 13:15:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/8, changed state to down
+May  7 13:15:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/8, changed state to up
+May  7 13:35:01 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May  7 13:35:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May  7 13:35:43 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May  7 13:35:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May  7 14:00:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  7 14:00:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  7 14:00:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+May  7 14:00:14 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+May  7 14:00:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May  7 14:00:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May  7 14:00:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  7 14:00:22 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+May  7 14:00:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May  7 14:00:24 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May  7 14:00:25 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+May  7 14:00:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  7 14:05:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May  7 14:05:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May  7 14:36:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May  7 14:36:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May  7 15:11:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  7 15:11:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  7 15:14:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  7 15:14:05 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May  7 15:15:28 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May  7 15:15:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  7 15:21:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  7 15:21:14 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May  8 05:32:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May  8 05:33:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May  8 05:40:20 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May  8 05:40:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  8 05:40:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  8 05:40:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  8 05:40:43 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  8 05:40:44 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May  8 05:40:46 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May  8 05:40:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  8 05:52:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  8 05:52:04 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+May  8 05:52:06 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+May  8 05:52:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  8 05:52:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  8 05:52:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  8 05:54:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May  8 05:54:07 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May  8 05:54:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May  8 05:54:16 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May  8 05:54:20 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May  8 05:54:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May  8 05:55:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May  8 05:55:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May  8 05:55:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May  8 05:55:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May  8 06:03:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May  8 06:03:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May  8 07:45:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May  8 07:45:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May  8 09:31:18 CET: %SW_MATM-4-MACFLAP_NOTIF: Host da47.feef.a9f3 in vlan 51 is flapping between port Fa0/45 and port Gi0/4
+May  8 09:36:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  8 09:36:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  8 09:36:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  8 09:36:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  8 09:36:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  8 09:36:42 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  8 12:48:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  8 12:48:27 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May  8 13:44:01 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May  8 13:44:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  8 13:44:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  8 13:44:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  8 13:44:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  8 13:44:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  8 14:01:01 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  8 14:01:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May  8 14:01:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  8 14:01:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May  8 14:01:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May  8 14:01:10 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May  8 14:01:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May  8 14:01:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May  8 14:06:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May  8 14:06:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May  8 14:14:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May  8 14:14:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May  8 14:43:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May  8 14:43:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May  8 14:44:01 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May  8 14:44:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May  8 15:36:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  8 15:36:01 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May  8 15:36:04 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May  8 15:36:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May  8 15:41:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May  8 15:41:54 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May 11 05:28:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 11 05:28:39 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+May 11 05:28:42 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+May 11 05:28:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 11 05:28:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 11 05:28:50 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+May 11 05:28:52 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+May 11 05:28:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 11 05:35:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May 11 05:35:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May 11 05:40:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May 11 05:40:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May 11 05:44:07 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May 11 05:44:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 11 05:44:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 11 05:44:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 11 05:44:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 11 05:44:31 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May 11 05:44:33 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May 11 05:44:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 11 05:55:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May 11 05:55:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May 11 05:55:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May 11 05:55:32 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May 11 05:55:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May 11 05:55:37 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May 11 05:55:40 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May 11 05:55:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May 11 05:55:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May 11 05:55:43 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May 11 06:50:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 11 06:50:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 11 06:50:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 11 06:50:35 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May 11 07:52:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May 11 07:52:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May 11 08:38:51 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May 11 08:38:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 11 09:29:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 11 09:29:09 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May 11 09:29:15 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May 11 09:29:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 11 09:29:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 11 09:29:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 11 12:33:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 11 12:33:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 11 12:34:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 11 12:34:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 11 12:50:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 11 12:50:52 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May 11 13:34:39 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May 11 13:34:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 11 13:37:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 11 13:37:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 11 13:37:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 11 13:37:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 11 14:00:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May 11 14:00:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May 11 14:00:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May 11 14:00:36 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May 11 14:05:43 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May 11 14:05:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May 11 14:27:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May 11 14:27:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May 11 14:36:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May 11 14:36:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May 11 15:02:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May 11 15:02:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May 11 15:31:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 11 15:31:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 11 15:37:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 11 15:37:16 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May 12 05:14:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May 12 05:14:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May 12 05:36:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May 12 05:36:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May 12 05:53:40 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May 12 05:53:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 12 05:53:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 12 05:53:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 12 05:54:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 12 05:54:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 12 05:55:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May 12 05:55:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May 12 05:55:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May 12 05:55:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May 12 05:57:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 12 05:57:15 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+May 12 05:57:17 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+May 12 05:57:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 12 05:57:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 12 05:57:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 12 05:58:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May 12 05:58:38 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May 12 05:58:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May 12 05:58:46 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May 12 05:58:50 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May 12 05:58:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May 12 06:59:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May 12 06:59:30 CET: %LINK-3-UPDOWN: Interface FastEthernet0/41, changed state to down
+May 12 06:59:33 CET: %LINK-3-UPDOWN: Interface FastEthernet0/41, changed state to up
+May 12 06:59:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May 12 13:56:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 12 13:56:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 12 13:57:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 12 13:57:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 12 14:06:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May 12 14:06:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May 12 14:06:43 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May 12 14:06:44 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May 12 14:20:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May 12 14:20:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May 12 15:01:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May 12 15:01:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May 12 15:07:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May 12 15:07:54 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May 12 15:28:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 12 15:28:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 12 15:47:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May 12 15:47:23 CET: %LINK-3-UPDOWN: Interface FastEthernet0/42, changed state to down
+May 12 15:47:26 CET: %LINK-3-UPDOWN: Interface FastEthernet0/42, changed state to up
+May 12 15:47:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May 13 03:34:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May 13 03:34:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May 13 05:00:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May 13 05:00:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May 13 05:56:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May 13 05:56:24 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May 13 05:56:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May 13 05:56:28 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May 13 05:56:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May 13 05:56:32 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May 13 05:56:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May 13 05:56:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May 13 05:56:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 13 05:56:38 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+May 13 05:56:40 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+May 13 05:56:43 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 13 05:56:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May 13 05:56:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May 13 05:56:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 13 05:56:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 13 05:58:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 13 05:58:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 13 05:58:54 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 13 05:58:55 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May 13 05:58:57 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May 13 05:58:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 13 07:11:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May 13 07:11:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May 13 09:30:13 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+May 13 09:30:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+May 13 10:18:01 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+May 13 10:18:02 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to down
+May 13 10:41:37 CET: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+May 13 10:41:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to up
+May 13 12:32:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 13 12:32:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 13 12:33:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 13 12:33:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 13 12:33:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 13 12:33:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 13 12:33:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 13 12:33:41 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May 13 12:52:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 13 12:52:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 13 12:53:01 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 13 12:53:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 13 13:26:45 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May 13 13:26:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 13 13:27:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 13 13:27:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 13 13:27:54 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 13 13:27:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 13 14:00:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May 13 14:00:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May 13 14:00:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May 13 14:00:26 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May 13 14:08:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May 13 14:08:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May 13 14:18:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May 13 14:18:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May 13 14:56:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May 13 14:56:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May 13 15:01:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May 13 15:01:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May 13 15:21:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 13 15:21:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 14 05:15:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May 14 05:15:55 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May 14 05:22:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/38, changed state to down
+May 14 05:22:58 CET: %LINK-3-UPDOWN: Interface FastEthernet0/38, changed state to down
+May 14 05:35:06 CET: %LINK-3-UPDOWN: Interface FastEthernet0/38, changed state to up
+May 14 05:35:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/38, changed state to up
+May 14 05:36:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May 14 05:36:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May 14 05:53:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May 14 05:53:34 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May 14 05:53:42 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May 14 05:53:43 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May 14 05:53:46 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May 14 05:53:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May 14 05:53:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 14 05:53:52 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+May 14 05:53:54 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+May 14 05:53:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 14 05:54:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 14 05:54:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 14 06:00:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 14 06:00:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 14 06:00:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 14 06:00:18 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May 14 06:00:21 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May 14 06:00:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 14 06:00:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May 14 06:00:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May 14 06:01:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May 14 06:01:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May 14 06:07:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May 14 06:07:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May 14 06:49:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May 14 06:49:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May 14 08:58:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May 14 08:58:55 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May 14 13:58:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 14 13:58:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 14 13:58:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 14 13:58:59 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+May 14 13:59:05 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+May 14 13:59:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 14 14:00:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May 14 14:00:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May 14 14:00:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May 14 14:00:21 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May 14 14:02:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May 14 14:02:55 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May 14 14:10:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May 14 14:10:20 CET: %LINK-3-UPDOWN: Interface FastEthernet0/37, changed state to down
+May 14 14:10:23 CET: %LINK-3-UPDOWN: Interface FastEthernet0/37, changed state to up
+May 14 14:10:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May 14 14:49:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May 14 14:49:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May 14 15:12:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May 14 15:12:21 CET: %LINK-3-UPDOWN: Interface FastEthernet0/42, changed state to down
+May 14 15:12:24 CET: %LINK-3-UPDOWN: Interface FastEthernet0/42, changed state to up
+May 14 15:12:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May 14 16:04:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 14 16:04:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 14 16:13:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 14 16:13:27 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to down
+May 14 16:13:36 CET: %LINK-3-UPDOWN: Interface FastEthernet0/18, changed state to up
+May 14 16:13:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 14 16:13:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 14 16:14:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 14 16:14:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 14 16:14:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 14 16:15:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 14 16:15:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 15 02:40:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to down
+May 15 02:40:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/37, changed state to up
+May 15 04:56:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 15 04:56:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 15 04:57:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to down
+May 15 04:57:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/18, changed state to up
+May 15 05:01:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to down
+May 15 05:01:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/42, changed state to up
+May 15 05:43:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 15 05:43:46 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to down
+May 15 05:43:49 CET: %LINK-3-UPDOWN: Interface FastEthernet0/36, changed state to up
+May 15 05:43:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 15 05:44:01 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to down
+May 15 05:44:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/36, changed state to up
+May 15 05:54:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May 15 05:54:38 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May 15 05:54:42 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to down
+May 15 05:54:43 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to down
+May 15 05:54:46 CET: %LINK-3-UPDOWN: Interface FastEthernet0/17, changed state to up
+May 15 05:54:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/17, changed state to up
+May 15 05:55:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May 15 05:55:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May 15 05:55:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+May 15 05:55:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to up
+May 15 07:51:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to down
+May 15 07:51:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/41, changed state to up
+May 15 10:49:04 CET: %SYS-5-CONFIG_I: Configured from console by lukbie on vty0 (10.0.151.6)
+
+------------------------------------------------------------
+  CMD: show interfaces status
+------------------------------------------------------------
+
+
+Port      Name               Status       Vlan       Duplex  Speed Type 
+Fa0/1     ***DO-NOT-USE-BROK disabled     1            auto   auto 10/100BaseTX
+Fa0/2     ***DO-NOT-USE-BROK disabled     1            auto   auto 10/100BaseTX
+Fa0/3     ***DO-NOT-USE-BROK disabled     1            auto   auto 10/100BaseTX
+Fa0/4     ***DO-NOT-USE-BROK disabled     1            auto   auto 10/100BaseTX
+Fa0/5     ***PHONE           notconnect   30           auto   auto 10/100BaseTX
+Fa0/6                        notconnect   10           auto   auto 10/100BaseTX
+Fa0/7                        connected    10         a-full  a-100 10/100BaseTX
+Fa0/8                        connected    10         a-full  a-100 10/100BaseTX
+Fa0/9                        connected    10         a-full  a-100 10/100BaseTX
+Fa0/10                       connected    10         a-full  a-100 10/100BaseTX
+Fa0/11    ***PHONE           notconnect   30           auto   auto 10/100BaseTX
+Fa0/12                       connected    10         a-full  a-100 10/100BaseTX
+Fa0/13                       notconnect   10           auto   auto 10/100BaseTX
+Fa0/14                       notconnect   10           auto   auto 10/100BaseTX
+Fa0/15                       notconnect   10           auto   auto 10/100BaseTX
+Fa0/16                       notconnect   10           auto   auto 10/100BaseTX
+Fa0/17                       connected    10         a-full  a-100 10/100BaseTX
+Fa0/18                       connected    10         a-full  a-100 10/100BaseTX
+Fa0/19                       connected    10         a-full  a-100 10/100BaseTX
+Fa0/20                       notconnect   10           auto   auto 10/100BaseTX
+Fa0/21                       connected    10         a-full  a-100 10/100BaseTX
+Fa0/22                       notconnect   10           auto   auto 10/100BaseTX
+Fa0/23                       notconnect   10           auto   auto 10/100BaseTX
+Fa0/24                       notconnect   10           auto   auto 10/100BaseTX
+Fa0/25    ***TELEFON MATEUSZ notconnect   10           auto   auto 10/100BaseTX
+Fa0/26    *** Skalmex Rasber connected    10         a-full  a-100 10/100BaseTX
+Fa0/27    CCTV-TIANDY-HALA1- connected    10         a-full  a-100 10/100BaseTX
+Fa0/28    CCTV-TIANDY-PARKIN connected    10         a-full  a-100 10/100BaseTX
+Fa0/29                       notconnect   10           auto   auto 10/100BaseTX
+Fa0/30                       notconnect   10           auto   auto 10/100BaseTX
+Fa0/31                       notconnect   10           auto   auto 10/100BaseTX
+Fa0/32                       notconnect   10           auto   auto 10/100BaseTX
+Fa0/33    ***WIFI-PIWAP05-BI connected    trunk      a-full  a-100 10/100BaseTX
+Fa0/34                       notconnect   10           auto   auto 10/100BaseTX
+Fa0/35                       connected    10         a-full  a-100 10/100BaseTX
+Fa0/36                       connected    10         a-full  a-100 10/100BaseTX
+Fa0/37                       connected    10         a-full  a-100 10/100BaseTX
+Fa0/38                       connected    10         a-full  a-100 10/100BaseTX
+Fa0/39                       connected    10         a-full  a-100 10/100BaseTX
+Fa0/40                       notconnect   10           auto   auto 10/100BaseTX
+Fa0/41                       connected    10         a-full  a-100 10/100BaseTX
+Fa0/42                       connected    10         a-full  a-100 10/100BaseTX
+Fa0/43                       notconnect   10           auto   auto 10/100BaseTX
+Fa0/44                       connected    10         a-full  a-100 10/100BaseTX
+Fa0/45    ***WIFI-PIWAP04-BI connected    trunk      a-full  a-100 10/100BaseTX
+Fa0/46    PHONE-CTS-330.IP   notconnect   30           auto   auto 10/100BaseTX
+Fa0/47    ***PC-SEKRETARIAT  notconnect   10           auto   auto 10/100BaseTX
+Fa0/48                       notconnect   1            auto   auto 10/100BaseTX
+Gi0/1                        notconnect   1            auto   auto Not Present
+Gi0/2                        notconnect   1            auto   auto Not Present
+Gi0/3                        notconnect   1            auto   auto 10/100/1000BaseTX
+Gi0/4     ***SW00-CORE-HALA- connected    trunk      a-full a-1000 10/100/1000BaseTX
+
+------------------------------------------------------------
+  CMD: show version
+------------------------------------------------------------
+
+Cisco IOS Software, C2960 Software (C2960-LANBASEK9-M), Version 15.2(7)E5, RELEASE SOFTWARE (fc3)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2021 by Cisco Systems, Inc.
+Compiled Mon 13-Sep-21 09:52 by mcpre
+
+ROM: Bootstrap program is C2960 boot loader
+BOOTLDR: C2960 Boot Loader (C2960-HBOOT-M) Version 15.0(2r)EZ1, RELEASE SOFTWARE (fc2)
+
+SW01-PoE-48P-BIURO-1 uptime is 3 weeks, 4 days, 5 hours, 47 minutes
+System returned to ROM by power-on
+System restarted at 05:36:10 CET Mon Apr 20 2026
+System image file is "flash:c2960-lanbasek9-mz.152-7.E5.bin"
+Last reload reason: power-on
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+cisco WS-C2960+48PST-L (PowerPC405) processor (revision H0) with 131072K bytes of memory.
+Processor board ID FOC2025W3WS
+Last reset from power-on
+2 Virtual Ethernet interfaces
+48 FastEthernet interfaces
+4 Gigabit Ethernet interfaces
+The password-recovery mechanism is enabled.
+
+64K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address       : 00:56:2B:E1:90:80
+Motherboard assembly number     : 73-15617-01
+Power supply part number        : 341-0266-03
+Motherboard serial number       : FOC20251H2J
+Power supply serial number      : LIT20200UG6
+Model revision number           : H0
+Motherboard revision number     : C0
+Model number                    : WS-C2960+48PST-L
+System serial number            : FOC2025W3WS
+Top Assembly Part Number        : 800-40258-02
+Top Assembly Revision Number    : B0
+Version ID                      : V02
+CLEI Code Number                : CMMKP00ARB
+Hardware Board Revision Number  : 0x02
+
+
+Switch Ports Model                     SW Version            SW Image                 
+------ ----- -----                     ----------            ----------               
+*    1 52    WS-C2960+48PST-L          15.2(7)E5             C2960-LANBASEK9-M        
+
+
+Configuration register is 0xF
+
+
+------------------------------------------------------------
+  CMD: show ip interface brief
+------------------------------------------------------------
+
+Interface              IP-Address      OK? Method Status                Protocol
+Vlan1                  unassigned      YES NVRAM  administratively down down    
+Vlan100                10.0.100.11     YES NVRAM  up                    up      
+FastEthernet0/1        unassigned      YES unset  administratively down down    
+FastEthernet0/2        unassigned      YES unset  administratively down down    
+FastEthernet0/3        unassigned      YES unset  administratively down down    
+FastEthernet0/4        unassigned      YES unset  administratively down down    
+FastEthernet0/5        unassigned      YES unset  down                  down    
+FastEthernet0/6        unassigned      YES unset  down                  down    
+FastEthernet0/7        unassigned      YES unset  up                    up      
+FastEthernet0/8        unassigned      YES unset  up                    up      
+FastEthernet0/9        unassigned      YES unset  up                    up      
+FastEthernet0/10       unassigned      YES unset  up                    up      
+FastEthernet0/11       unassigned      YES unset  down                  down    
+FastEthernet0/12       unassigned      YES unset  up                    up      
+FastEthernet0/13       unassigned      YES unset  down                  down    
+FastEthernet0/14       unassigned      YES unset  down                  down    
+FastEthernet0/15       unassigned      YES unset  down                  down    
+FastEthernet0/16       unassigned      YES unset  down                  down    
+FastEthernet0/17       unassigned      YES unset  up                    up      
+FastEthernet0/18       unassigned      YES unset  up                    up      
+FastEthernet0/19       unassigned      YES unset  up                    up      
+FastEthernet0/20       unassigned      YES unset  down                  down    
+FastEthernet0/21       unassigned      YES unset  up                    up      
+FastEthernet0/22       unassigned      YES unset  down                  down    
+FastEthernet0/23       unassigned      YES unset  down                  down    
+FastEthernet0/24       unassigned      YES unset  down                  down    
+FastEthernet0/25       unassigned      YES unset  down                  down    
+FastEthernet0/26       unassigned      YES unset  up                    up      
+FastEthernet0/27       unassigned      YES unset  up                    up      
+FastEthernet0/28       unassigned      YES unset  up                    up      
+FastEthernet0/29       unassigned      YES unset  down                  down    
+FastEthernet0/30       unassigned      YES unset  down                  down    
+FastEthernet0/31       unassigned      YES unset  down                  down    
+FastEthernet0/32       unassigned      YES unset  down                  down    
+FastEthernet0/33       unassigned      YES unset  up                    up      
+FastEthernet0/34       unassigned      YES unset  down                  down    
+FastEthernet0/35       unassigned      YES unset  up                    up      
+FastEthernet0/36       unassigned      YES unset  up                    up      
+FastEthernet0/37       unassigned      YES unset  up                    up      
+FastEthernet0/38       unassigned      YES unset  up                    up      
+FastEthernet0/39       unassigned      YES unset  up                    up      
+FastEthernet0/40       unassigned      YES unset  down                  down    
+FastEthernet0/41       unassigned      YES unset  up                    up      
+FastEthernet0/42       unassigned      YES unset  up                    up      
+FastEthernet0/43       unassigned      YES unset  down                  down    
+FastEthernet0/44       unassigned      YES unset  up                    up      
+FastEthernet0/45       unassigned      YES unset  up                    up      
+FastEthernet0/46       unassigned      YES unset  down                  down    
+FastEthernet0/47       unassigned      YES unset  down                  down    
+FastEthernet0/48       unassigned      YES unset  down                  down    
+GigabitEthernet0/1     unassigned      YES unset  down                  down    
+GigabitEthernet0/2     unassigned      YES unset  down                  down    
+GigabitEthernet0/3     unassigned      YES unset  down                  down    
+GigabitEthernet0/4     unassigned      YES unset  up                    up      
+
+============================================================
+Czas wykonania: 5.0s  |  Status: OK

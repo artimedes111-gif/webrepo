@@ -1,0 +1,11 @@
+NET AUDIT SUMMARY  2026-05-15 12:24:26
+============================================================
+
+SW00-CORE-48P-HALA-2                     10.0.100.10        cisco        OK  (2.2s)
+SW01-PoE-48P-BIURO-1                     10.0.100.11        cisco        OK  (5.0s)
+SW02-PoE-48P-HALA-2                      10.0.100.12        cisco        OK  (5.1s)
+SW03-PoE-48P-HALA-2                      10.0.100.13        cisco        OK  (2.1s)
+SW04-nPoE-24P-HALA-2                     10.0.100.14        cisco        OK  (4.3s)
+SW05-PoE-24P-HALA-1                      10.0.100.15        cisco        OK  (4.6s)
+SW06-PoE-24P-BIURO-1-P1                  10.0.100.16        cisco        OK  (5.1s)
+SW07-PoE-48P-HALA-3                      10.0.100.17        cisco        OK  (4.3s)

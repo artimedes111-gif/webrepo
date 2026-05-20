@@ -1,0 +1,23 @@
+
+============================================================
+  DEVICE: FW-SN310  [10.0.0.1]  vendor: stormshield
+============================================================
+
+Timestamp : 2026-05-15 12:40:05
+
+
+[ERROR] 
+
+Pattern not detected: '[\\$\\#]' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+============================================================
+Czas wykonania: 20.6s  |  Status: ERROR

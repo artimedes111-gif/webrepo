@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skin Estetic — Kosmetologia Estetyczna Ostrów Wielkopolski</title>
+  <meta name="description" content="Gabinet kosmetologii estetycznej Joanna Mendera. Mezoterapia, laseroterapia, pielęgnacja twarzy i ciała. Ostrów Wielkopolski, ul. Szafirowa 2/12. Ocena 5.0★.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://skinestetic.pl/">
+  <meta property="og:title" content="Skin Estetic — Kosmetologia Estetyczna Ostrów Wlkp">
+  <meta property="og:description" content="Profesjonalny gabinet kosmetologii estetycznej. Mezoterapia, laseroterapia, masaże. ul. Szafirowa 2/12, Ostrów Wielkopolski.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Skin Estetic Kosmetologia Estetyczna",
+    "description": "Profesjonalny gabinet kosmetologii estetycznej i pielęgnacyjnej",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Szafirowa 2/12",
+      "addressLocality": "Ostrów Wielkopolski",
+      "postalCode": "63-400",
+      "addressCountry": "PL"
+    },
+    "telephone": "+48602762180",
+    "email": "joanna_mendera@wp.pl",
+    "url": "https://skinestetic.pl",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "27"
+    }
+  }
+  </script>
+
+  <style>
+    /* ── RESET ─────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; border: none; background: none; font: inherit; }
+
+    /* ── TOKENS ────────────────────────────────────── */
+    :root {
+      --white:   #FFFFFF;
+      --off:     #FAFAF7;
+      --cream:   #F5F0E8;
+      --warm:    #EDE5D5;
+      --gold:    #B8975A;
+      --gold2:   #D4AF72;
+      --dark:    #1A1714;
+      --mid:     #4A4540;
+      --muted:   #9A948E;
+      --border:  #E8E2D8;
+      --borderg: rgba(184,151,90,.25);
+
+      --serif: 'Didot', 'Bodoni MT', 'Playfair Display', 'Times New Roman', serif;
+      --sans:  'Optima', 'Gill Sans', 'Trebuchet MS', sans-serif;
+      --mono:  'Courier New', monospace;
+
+      --max: 1160px;
+      --pad: clamp(1.5rem, 5vw, 3rem);
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--white);
+      color: var(--dark);
+      line-height: 1.65;
+    }
+
+    /* ── UTILITIES ─────────────────────────────────── */
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: .65rem; letter-spacing: .22em;
+      text-transform: uppercase; color: var(--gold);
+      display: flex; align-items: center; gap: .75rem;
+    }
+    .eyebrow::before {
+      content: ''; display: block;
+      width: 28px; height: 1px; background: var(--gold);
+    }
+
+    /* ── NAV ───────────────────────────────────────── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 1.1rem var(--pad);
+      display: flex; align-items: center; justify-content: space-between;
+      transition: background .4s, border-color .4s, box-shadow .4s;
+      border-bottom: 1px solid transparent;
+      background: rgba(255,255,255,.0);
+    }
+    .nav.stuck {
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(12px);
+      border-color: var(--border);
+      box-shadow: 0 1px 0 var(--border);
+    }
+
+    /* KROK 2 — logo w kontenerze z ciemnym tłem */
+    .nav-logo-wrap {
+      background: #3A3A3A;
+      border-radius: 4px;
+      padding: 6px 10px;
+      display: inline-flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .nav-logo-wrap img {
+      height: 36px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-links { display: flex; gap: 2.25rem; list-style: none; }
+    .nav-links a {
+      font-size: .75rem; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--muted);
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+
+    .nav-cta {
+      display: inline-flex; align-items: center; gap: .5rem;
+      border: 1px solid var(--dark); color: var(--dark);
+      padding: .55rem 1.4rem;
+      font-size: .7rem; letter-spacing: .12em; text-transform: uppercase;
+      transition: background .2s, color .2s;
+    }
+    .nav-cta:hover { background: var(--dark); color: var(--white); }
+
+    .burger {
+      display: none; flex-direction: column; gap: 5px; padding: .25rem;
+    }
+    .burger span { display: block; width: 22px; height: 1px; background: var(--dark); transition: .25s; }
+
+    /* ── HERO ──────────────────────────────────────── */
+    .hero {
+      min-height: 100svh;
+      display: grid; grid-template-columns: 1fr 1fr;
+      position: relative;
+    }
+
+    .hero-left {
+      display: flex; flex-direction: column;
+      justify-content: flex-end;
+      padding: clamp(5rem,10vw,9rem) var(--pad) clamp(3.5rem,6vw,5rem);
+      background: var(--white);
+      border-right: 1px solid var(--border);
+      position: relative; z-index: 1;
+    }
+
+    .hero-eyebrow { margin-bottom: 2rem; }
+
+    .hero-h1 {
+      font-family: var(--serif);
+      font-size: clamp(3rem, 6vw, 5.2rem);
+      font-weight: 400; line-height: 1.06;
+      letter-spacing: -.01em; color: var(--dark);
+      margin-bottom: 1.5rem;
+    }
+    .hero-h1 em { font-style: italic; color: var(--gold); display: block; }
+
+    .hero-lead {
+      font-size: .95rem; color: var(--muted);
+      line-height: 1.85; max-width: 380px;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-stars {
+      display: flex; align-items: center; gap: .6rem;
+      margin-bottom: 2.25rem;
+    }
+    .stars-row { display: flex; gap: .15rem; }
+    .star {
+      color: var(--gold); font-size: .9rem;
+      opacity: 0; animation: sfade .3s ease forwards;
+    }
+    .star:nth-child(1){animation-delay:.4s}
+    .star:nth-child(2){animation-delay:.55s}
+    .star:nth-child(3){animation-delay:.7s}
+    .star:nth-child(4){animation-delay:.85s}
+    .star:nth-child(5){animation-delay:1s}
+    @keyframes sfade {
+      from { opacity:0; transform:scale(.4); }
+      to   { opacity:1; transform:scale(1); }
+    }
+    .stars-txt {
+      font-family: var(--mono);
+      font-size: .65rem; color: var(--muted); letter-spacing: .08em;
+    }
+
+    .hero-actions { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+
+    .btn-dark {
+      display: inline-flex; align-items: center; gap: .6rem;
+      background: var(--dark); color: var(--white);
+      padding: .95rem 2.25rem;
+      font-size: .72rem; letter-spacing: .14em; text-transform: uppercase;
+      transition: background .2s, transform .15s;
+      min-height: 44px;
+    }
+    .btn-dark:hover { background: var(--mid); transform: translateY(-1px); }
+
+    .btn-text {
+      display: inline-flex; align-items: center; gap: .5rem;
+      font-size: .72rem; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted); border-bottom: 1px solid var(--border);
+      padding-bottom: 2px; transition: color .2s, border-color .2s;
+    }
+    .btn-text:hover { color: var(--gold); border-color: var(--gold); }
+
+    /* KROK 3 — hero right z prawdziwym zdjęciem */
+    .hero-right {
+      display: flex; flex-direction: column;
+      background: var(--off);
+      position: relative; overflow: hidden;
+    }
+
+    .hero-photo {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-photo img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .hero-photo-overlay {
+      position: absolute; inset: 0;
+      background: rgba(0,0,0,0.15);
+      pointer-events: none;
+    }
+
+    /* statystyki bottom-right */
+    .hero-metrics {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 1px; background: var(--border);
+    }
+    .hm {
+      background: var(--off); padding: 1.4rem 1.25rem;
+      text-align: center;
+    }
+    .hm-n {
+      font-family: var(--serif);
+      font-size: 2rem; font-weight: 400; color: var(--dark); line-height: 1;
+    }
+    .hm-n span { color: var(--gold); }
+    .hm-l {
+      font-family: var(--mono);
+      font-size: .58rem; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--muted); margin-top: .3rem;
+    }
+
+    .hero-vert {
+      position: absolute; right: 1.25rem; top: 40%;
+      transform: translateY(-50%) rotate(90deg);
+      font-family: var(--mono);
+      font-size: .52rem; letter-spacing: .2em; text-transform: uppercase;
+      color: var(--border); white-space: nowrap;
+    }
+
+    /* ── THIN DIVIDER ──────────────────────────────── */
+    .divider-line {
+      height: 1px; background: var(--border);
+      max-width: var(--max); margin: 0 auto;
+    }
+
+    /* ── SECTION BASE ──────────────────────────────── */
+    .section {
+      padding: clamp(4rem,8vw,7rem) var(--pad);
+      max-width: var(--max); margin: 0 auto;
+    }
+    .section-head { margin-bottom: 3rem; }
+    .section-head .eyebrow { margin-bottom: 1rem; }
+    .section-h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.9rem,3.5vw,3rem);
+      font-weight: 400; line-height: 1.15; color: var(--dark);
+    }
+    .section-h2 em { font-style: italic; color: var(--gold); }
+    .section-intro {
+      font-size: .92rem; color: var(--muted);
+      line-height: 1.85; max-width: 480px;
+      margin-top: .75rem;
+    }
+
+    /* ── USŁUGI ────────────────────────────────────── */
+    .services-bg { background: var(--off); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+    .srv-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 1px; background: var(--border);
+    }
+    .srv {
+      background: var(--off); padding: 2.25rem 2rem;
+      position: relative; overflow: hidden;
+      transition: background .3s;
+    }
+    .srv:hover { background: var(--white); }
+    .srv:hover .srv-arrow { opacity:1; transform: translate(0,0); }
+    .srv:hover .srv-num { color: rgba(184,151,90,.15); }
+
+    .srv-num {
+      font-family: var(--serif);
+      font-size: 3.5rem; font-weight: 400;
+      color: rgba(26,23,20,.04); line-height: 1;
+      margin-bottom: 1.25rem; transition: color .3s;
+    }
+    .srv-name {
+      font-family: var(--serif);
+      font-size: 1.05rem; color: var(--dark); margin-bottom: .5rem;
+    }
+    .srv-desc {
+      font-size: .82rem; color: var(--muted); line-height: 1.7;
+    }
+    .srv-arrow {
+      position: absolute; bottom: 1.75rem; right: 1.75rem;
+      color: var(--gold); font-size: 1rem;
+      opacity: 0; transform: translate(-5px,5px);
+      transition: opacity .3s, transform .3s;
+    }
+
+    /* KROK 3 — galeria 3 zdjęć */
+    .gallery-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+    }
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+    }
+    .gallery-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .4s ease;
+    }
+    .gallery-item::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: rgba(0,0,0,0);
+      transition: background .3s;
+      pointer-events: none;
+    }
+    .gallery-item:hover img { transform: scale(1.03); }
+    .gallery-item:hover::after { background: rgba(0,0,0,0.08); }
+
+    /* ── O GABINECIE ───────────────────────────────── */
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem,6vw,7rem); align-items: center;
+    }
+
+    /* KROK 3 — about-photo z prawdziwym zdjęciem */
+    .about-photo {
+      aspect-ratio: 4/5;
+      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    .about-photo::before {
+      content: '';
+      position: absolute; top: -16px; left: -16px;
+      width: 55%; height: 55%;
+      border: 1px solid var(--borderg);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .about-photo img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .about-text {
+      font-size: .92rem; color: var(--mid);
+      line-height: 1.9; margin-bottom: 2rem;
+    }
+
+    .about-list {
+      display: flex; flex-direction: column; gap: .75rem;
+      margin-bottom: 2.5rem;
+    }
+    .al-item {
+      display: flex; gap: .75rem; align-items: flex-start;
+      font-size: .88rem; color: var(--mid); line-height: 1.6;
+    }
+    .al-dot {
+      width: 5px; height: 5px; border-radius: 50%;
+      background: var(--gold); flex-shrink: 0; margin-top: .55rem;
+    }
+
+    .about-nums {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 1.5rem; padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+    .anum-n {
+      font-family: var(--serif);
+      font-size: 2rem; color: var(--dark); line-height: 1;
+    }
+    .anum-n span { color: var(--gold); }
+    .anum-l {
+      font-family: var(--mono);
+      font-size: .58rem; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--muted); margin-top: .3rem;
+    }
+
+    /* ── ZABIEGI — ACCORDION ───────────────────────── */
+    .zabieg-bg { background: var(--off); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+
+    .zabieg-list { display: flex; flex-direction: column; gap: 0; }
+    .zabieg-item { border-bottom: 1px solid var(--border); }
+    .zabieg-item:last-child { border-bottom: none; }
+    .zabieg-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 0; cursor: pointer;
+      transition: color .2s;
+    }
+    .zabieg-header:hover .zabieg-name { color: var(--gold); }
+    .zabieg-name {
+      font-family: var(--serif);
+      font-size: 1.05rem; color: var(--dark); transition: color .2s;
+    }
+    .zabieg-plus {
+      font-size: 1.1rem; color: var(--gold);
+      transition: transform .3s; flex-shrink: 0;
+    }
+    .zabieg-plus.open { transform: rotate(45deg); }
+    .zabieg-body {
+      overflow: hidden; max-height: 0;
+      transition: max-height .35s ease, padding .3s;
+      padding-bottom: 0;
+    }
+    .zabieg-body.open {
+      max-height: 200px;
+      padding-bottom: 1.25rem;
+    }
+    .zabieg-desc {
+      font-size: .88rem; color: var(--muted); line-height: 1.75;
+      max-width: 680px;
+    }
+
+    /* ── OPINIE ────────────────────────────────────── */
+    .opinions-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 1.5rem;
+    }
+    .opinion {
+      background: var(--off); border: 1px solid var(--border);
+      padding: 2rem 1.75rem;
+    }
+    .opinion-stars { color: var(--gold); font-size: .85rem; margin-bottom: .75rem; letter-spacing: .1rem; }
+    .opinion-text {
+      font-family: var(--serif); font-style: italic;
+      font-size: .95rem; color: var(--mid); line-height: 1.75;
+      margin-bottom: 1.25rem;
+    }
+    .opinion-text::before { content: '\201C'; color: var(--gold); }
+    .opinion-text::after  { content: '\201D'; color: var(--gold); }
+    .opinion-author {
+      font-family: var(--mono);
+      font-size: .6rem; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--muted);
+    }
+
+    /* KROK 5 — sekcja promocji */
+    .promo-section {
+      background: var(--off);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .promo-inner {
+      max-width: var(--max); margin: 0 auto;
+      padding: clamp(4rem,8vw,7rem) var(--pad);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem,6vw,6rem);
+      align-items: center;
+    }
+    .promo-img {
+      aspect-ratio: 4/3;
+      overflow: hidden;
+    }
+    .promo-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .promo-text .eyebrow { margin-bottom: 1.25rem; }
+    .promo-h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem,3vw,2.6rem);
+      font-weight: 400; line-height: 1.15; color: var(--dark);
+      margin-bottom: 1.25rem;
+    }
+    .promo-h2 em { font-style: italic; color: var(--gold); }
+    .promo-p {
+      font-size: .92rem; color: var(--muted);
+      line-height: 1.85; margin-bottom: 2rem;
+      max-width: 420px;
+    }
+
+    /* ── CTA STRIP ─────────────────────────────────── */
+    .cta-strip {
+      background: var(--dark);
+      padding: clamp(3rem,6vw,5rem) var(--pad);
+    }
+    .cta-inner {
+      max-width: var(--max); margin: 0 auto;
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 2rem; flex-wrap: wrap;
+    }
+    .cta-h {
+      font-family: var(--serif);
+      font-size: clamp(1.7rem,3vw,2.6rem);
+      font-weight: 400; color: var(--white); line-height: 1.2;
+    }
+    .cta-h em { font-style: italic; color: var(--gold2); }
+    .cta-sub { font-size: .88rem; color: rgba(255,255,255,.5); margin-top: .4rem; }
+    .btn-gold {
+      display: inline-flex; align-items: center; gap: .6rem;
+      background: var(--gold); color: var(--white);
+      padding: 1rem 2.25rem;
+      font-size: .72rem; letter-spacing: .14em; text-transform: uppercase;
+      transition: background .2s; white-space: nowrap;
+      min-height: 44px;
+    }
+    .btn-gold:hover { background: var(--gold2); }
+
+    /* ── KONTAKT ───────────────────────────────────── */
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 4rem; align-items: start;
+    }
+
+    .ci { display: flex; gap: 1rem; padding: 1.1rem 0; border-bottom: 1px solid var(--border); }
+    .ci:last-of-type { border-bottom: none; }
+    .ci-icon { color: var(--gold); flex-shrink: 0; margin-top: 2px; }
+    .ci-label {
+      font-family: var(--mono);
+      font-size: .58rem; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: .25rem;
+    }
+    .ci-val { font-size: .92rem; color: var(--dark); line-height: 1.6; }
+    .ci-val a { color: var(--dark); transition: color .2s; }
+    .ci-val a:hover { color: var(--gold); }
+
+    .hours-title {
+      font-family: var(--mono);
+      font-size: .62rem; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 1rem;
+    }
+    .hr-row {
+      display: flex; justify-content: space-between;
+      padding: .65rem 0; border-bottom: 1px solid var(--border);
+      font-size: .88rem;
+    }
+    .hr-row:last-child { border-bottom: none; }
+    .hr-day { color: var(--muted); }
+    .hr-time { color: var(--dark); }
+    .hr-closed { color: var(--border); }
+
+    /* KROK 4 — zdjęcie budynku w kontakcie */
+    .building-photo {
+      margin-top: 1.5rem;
+    }
+    .building-photo img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+    .building-caption {
+      font-family: var(--mono);
+      font-size: .65rem;
+      color: var(--muted);
+      margin-top: .5rem;
+      letter-spacing: .04em;
+    }
+
+    .rodo-note {
+      margin-top: 2rem; padding: 1.25rem 1.5rem;
+      border-left: 2px solid var(--borderg);
+      font-size: .8rem; color: var(--muted); line-height: 1.7;
+    }
+
+    /* ── FOOTER ────────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.75rem var(--pad);
+    }
+    .footer-inner {
+      max-width: var(--max); margin: 0 auto;
+      display: flex; align-items: center;
+      justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+    }
+
+    /* KROK 2 — logo w stopce */
+    .footer-logo-wrap {
+      background: #3A3A3A;
+      border-radius: 4px;
+      padding: 6px 10px;
+      display: inline-flex;
+      align-items: center;
+    }
+    .footer-logo-wrap img {
+      height: 24px;
+      width: auto;
+      display: block;
+    }
+
+    .footer-links { display: flex; gap: 1.5rem; list-style: none; }
+    .footer-links a {
+      font-family: var(--mono);
+      font-size: .58rem; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--border); transition: color .2s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy {
+      width: 100%;
+      font-family: var(--mono);
+      font-size: .58rem; letter-spacing: .06em;
+      color: var(--border);
+    }
+
+    /* ── FADE UP ───────────────────────────────────── */
+    @media (prefers-reduced-motion: no-preference) {
+      .fade { opacity:0; transform:translateY(22px); transition: opacity .65s ease, transform .65s ease; }
+      .fade.on { opacity:1; transform:none; }
+      .fade:nth-child(2){transition-delay:.08s}
+      .fade:nth-child(3){transition-delay:.16s}
+      .fade:nth-child(4){transition-delay:.24s}
+      .fade:nth-child(5){transition-delay:.32s}
+    }
+
+    /* ── RESPONSIVE ────────────────────────────────── */
+    @media (max-width: 960px) {
+      /* hero — single column, zdjęcie pod tekstem, 280px height */
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-right { height: 280px; }
+      .hero-photo { height: 100%; }
+
+      .srv-grid { grid-template-columns: 1fr 1fr; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-photo { display: none; }
+      .opinions-grid { grid-template-columns: 1fr; gap: 1rem; }
+      .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .nav-links { display: none; }
+      .burger { display: flex; }
+
+      /* galeria — 1 kolumna na mobile */
+      .gallery-strip { grid-template-columns: 1fr; }
+
+      /* promocja — zdjęcie pierwsze, potem tekst */
+      .promo-inner {
+        grid-template-columns: 1fr;
+      }
+      .promo-img { order: -1; }
+    }
+
+    @media (max-width: 560px) {
+      .srv-grid { grid-template-columns: 1fr; }
+      .about-nums { grid-template-columns: 1fr 1fr; }
+      .hero-metrics { grid-template-columns: 1fr 1fr; }
+
+      /* KROK 6 — fonty min 14px, przyciski min 44px */
+      body { font-size: 14px; }
+      .srv-desc, .zabieg-desc, .about-text, .ci-val,
+      .opinion-text, .promo-p, .section-intro { font-size: .875rem; }
+      .nav-cta { padding: .65rem 1rem; min-height: 44px; }
+      .btn-dark { padding: .875rem 1.5rem; min-height: 44px; }
+      .btn-gold { padding: .875rem 1.5rem; min-height: 44px; }
+    }
+
+    @media (max-width: 375px) {
+      :root { --pad: 1.25rem; }
+      .hero-h1 { font-size: 2.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" aria-label="Nawigacja główna">
+    <!-- KROK 2 — logo w kontenerze z ciemnym tłem -->
+    <a href="/" class="nav-logo-wrap" aria-label="Skin Estetic — strona główna">
+      <img src="img/logo.webp" alt="Skin Estetic Kosmetologia Estetyczna" height="36" loading="eager">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#uslugi">Usługi</a></li>
+      <li><a href="#zabiegi">Zabiegi</a></li>
+      <li><a href="#o-gabinecie">O gabinecie</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a class="nav-cta" href="tel:+48602762180">Umów wizytę</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-h1">
+      <div class="hero-left">
+        <p class="eyebrow hero-eyebrow">Kosmetologia Estetyczna · Ostrów Wlkp.</p>
+        <h1 class="hero-h1" id="hero-h1">
+          Piękno,<br>które zaczyna się<br>
+          <em>od środka</em>
+        </h1>
+        <p class="hero-lead">
+          Profesjonalny gabinet kosmetologii estetycznej Joanny Mendery.
+          Nowoczesne zabiegi dobrane indywidualnie — dla skóry, której
+          na co dzień poświęcamy zbyt mało uwagi.
+        </p>
+        <div class="hero-stars">
+          <div class="stars-row" aria-label="Ocena 5 gwiazdek">
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+            <span class="star" aria-hidden="true">★</span>
+          </div>
+          <span class="stars-txt">5.0 · 27 opinii · 100% rekomendacji</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn-dark" href="tel:+48602762180">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Umów wizytę
+          </a>
+          <a class="btn-text" href="#zabiegi">
+            Zobacz zabiegi
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- KROK 3 — hero photo z img/5.webp + overlay -->
+      <div class="hero-right">
+        <div class="hero-photo">
+          <img src="img/5.webp" alt="Gabinet kosmetologii estetycznej Skin Estetic — zabieg na twarz" loading="eager">
+          <div class="hero-photo-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="hero-metrics">
+          <div class="hm"><div class="hm-n">5<span>.0★</span></div><div class="hm-l">Ocena Google</div></div>
+          <div class="hm"><div class="hm-n">27<span>+</span></div><div class="hm-l">Opinii</div></div>
+          <div class="hm"><div class="hm-n">100<span>%</span></div><div class="hm-l">Rekomendacji</div></div>
+          <div class="hm"><div class="hm-n">∞</div><div class="hm-l">Indywidualne podejście</div></div>
+        </div>
+        <div class="hero-vert" aria-hidden="true">Skin Estetic · ul. Szafirowa 2/12 · Ostrów Wlkp.</div>
+      </div>
+    </section>
+
+    <!-- USŁUGI GŁÓWNE -->
+    <div class="services-bg" id="uslugi">
+      <div class="section" style="padding-bottom:0">
+        <div class="section-head fade">
+          <p class="eyebrow">Zakres usług</p>
+          <h2 class="section-h2">Kompleksowa pielęgnacja<br><em>twarzy i ciała</em></h2>
+          <p class="section-intro">Szeroki wachlarz zabiegów kosmetologii estetycznej, pielęgnacyjnej, laseroterapii i masaży. Każda kuracja poprzedzona konsultacją.</p>
+        </div>
+      </div>
+      <div class="srv-grid">
+        <div class="srv fade">
+          <div class="srv-num">01</div>
+          <h3 class="srv-name">Kosmetologia estetyczna</h3>
+          <p class="srv-desc">Mezoterapia igłowa, stymulatory tkankowe, eksfoliacje kwasami. Zabiegi dobrane do potrzeb skóry.</p>
+          <span class="srv-arrow" aria-hidden="true">→</span>
+        </div>
+        <div class="srv fade">
+          <div class="srv-num">02</div>
+          <h3 class="srv-name">Laseroterapia</h3>
+          <p class="srv-desc">Nowoczesne zabiegi laserowe — skuteczne i bezpieczne. Mikroigłowy system frakcji RF.</p>
+          <span class="srv-arrow" aria-hidden="true">→</span>
+        </div>
+        <div class="srv fade">
+          <div class="srv-num">03</div>
+          <h3 class="srv-name">Pielęgnacja twarzy</h3>
+          <p class="srv-desc">Oczyszczanie wodorowe, oksybrazja, infuzja tlenowa. Zabiegi przywracające blask i zdrowie skóry.</p>
+          <span class="srv-arrow" aria-hidden="true">→</span>
+        </div>
+        <div class="srv fade">
+          <div class="srv-num">04</div>
+          <h3 class="srv-name">Modelowanie sylwetki</h3>
+          <p class="srv-desc">EMS — elektrostymulacja mięśni, zabiegi ujędrniające. Nowoczesny sprzęt, widoczne efekty.</p>
+          <span class="srv-arrow" aria-hidden="true">→</span>
+        </div>
+        <div class="srv fade">
+          <div class="srv-num">05</div>
+          <h3 class="srv-name">Masaże twarzy</h3>
+          <p class="srv-desc">Relaksujące i lecznicze masaże twarzy. Redukcja napięć, poprawa owalu i koloryt skóry.</p>
+          <span class="srv-arrow" aria-hidden="true">→</span>
+        </div>
+        <div class="srv fade">
+          <div class="srv-num">06</div>
+          <h3 class="srv-name">Makijaż okolicznościowy</h3>
+          <p class="srv-desc">Makijaż na wyjątkowe okazje, henna pudrowa brwi. Podkreślenie naturalnego piękna.</p>
+          <span class="srv-arrow" aria-hidden="true">→</span>
+        </div>
+      </div>
+      <div style="height:clamp(2rem,4vw,3.5rem)"></div>
+    </div>
+
+    <!-- KROK 3 — GALERIA 3 zdjęć między usługami a zabiegami -->
+    <div class="gallery-strip" aria-label="Galeria gabinetu">
+      <div class="gallery-item">
+        <img src="img/3.webp" alt="Wnętrze gabinetu kosmetologicznego Skin Estetic" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="img/6.webp" alt="Zabiegi kosmetologiczne w gabinecie Skin Estetic" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="img/4.webp" alt="Sprzęt do zabiegów estetycznych w gabinecie Skin Estetic" loading="lazy">
+      </div>
+    </div>
+
+    <!-- ZABIEGI ACCORDION -->
+    <div class="zabieg-bg" id="zabiegi">
+      <div class="section">
+        <div class="section-head fade">
+          <p class="eyebrow">Szczegółowe zabiegi</p>
+          <h2 class="section-h2">Co znajdziesz<br><em>w naszej ofercie</em></h2>
+        </div>
+        <div class="zabieg-list">
+          <div class="zabieg-item">
+            <div class="zabieg-header" onclick="toggleZ(this)" aria-expanded="false">
+              <span class="zabieg-name">Mezoterapia igłowa</span>
+              <span class="zabieg-plus">+</span>
+            </div>
+            <div class="zabieg-body">
+              <p class="zabieg-desc">Mikroiniekcje składników aktywnych bezpośrednio w skórę — kwas hialuronowy, witaminy, peptydy. Efekt: nawilżenie, odmłodzenie, poprawa napięcia. Seria zabiegów daje widoczne i trwałe rezultaty.</p>
+            </div>
+          </div>
+          <div class="zabieg-item">
+            <div class="zabieg-header" onclick="toggleZ(this)" aria-expanded="false">
+              <span class="zabieg-name">Eksfoliacje kwasami</span>
+              <span class="zabieg-plus">+</span>
+            </div>
+            <div class="zabieg-body">
+              <p class="zabieg-desc">Peeling chemiczny kwasami (AHA, BHA, TCA) — głęboka eksfoliacja, wyrównanie kolorytu, redukcja przebarwień i blizn po trądziku. Dobierany do typu i potrzeb skóry.</p>
+            </div>
+          </div>
+          <div class="zabieg-item">
+            <div class="zabieg-header" onclick="toggleZ(this)" aria-expanded="false">
+              <span class="zabieg-name">Oczyszczanie wodorowe</span>
+              <span class="zabieg-plus">+</span>
+            </div>
+            <div class="zabieg-body">
+              <p class="zabieg-desc">Bezbolesne oczyszczanie porów połączone z nawilżeniem i natlenieniem skóry. Efekty widoczne już po pierwszym zabiegu — idealne przed ważną okazją.</p>
+            </div>
+          </div>
+          <div class="zabieg-item">
+            <div class="zabieg-header" onclick="toggleZ(this)" aria-expanded="false">
+              <span class="zabieg-name">Mikroigłowy system frakcji RF</span>
+              <span class="zabieg-plus">+</span>
+            </div>
+            <div class="zabieg-body">
+              <p class="zabieg-desc">Zaawansowany zabieg łączący mikroigłowanie z energią fal radiowych. Stymuluje produkcję kolagenu, redukuje zmarszczki i blizny. Jeden z najskuteczniejszych zabiegów odmładzających.</p>
+            </div>
+          </div>
+          <div class="zabieg-item">
+            <div class="zabieg-header" onclick="toggleZ(this)" aria-expanded="false">
+              <span class="zabieg-name">Modelowanie sylwetki EMS</span>
+              <span class="zabieg-plus">+</span>
+            </div>
+            <div class="zabieg-body">
+              <p class="zabieg-desc">Elektrostymulacja mięśni — ujędrnienie, redukcja cellulitu, modelowanie ciała. Efekt porównywalny z intensywnym treningiem, bez wysiłku fizycznego.</p>
+            </div>
+          </div>
+          <div class="zabieg-item">
+            <div class="zabieg-header" onclick="toggleZ(this)" aria-expanded="false">
+              <span class="zabieg-name">Stymulatory tkankowe</span>
+              <span class="zabieg-plus">+</span>
+            </div>
+            <div class="zabieg-body">
+              <p class="zabieg-desc">Biostymulatory (np. Sculptra, Radiesse) — głęboka regeneracja skóry przez stymulację fibroblastów. Długotrwałe efekty odmłodzenia bez chirurgii.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- O GABINECIE -->
+    <div id="o-gabinecie" style="border-top:1px solid var(--border)">
+      <div class="section">
+        <div class="about-grid">
+          <!-- KROK 3 — about-photo z img/joanna.webp -->
+          <div class="about-photo fade">
+            <img src="img/joanna.webp" alt="Joanna Mendera — kosmetolog, właścicielka gabinetu Skin Estetic" loading="lazy">
+          </div>
+          <div>
+            <p class="eyebrow" style="margin-bottom:1.25rem">O gabinecie</p>
+            <h2 class="section-h2" style="margin-bottom:1.25rem">
+              Świadoma terapia<br>skóry zaczyna się od<br><em>konsultacji</em>
+            </h2>
+            <p class="about-text">
+              Skin Estetic to gabinet kosmetologii estetycznej prowadzony przez Joannę Menderę — kosmetologa z pasją do nauki i indywidualnego podejścia do każdej klientki. Zapraszam na bezpłatną konsultację kosmetologiczną.
+            </p>
+            <div class="about-list">
+              <div class="al-item fade"><div class="al-dot"></div><span>Zabiegi poprzedzone szczegółowym wywiadem i analizą skóry</span></div>
+              <div class="al-item fade"><div class="al-dot"></div><span>Kosmetyki marek Rerix C, Exuviance, NeoStrata, Medex, Fusion, Ekseption</span></div>
+              <div class="al-item fade"><div class="al-dot"></div><span>Nowoczesny sprzęt regularnie serwisowany i dezynfekowany</span></div>
+              <div class="al-item fade"><div class="al-dot"></div><span>Bezpłatna konsultacja kosmetologiczna przed pierwszym zabiegiem</span></div>
+            </div>
+            <div class="about-nums">
+              <div><div class="anum-n">5<span>.0★</span></div><div class="anum-l">Ocena</div></div>
+              <div><div class="anum-n">100<span>%</span></div><div class="anum-l">Rekomendacji</div></div>
+              <div><div class="anum-n">27<span>+</span></div><div class="anum-l">Opinii</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPINIE -->
+    <div style="background:var(--off);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+      <div class="section">
+        <div class="section-head fade">
+          <p class="eyebrow">Opinie klientek</p>
+          <h2 class="section-h2">Co mówią o nas<br><em>klientki</em></h2>
+        </div>
+        <div class="opinions-grid">
+          <div class="opinion fade">
+            <div class="opinion-stars">★★★★★</div>
+            <p class="opinion-text">Bardzo profesjonalny salon, przemiła obsługa i bardzo rzeczowa. Jeden z lepszych salonów jakie miałam okazje odwiedzić. Na pewno wrócę!</p>
+            <div class="opinion-author">Klientka · Google</div>
+          </div>
+          <div class="opinion fade">
+            <div class="opinion-stars">★★★★★</div>
+            <p class="opinion-text">Fantastyczne miejsce! Bardzo profesjonalny salon, w którym każdy poczuje się dobrze. Przesympatyczna obsługa, nowoczesny sprzęt. Serdecznie polecam.</p>
+            <div class="opinion-author">Klientka · Google</div>
+          </div>
+          <div class="opinion fade">
+            <div class="opinion-stars">★★★★★</div>
+            <p class="opinion-text">Zabiegi odpowiednio dobrane do cery i kondycji skóry. Na początku wstępny wywiad, w trakcie zabiegów wszystko rzetelnie omawiane. Bardzo przyjemna atmosfera.</p>
+            <div class="opinion-author">Klientka · Google</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KROK 5 — SEKCJA PROMOCJI -->
+    <!-- PROMOCJA START -->
+    <div class="promo-section">
+      <div class="promo-inner">
+        <div class="promo-text fade">
+          <p class="eyebrow">Promocja miesiąca</p>
+          <h2 class="promo-h2">Kobido Lift — <em>japoński masaż twarzy</em></h2>
+          <p class="promo-p">Naturalny lifting bez igieł. Relaksujący masaż przywracający młody owal twarzy. Maj 2026 — 15% taniej przy rezerwacji telefonicznej.</p>
+          <a class="btn-dark" href="tel:+48602762180">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Zadzwoń i zarezerwuj
+          </a>
+        </div>
+        <div class="promo-img fade">
+          <img src="img/1.webp" alt="Kobido Lift — japoński masaż twarzy w gabinecie Skin Estetic" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <!-- PROMOCJA END -->
+
+    <!-- CTA STRIP -->
+    <div class="cta-strip">
+      <div class="cta-inner">
+        <div>
+          <h2 class="cta-h">Umów <em>bezpłatną</em><br>konsultację</h2>
+          <p class="cta-sub">Zadzwoń lub napisz — odpowiemy w ciągu kilku godzin.</p>
+        </div>
+        <a class="btn-gold" href="tel:+48602762180">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          602 762 180
+        </a>
+      </div>
+    </div>
+
+    <!-- KONTAKT -->
+    <div id="kontakt" style="border-top:1px solid var(--border)">
+      <div class="section">
+        <div class="section-head fade">
+          <p class="eyebrow">Kontakt</p>
+          <h2 class="section-h2">Znajdź <em>nas</em></h2>
+        </div>
+        <div class="contact-grid">
+          <div>
+            <address style="font-style:normal">
+              <div class="ci">
+                <svg class="ci-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div>
+                  <div class="ci-label">Adres</div>
+                  <div class="ci-val">ul. Szafirowa 2/12 (wejście od tyłu budynku)<br>63-400 Ostrów Wielkopolski</div>
+                </div>
+              </div>
+              <div class="ci">
+                <svg class="ci-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <div>
+                  <div class="ci-label">Telefon</div>
+                  <div class="ci-val"><a href="tel:+48602762180">602 762 180</a></div>
+                </div>
+              </div>
+              <div class="ci">
+                <svg class="ci-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <div>
+                  <div class="ci-label">E-mail</div>
+                  <div class="ci-val"><a href="mailto:joanna_mendera@wp.pl">joanna_mendera@wp.pl</a></div>
+                </div>
+              </div>
+            </address>
+            <div class="rodo-note">
+              Strona nie zawiera formularzy kontaktowych — Państwa dane osobowe nie są przetwarzane przez stronę. Kontakt wyłącznie przez telefon lub e-mail.
+            </div>
+          </div>
+          <div>
+            <div class="hours-title">Godziny otwarcia</div>
+            <div class="hr-row"><span class="hr-day">Wtorek</span><span class="hr-time">10:00 – 19:00</span></div>
+            <div class="hr-row"><span class="hr-day">Środa</span><span class="hr-time">10:00 – 19:00</span></div>
+            <div class="hr-row"><span class="hr-day">Czwartek</span><span class="hr-time">10:00 – 19:00</span></div>
+            <div class="hr-row"><span class="hr-day">Piątek</span><span class="hr-time">10:00 – 19:00</span></div>
+            <div class="hr-row"><span class="hr-day">Poniedziałek</span><span class="hr-time hr-closed">Nieczynne</span></div>
+            <div class="hr-row"><span class="hr-day">Sobota</span><span class="hr-time hr-closed">Nieczynne</span></div>
+            <div class="hr-row"><span class="hr-day">Niedziela</span><span class="hr-time hr-closed">Nieczynne</span></div>
+
+            <!-- KROK 4 — zdjęcie budynku pod tabelą godzin -->
+            <div class="building-photo">
+              <img src="img/2.webp" alt="Budynek przy ul. Szafirowej 2 w Ostrowie Wielkopolskim — wejście od tyłu" loading="lazy">
+              <p class="building-caption">ul. Szafirowa 2, wejście od tyłu budynku</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- KROK 2 — logo w stopce w kontenerze z ciemnym tłem -->
+  <footer>
+    <div class="footer-inner">
+      <a href="/" class="footer-logo-wrap" aria-label="Skin Estetic — strona główna">
+        <img src="img/logo.webp" alt="Skin Estetic Kosmetologia Estetyczna" height="24" loading="lazy">
+      </a>
+      <ul class="footer-links">
+        <li><a href="/polityka-prywatnosci/">Polityka Prywatności</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+      <p class="footer-copy">© 2026 Skin Estetic Kosmetologia Estetyczna · ul. Szafirowa 2/12, 63-400 Ostrów Wielkopolski</p>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('stuck', window.scrollY > 60);
+    }, { passive: true });
+
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+    burger.addEventListener('click', () => {
+      const open = burger.getAttribute('aria-expanded') === 'true';
+      burger.setAttribute('aria-expanded', String(!open));
+      navLinks.style.cssText = open
+        ? ''
+        : 'display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(255,255,255,.98);padding:1.25rem var(--pad,1.5rem);gap:1.25rem;border-bottom:1px solid var(--border);z-index:99;';
+    });
+
+    function toggleZ(header) {
+      const body = header.nextElementSibling;
+      const plus = header.querySelector('.zabieg-plus');
+      const open = body.classList.contains('open');
+      document.querySelectorAll('.zabieg-body.open').forEach(b => {
+        b.classList.remove('open');
+        b.previousElementSibling.querySelector('.zabieg-plus').classList.remove('open');
+        b.previousElementSibling.setAttribute('aria-expanded', 'false');
+      });
+      if (!open) {
+        body.classList.add('open');
+        plus.classList.add('open');
+        header.setAttribute('aria-expanded', 'true');
+      }
+    }
+
+    if ('IntersectionObserver' in window && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.fade').forEach(el => io.observe(el));
+    } else {
+      document.querySelectorAll('.fade').forEach(el => el.classList.add('on'));
+    }
+  </script>
+</body>
+</html>

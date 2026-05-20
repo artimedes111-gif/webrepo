@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python net_audit.py --inventory inventory.yaml --pass-cisco \"CodeX!@#2021\" --filter SW)",
+      "Bash(python net_audit.py --inventory inventory.yaml --pass-linux \"CodeX!@#2021\" --filter FW)",
+      "Bash(python net_audit.py --help)",
+      "Bash(python net_audit.py --inventory inventory.yaml --pass-stormshield \"CodeX!@#2021\" --pass-stormshield-cli \"St0r_Sh2Ld165#@!\" --filter FW)",
+      "Bash(cwebp -version)",
+      "Bash(node -e \"require\\('sharp'\\)\")",
+      "Bash(npm install *)",
+      "Bash(node -e ' *)"
+    ]
+  }
+}

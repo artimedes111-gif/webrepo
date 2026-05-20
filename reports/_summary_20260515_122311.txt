@@ -1,0 +1,11 @@
+NET AUDIT SUMMARY  2026-05-15 12:23:11
+============================================================
+
+SW00-CORE-48P-HALA-2                     10.0.100.10        cisco        SKIP  >> nie podano hasla
+SW01-PoE-48P-BIURO-1                     10.0.100.11        cisco        SKIP  >> nie podano hasla
+SW02-PoE-48P-HALA-2                      10.0.100.12        cisco        SKIP  >> nie podano hasla
+SW03-PoE-48P-HALA-2                      10.0.100.13        cisco        SKIP  >> nie podano hasla
+SW04-nPoE-24P-HALA-2                     10.0.100.14        cisco        SKIP  >> nie podano hasla
+SW05-PoE-24P-HALA-1                      10.0.100.15        cisco        SKIP  >> nie podano hasla
+SW06-PoE-24P-BIURO-1-P1                  10.0.100.16        cisco        SKIP  >> nie podano hasla
+SW07-PoE-48P-HALA-3                      10.0.100.17        cisco        SKIP  >> nie podano hasla

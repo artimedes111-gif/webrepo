@@ -1,0 +1,938 @@
+
+============================================================
+  DEVICE: SW00-CORE-48P-HALA-2  [10.0.100.10]  vendor: cisco
+============================================================
+
+Timestamp : 2026-05-15 12:23:53
+
+
+------------------------------------------------------------
+  CMD: show log
+------------------------------------------------------------
+
+Syslog logging: enabled (0 messages dropped, 0 messages rate-limited, 0 flushes, 0 overruns, xml disabled, filtering disabled)
+
+No Active Message Discriminator.
+
+
+
+No Inactive Message Discriminator.
+
+
+    Console logging: level debugging, 699 messages logged, xml disabled,
+                     filtering disabled
+    Monitor logging: level debugging, 0 messages logged, xml disabled,
+                     filtering disabled
+    Buffer logging:  level debugging, 699 messages logged, xml disabled,
+                    filtering disabled
+    Exception Logging: size (4096 bytes)
+    Count and timestamp logging messages: disabled
+    File logging: disabled
+    Persistent logging: disabled
+
+No active filter modules.
+
+    Trap logging: level informational, 702 message lines logged
+        Logging Source-Interface:       VRF Name:
+
+Log Buffer (1000000 bytes):
+
+*Mar  1 00:00:20.840: Read env variable - LICENSE_BOOT_LEVEL = 
+*Jan  2 00:00:00.571: %IOS_LICENSE_IMAGE_APPLICATION-6-LICENSE_LEVEL: Module name = c2960s_lanbase Next reboot level = lanbase and License = lanbase
+*Jan  2 00:00:23.907: %STACKMGR-4-SWITCH_ADDED: Switch 1 has been ADDED to the stack
+*Jan  2 00:00:26.670: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+*Jan  2 00:00:26.670: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0, changed state to down
+*Jan  2 00:00:28.793: %SPANTREE-5-EXTENDED_SYSID: Extended SysId enabled for type vlan
+*Jan  2 00:00:37 UTC: %SYS-5-LOG_CONFIG_CHANGE: Buffer logging: level debugging, xml disabled, filtering disabled, size (1000000)
+*Jan  2 01:00:37 CET: %SYS-6-CLOCKUPDATE: System clock has been updated from 00:00:37 UTC Mon Jan 2 2006 to 01:00:37 CET Mon Jan 2 2006, configured from console by vty0.
+*Jan  2 01:00:37 CET: %SYS-6-CLOCKUPDATE: System clock has been updated from 01:00:37 CET Mon Jan 2 2006 to 01:00:37 CET Mon Jan 2 2006, configured from console by vty0.
+*Jan  2 01:00:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan10, changed state to down
+*Jan  2 01:00:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan100, changed state to down
+*Jan  2 01:00:38 CET: %SW_VLAN-6-VTP_DOMAIN_NAME_CHG: VTP domain name changed to AN0106S01V16B.
+*Jan  2 01:00:38 CET: %SYS-5-CONFIG_I: Configured from memory by console
+*Jan  2 01:00:38 CET: %STACKMGR-5-SWITCH_READY: Switch 1 is READY
+*Jan  2 01:00:38 CET: %STACKMGR-4-STACK_LINK_CHANGE: Stack Port 1 Switch 1 has changed to state DOWN
+*Jan  2 01:00:38 CET: %STACKMGR-4-STACK_LINK_CHANGE: Stack Port 2 Switch 1 has changed to state DOWN
+*Jan  2 01:00:38 CET: %STACKMGR-5-MASTER_READY: Master Switch 1 is READY
+*Jan  2 01:00:39 CET: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, C2960S Software (C2960S-UNIVERSALK9-M), Version 15.2(2)E9, RELEASE SOFTWARE (fc4)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2018 by Cisco Systems, Inc.
+Compiled Sat 08-Sep-18 14:56 by prod_rel_team
+*Jan  2 01:00:39 CET: %PNP-6-PNP_DISCOVERY_STOPPED: PnP Discovery stopped (Aborted by non-PnP bootstrapping)
+*Jan  2 01:00:39 CET: %SSH-5-ENABLED: SSH 1.99 has been enabled
+*Jan  2 01:00:39 CET: %LINK-5-CHANGED: Interface FastEthernet0, changed state to administratively down
+*Jan  2 01:00:39 CET: %LINK-5-CHANGED: Interface GigabitEthernet1/0/22, changed state to administratively down
+*Jan  2 01:00:39 CET: %LINK-5-CHANGED: Interface Vlan1, changed state to administratively down
+*Jan  2 01:00:39 CET: %LINK-5-CHANGED: Interface Vlan10, changed state to administratively down
+*Jan  2 01:00:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0, changed state to down
+*Jan  2 01:00:40 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/20, changed state to up
+*Jan  2 01:00:41 CET: %USB_CONSOLE-6-MEDIA_RJ45: Console media-type is RJ45.
+*Jan  2 01:00:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/20, changed state to up
+*Jan  2 01:00:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/21, changed state to up
+*Jan  2 01:00:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/27, changed state to up
+*Jan  2 01:00:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/28, changed state to up
+*Jan  2 01:00:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan100, changed state to up
+*Jan  2 01:00:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+*Jan  2 01:00:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/1, changed state to up
+*Jan  2 01:00:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/21, changed state to up
+*Jan  2 01:00:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/45, changed state to up
+*Jan  2 01:00:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/26, changed state to up
+*Jan  2 01:00:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/27, changed state to up
+*Jan  2 01:00:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/28, changed state to up
+*Jan  2 01:00:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/34, changed state to up
+*Jan  2 01:00:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/35, changed state to up
+*Jan  2 01:00:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/25, changed state to up
+*Jan  2 01:00:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/33, changed state to up
+*Jan  2 01:00:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/23, changed state to up
+*Jan  2 01:00:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/36, changed state to up
+*Jan  2 01:00:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/35, changed state to up
+*Jan  2 01:00:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/23, changed state to up
+*Jan  2 01:00:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/36, changed state to up
+*Jan  2 01:00:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+*Jan  2 01:00:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/1, changed state to up
+*Jan  2 01:00:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/45, changed state to up
+*Jan  2 01:00:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/26, changed state to up
+*Jan  2 01:00:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/34, changed state to up
+*Jan  2 01:00:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/25, changed state to up
+*Jan  2 01:00:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/33, changed state to up
+*Jan  2 01:01:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/27, changed state to down
+*Jan  2 01:01:05 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/27, changed state to down
+*Jan  2 01:01:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/25, changed state to down
+*Jan  2 01:01:08 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to up
+*Jan  2 01:01:09 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/27, changed state to up
+*Jan  2 01:01:09 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/25, changed state to down
+*Jan  2 01:01:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/27, changed state to up
+*Jan  2 01:01:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/26, changed state to down
+*Jan  2 01:01:11 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to down
+*Jan  2 01:01:11 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/26, changed state to down
+*Jan  2 01:01:12 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/25, changed state to up
+*Jan  2 01:01:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/25, changed state to up
+*Jan  2 01:01:14 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/26, changed state to up
+*Jan  2 01:01:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/26, changed state to up
+*Jan  2 01:01:19 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/43, changed state to up
+*Jan  2 01:01:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/35, changed state to down
+*Jan  2 01:01:20 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/35, changed state to down
+*Jan  2 01:01:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/43, changed state to up
+*Jan  2 01:01:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/33, changed state to down
+*Jan  2 01:01:22 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/33, changed state to down
+*Jan  2 01:01:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/34, changed state to down
+*Jan  2 01:01:23 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/35, changed state to up
+*Jan  2 01:01:24 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/34, changed state to down
+*Jan  2 01:01:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/35, changed state to up
+*Jan  2 01:01:25 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/33, changed state to up
+*Jan  2 01:01:27 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/34, changed state to up
+*Jan  2 01:01:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/33, changed state to up
+*Jan  2 01:01:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/34, changed state to up
+*Jan  2 01:01:30 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to up
+*Jan  2 01:01:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/47, changed state to up
+*Jan  2 01:01:37 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+*Jan  2 01:01:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+*Jan  2 01:01:43 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+*Jan  2 01:01:44 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+*Jan  2 01:01:47 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/5, changed state to up
+*Jan  2 01:01:47 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+*Jan  2 01:01:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+*Jan  2 01:01:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/5, changed state to up
+*Jan  2 01:01:53 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/3, changed state to up
+*Jan  2 01:01:55 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/3, changed state to up
+*Jan  2 01:02:00 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/41, changed state to up
+*Jan  2 01:02:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/41, changed state to up
+Nov 27 08:59:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/47, changed state to down
+Nov 27 08:59:13 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to down
+Nov 27 09:03:19 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to up
+Nov 27 09:03:21 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to down
+Nov 27 09:03:41 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to up
+Nov 27 09:03:43 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/47, changed state to up
+Nov 27 09:05:13 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 36fc.115f.2d41 in vlan 51 is flapping between port Gi1/0/45 and port Gi1/0/47
+Nov 27 09:10:49 CET: %SW_MATM-4-MACFLAP_NOTIF: Host fe4f.d57f.411c in vlan 51 is flapping between port Gi1/0/43 and port Gi1/0/45
+Nov 27 17:10:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/47, changed state to down
+Nov 27 17:10:04 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to down
+Nov 27 17:13:05 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to up
+Nov 27 17:13:08 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to down
+Nov 27 17:13:27 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to up
+Nov 27 17:13:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/47, changed state to up
+Nov 27 18:51:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/47, changed state to down
+Nov 27 18:51:41 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to down
+Nov 27 18:54:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to up
+Nov 27 18:54:45 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to down
+Nov 27 18:55:05 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to up
+Nov 27 18:55:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/47, changed state to up
+Nov 28 17:04:33 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 162c.6a00.dddc in vlan 51 is flapping between port Gi1/0/45 and port Gi1/0/5
+Nov 28 18:48:55 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Nov 28 18:48:56 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Nov 28 18:49:05 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Nov 28 18:49:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Nov 28 18:49:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Nov 28 18:49:58 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Nov 28 18:50:05 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Nov 28 18:50:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Nov 28 18:50:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Nov 28 18:50:10 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Nov 28 18:50:12 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Nov 28 18:50:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Nov 28 20:06:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Nov 28 20:06:50 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Nov 28 20:06:59 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Nov 28 20:07:01 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Nov 28 20:07:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Nov 28 20:07:58 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Nov 28 20:08:06 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Nov 28 20:08:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Nov 28 20:08:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Nov 28 20:08:10 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Nov 28 20:08:12 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Nov 28 20:08:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec  1 11:30:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec  1 11:30:50 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec  1 11:30:59 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec  1 11:31:01 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec  1 11:31:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec  1 11:31:59 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec  1 11:32:07 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec  1 11:32:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec  1 11:32:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec  1 11:32:11 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec  1 11:32:13 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec  1 11:32:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec  4 15:05:31 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 36fc.115f.2d41 in vlan 51 is flapping between port Gi1/0/5 and port Gi1/0/43
+Dec  5 01:34:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec  5 01:34:48 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec  5 01:34:56 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec  5 01:34:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec  5 01:35:54 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec  5 01:35:55 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec  5 01:36:02 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec  5 01:36:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec  5 01:36:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec  5 01:36:06 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec  5 01:36:09 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec  5 01:36:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec  7 23:13:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec  7 23:13:46 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec  7 23:13:55 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec  7 23:13:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec  7 23:14:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec  7 23:14:46 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec  7 23:14:53 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec  7 23:14:55 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec  7 23:14:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec  7 23:14:58 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec  7 23:15:00 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec  7 23:15:02 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec  8 16:58:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec  8 16:58:06 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec  8 16:58:15 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec  8 16:58:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec  8 16:59:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec  8 16:59:13 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec  8 16:59:20 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec  8 16:59:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec  8 16:59:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec  8 16:59:25 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec  8 16:59:27 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec  8 16:59:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec  8 17:04:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/41, changed state to down
+Dec  8 17:04:35 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/41, changed state to down
+Dec  8 18:19:16 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/41, changed state to up
+Dec  8 18:19:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/41, changed state to up
+Dec  9 14:02:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec  9 14:02:06 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec  9 14:02:15 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec  9 14:02:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec  9 14:03:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec  9 14:03:19 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec  9 14:03:27 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec  9 14:03:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec  9 14:03:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec  9 14:03:31 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec  9 14:03:34 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec  9 14:03:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:41:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:41:09 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:41:18 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:41:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:42:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:42:29 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:42:36 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:42:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:42:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:42:41 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:42:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:42:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:48:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:48:05 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:48:14 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:48:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:49:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:49:14 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:49:21 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:49:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:49:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:49:26 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:49:28 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:49:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:49:55 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:49:56 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:50:04 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:50:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:51:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:51:07 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:51:15 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:51:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:51:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:51:19 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 08:51:22 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 08:51:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 13:09:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 13:09:08 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 13:09:17 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 13:09:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 13:10:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 13:10:17 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 13:10:25 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 13:10:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 13:10:28 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 13:10:29 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 11 13:10:31 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 11 13:10:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 12 13:33:23 CET: %SW_MATM-4-MACFLAP_NOTIF: Host da47.feef.a9f3 in vlan 51 is flapping between port Gi1/0/45 and port Gi1/0/47
+Dec 12 19:13:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 12 19:13:08 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 12 19:13:17 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 12 19:13:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 12 19:14:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 12 19:14:13 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 12 19:14:20 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 12 19:14:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 12 19:14:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 12 19:14:25 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 12 19:14:28 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 12 19:14:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 14 00:16:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 14 00:16:37 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 14 00:16:40 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 14 00:16:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 14 00:17:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 14 00:17:16 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 14 00:17:20 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 14 00:17:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 14 00:17:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 14 00:17:39 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 14 00:17:42 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 14 00:17:43 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 14 00:18:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 14 00:18:07 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 14 00:21:07 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 14 00:21:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 14 00:21:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 14 00:21:14 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 14 00:21:16 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 14 00:21:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 15 06:53:31 CET: %SW_MATM-4-MACFLAP_NOTIF: Host a2b9.5853.18b2 in vlan 51 is flapping between port Gi1/0/5 and port Gi1/0/43
+Dec 15 13:30:20 CET: %SW_MATM-4-MACFLAP_NOTIF: Host a2b9.5853.18b2 in vlan 51 is flapping between port Gi1/0/5 and port Gi1/0/41
+Dec 16 14:07:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 16 14:07:07 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 16 14:07:15 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 16 14:07:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 16 14:08:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 16 14:08:24 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 16 14:08:31 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 16 14:08:35 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 16 14:08:38 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 16 14:08:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 16 15:06:04 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 36fc.115f.2d41 in vlan 51 is flapping between port Gi1/0/43 and port Gi1/0/45
+Dec 17 15:06:36 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 36fc.115f.2d41 in vlan 51 is flapping between port Gi1/0/43 and port Gi1/0/45
+Dec 18 07:01:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 18 07:01:13 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 18 07:01:22 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 18 07:01:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 18 07:02:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 18 07:02:34 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 18 07:02:42 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 18 07:02:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 18 07:02:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 18 07:02:46 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 18 07:02:48 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 18 07:02:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 18 15:07:10 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 36fc.115f.2d41 in vlan 51 is flapping between port Gi1/0/45 and port Gi1/0/43
+Dec 18 19:06:09 CET: %SW_MATM-4-MACFLAP_NOTIF: Host da47.feef.a9f3 in vlan 51 is flapping between port Gi1/0/43 and port Gi1/0/45
+Dec 19 15:01:52 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 162c.ce5c.7ec0 in vlan 51 is flapping between port Gi1/0/5 and port Gi1/0/41
+Dec 20 14:34:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 14:34:05 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 14:34:08 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 14:34:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 14:34:43 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 14:34:44 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 14:34:48 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 14:34:49 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 14:35:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 14:35:07 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 14:35:10 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 14:35:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 14:35:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 14:35:33 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 14:38:21 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 14:38:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 14:38:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 14:38:28 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 14:38:31 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 14:38:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:00:54 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:00:55 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:00:58 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:00:59 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:01:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:01:48 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:01:52 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:01:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:02:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:02:10 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:02:13 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:02:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:02:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:02:36 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:05:08 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:05:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:05:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:05:31 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:05:34 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:05:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:16:42 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:16:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:16:46 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:16:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:17:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:17:32 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:17:36 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:17:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:17:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:17:54 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:17:57 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:17:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:18:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:18:22 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:20:53 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:20:54 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:21:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:21:16 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Dec 20 15:21:19 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Dec 20 15:21:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Dec 23 11:58:59 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/4, changed state to up
+Dec 23 11:59:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/4, changed state to up
+Dec 23 12:20:22 CET: %SYS-5-CONFIG_I: Configured from console by lukbie on vty0 (10.0.100.78)
+Dec 23 12:30:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/4, changed state to down
+Dec 23 12:30:10 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/4, changed state to down
+Dec 23 12:30:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 23 12:30:32 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 23 12:30:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 23 12:30:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 23 12:31:54 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 23 12:31:55 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 23 12:32:02 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 23 12:32:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 23 12:32:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 23 12:32:07 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 23 12:32:09 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 23 12:32:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 23 14:21:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/41, changed state to down
+Dec 23 14:21:48 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/41, changed state to down
+Dec 23 14:28:08 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/41, changed state to up
+Dec 23 14:28:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/41, changed state to up
+Dec 24 20:22:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 24 20:22:26 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 24 20:22:35 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 24 20:22:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 24 20:23:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 24 20:23:30 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 24 20:23:38 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 24 20:23:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 24 20:23:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 24 20:23:42 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 24 20:23:45 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 24 20:23:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 25 16:38:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 25 16:38:34 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 25 16:38:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 25 16:38:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 25 16:39:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Dec 25 16:39:46 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 25 16:39:54 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 25 16:39:58 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Dec 25 16:40:01 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Dec 25 16:40:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Dec 29 08:00:17 CET: %SW_MATM-4-MACFLAP_NOTIF: Host fe4f.d57f.411c in vlan 51 is flapping between port Gi1/0/43 and port Gi1/0/47
+Dec 29 14:57:02 CET: %SW_MATM-4-MACFLAP_NOTIF: Host ea58.7a68.eb77 in vlan 51 is flapping between port Gi1/0/45 and port Gi1/0/43
+Jan  5 08:57:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 08:57:40 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 08:57:48 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 08:57:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 08:58:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 08:58:40 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 08:58:48 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 08:58:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 08:58:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 08:58:52 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 08:58:55 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 08:58:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 08:59:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 08:59:08 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 08:59:17 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 08:59:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 09:00:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 09:00:20 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 09:00:28 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 09:00:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 09:00:31 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 09:00:32 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 09:00:34 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 09:00:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 14:07:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 14:07:28 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 14:07:37 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 14:07:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 14:08:35 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 14:08:36 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 14:08:44 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 14:08:48 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 14:08:50 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 14:08:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 14:09:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 14:09:15 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 14:09:23 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 14:09:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 14:10:30 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 14:10:31 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 14:10:39 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 14:10:41 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 14:10:42 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 14:10:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan  5 14:10:46 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan  5 14:10:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan  7 10:28:45 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 8209.3583.45cc in vlan 51 is flapping between port Gi1/0/45 and port Gi1/0/47
+Jan 12 11:08:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan 12 11:08:26 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan 12 11:08:35 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan 12 11:08:37 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan 12 11:09:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan 12 11:09:34 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan 12 11:09:42 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan 12 11:09:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan 12 11:09:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan 12 11:09:46 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan 12 11:09:48 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan 12 11:09:50 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan 13 16:32:01 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 162c.6a00.dddc in vlan 51 is flapping between port Gi1/0/45 and port Gi1/0/47
+Jan 16 06:53:01 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan 16 06:53:02 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan 16 06:53:11 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan 16 06:53:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan 16 06:54:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan 16 06:54:22 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan 16 06:54:30 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan 16 06:54:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan 16 06:54:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan 16 06:54:34 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan 16 06:54:36 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan 16 06:54:38 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan 17 17:36:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan 17 17:36:19 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan 17 17:37:20 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan 17 17:37:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan 17 17:41:36 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan 17 17:41:37 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan 17 17:41:44 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan 17 17:41:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan 17 17:41:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan 17 17:41:49 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan 17 17:41:51 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan 17 17:41:53 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan 17 17:59:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan 17 17:59:04 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan 17 18:00:17 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan 17 18:00:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan 17 18:02:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan 17 18:02:10 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan 17 18:02:19 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan 17 18:02:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan 17 18:10:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan 17 18:10:16 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan 17 18:10:23 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan 17 18:10:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan 17 18:10:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Jan 17 18:10:28 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Jan 17 18:10:30 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Jan 17 18:10:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Jan 19 13:22:33 CET: %SSH-3-NO_MATCH: No matching kex algorithm found: client curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256,diffie-hellman-group-exchange-sha256,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,ext-info-c,kex-strict-c-v00@openssh.com server diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+Jan 22 09:03:52 CET: %SW_MATM-4-MACFLAP_NOTIF: Host da47.feef.a9f3 in vlan 51 is flapping between port Gi1/0/43 and port Gi1/0/5
+Jan 31 00:23:22 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Jan 31 00:23:23 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Jan 31 00:23:26 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Jan 31 00:23:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Jan 31 00:24:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Jan 31 00:24:12 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Jan 31 00:24:16 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Jan 31 00:24:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Jan 31 00:24:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Jan 31 00:24:35 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Jan 31 00:24:38 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Jan 31 00:24:39 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Jan 31 00:25:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Jan 31 00:25:04 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Jan 31 00:27:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Jan 31 00:27:44 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Jan 31 00:28:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to down
+Jan 31 00:28:06 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to down
+Jan 31 00:28:09 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/24, changed state to up
+Jan 31 00:28:10 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/24, changed state to up
+Feb 10 15:02:58 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 7ebb.20f5.aecd in vlan 51 is flapping between port Gi1/0/43 and port Gi1/0/41
+Feb 18 13:42:33 CET: %SSH-3-NO_MATCH: No matching kex algorithm found: client curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256,diffie-hellman-group-exchange-sha256,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,ext-info-c,kex-strict-c-v00@openssh.com server diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+Feb 24 20:49:59 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Feb 24 20:50:00 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Feb 24 20:50:09 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Feb 24 20:50:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Feb 24 20:52:06 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Feb 24 20:52:07 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Feb 24 20:52:15 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Feb 24 20:52:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Feb 24 20:52:18 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Feb 24 20:52:19 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Feb 24 20:52:21 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Feb 24 20:52:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Feb 24 21:06:47 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Feb 24 21:06:48 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Feb 24 21:06:57 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Feb 24 21:06:59 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Feb 24 21:08:48 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Feb 24 21:08:49 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Feb 24 21:08:57 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Feb 24 21:08:59 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Feb 24 21:09:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Feb 24 21:09:01 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Feb 24 21:09:03 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Feb 24 21:09:05 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Feb 25 14:36:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Feb 25 14:36:22 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Feb 25 14:36:31 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Feb 25 14:36:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Feb 25 14:38:01 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Feb 25 14:38:02 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Feb 25 14:38:15 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Feb 25 14:38:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Feb 25 14:39:56 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Feb 25 14:39:57 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Feb 25 14:40:05 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Feb 25 14:40:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Feb 25 14:40:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Feb 25 14:40:09 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Feb 25 14:40:11 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Feb 25 14:40:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Feb 27 14:09:15 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Feb 27 14:09:16 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Feb 27 14:09:24 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Feb 27 14:09:26 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Feb 27 14:11:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Feb 27 14:11:13 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Feb 27 14:11:21 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Feb 27 14:11:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Feb 27 14:11:24 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Feb 27 14:11:25 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Feb 27 14:11:27 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Feb 27 14:11:29 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Mar  4 13:37:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Mar  4 13:37:35 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Mar  4 13:37:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Mar  4 13:37:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Mar  4 13:39:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Mar  4 13:39:35 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Mar  4 13:39:43 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Mar  4 13:39:45 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Mar  4 13:39:46 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Mar  4 13:39:47 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Mar  4 13:39:49 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Mar  4 13:39:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Mar 17 10:35:01 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 1e06.0e21.7290 in vlan 51 is flapping between port Gi1/0/45 and port Gi1/0/43
+Mar 20 13:25:32 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/47, changed state to down
+Mar 20 13:25:33 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to down
+Mar 20 13:28:35 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to up
+Mar 20 13:28:37 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to down
+Mar 20 13:28:56 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to up
+Mar 20 13:28:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/47, changed state to up
+Mar 20 14:32:09 CET: %SSH-3-NO_MATCH: No matching kex algorithm found: client curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256,diffie-hellman-group-exchange-sha256,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,ext-info-c,kex-strict-c-v00@openssh.com server diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+Mar 24 12:03:57 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 261f.9089.1fb5 in vlan 51 is flapping between port Gi1/0/45 and port Gi1/0/43
+Mar 30 14:22:06 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 261f.9089.1fb5 in vlan 51 is flapping between port Gi1/0/45 and port Gi1/0/43
+Apr  1 08:03:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Apr  1 08:03:09 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Apr  1 08:03:18 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Apr  1 08:03:20 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Apr  1 08:05:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Apr  1 08:05:10 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Apr  1 08:05:17 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Apr  1 08:05:19 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Apr  1 08:05:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Apr  1 08:05:22 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Apr  1 08:05:25 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Apr  1 08:05:27 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Apr  8 12:32:05 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 162c.6a00.dddc in vlan 51 is flapping between port Gi1/0/43 and port Gi1/0/45
+Apr 17 11:17:51 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/20, changed state to down
+Apr 17 11:17:52 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/20, changed state to down
+Apr 17 11:17:57 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/20, changed state to up
+Apr 17 11:17:58 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/20, changed state to up
+Apr 17 13:22:51 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 162c.6a00.dddc in vlan 51 is flapping between port Gi1/0/5 and port Gi1/0/41
+Apr 17 15:00:14 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/20, changed state to down
+Apr 17 15:00:15 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/20, changed state to down
+Apr 17 15:00:20 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/20, changed state to up
+Apr 17 15:00:21 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/20, changed state to up
+Apr 19 15:17:20 CET: %SSH-3-NO_MATCH: No matching kex algorithm found: client curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group14-sha256,diffie-hellman-group-exchange-sha256,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,ext-info-c,kex-strict-c-v00@openssh.com server diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+Apr 19 23:15:08 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/47, changed state to down
+Apr 19 23:15:09 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to down
+Apr 19 23:18:10 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to up
+Apr 19 23:18:13 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to down
+Apr 19 23:18:32 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to up
+Apr 19 23:18:34 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/47, changed state to up
+Apr 19 23:34:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/47, changed state to down
+Apr 19 23:34:18 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to down
+Apr 19 23:37:33 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to up
+Apr 19 23:37:36 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to down
+Apr 19 23:37:55 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to up
+Apr 19 23:37:57 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/47, changed state to up
+Apr 20 05:27:23 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/43, changed state to down
+Apr 20 05:27:25 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/43, changed state to down
+Apr 20 05:31:31 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/43, changed state to up
+Apr 20 05:31:33 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/43, changed state to up
+Apr 20 05:34:07 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/47, changed state to down
+Apr 20 05:34:08 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to down
+Apr 20 05:37:16 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to up
+Apr 20 05:37:19 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to down
+Apr 20 05:37:38 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/47, changed state to up
+Apr 20 05:37:40 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/47, changed state to up
+Apr 22 10:46:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Apr 22 10:46:04 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Apr 22 10:46:14 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Apr 22 10:46:16 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Apr 22 10:47:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Apr 22 10:47:53 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Apr 22 10:48:01 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Apr 22 10:48:03 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Apr 22 10:48:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Apr 22 10:48:05 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Apr 22 10:48:07 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Apr 22 10:48:09 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Apr 22 15:44:52 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Apr 22 15:44:53 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Apr 22 15:45:02 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Apr 22 15:45:04 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Apr 22 15:47:00 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Apr 22 15:47:01 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Apr 22 15:47:09 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Apr 22 15:47:11 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Apr 22 15:47:12 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to down
+Apr 22 15:47:13 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to down
+Apr 22 15:47:15 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/2, changed state to up
+Apr 22 15:47:17 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/2, changed state to up
+Apr 25 12:00:13 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/43, changed state to down
+Apr 25 12:00:14 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/43, changed state to down
+Apr 25 12:55:23 CET: %LINK-3-UPDOWN: Interface GigabitEthernet1/0/43, changed state to up
+Apr 25 12:55:25 CET: %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet1/0/43, changed state to up
+Apr 27 19:39:04 CET: %SW_MATM-4-MACFLAP_NOTIF: Host c28b.9f1e.0f07 in vlan 51 is flapping between port Gi1/0/5 and port Gi1/0/43
+May  5 05:21:51 CET: %SW_MATM-4-MACFLAP_NOTIF: Host fe4f.d57f.411c in vlan 51 is flapping between port Gi1/0/45 and port Gi1/0/43
+May  5 05:23:54 CET: %SW_MATM-4-MACFLAP_NOTIF: Host da47.feef.a9f3 in vlan 51 is flapping between port Gi1/0/45 and port Gi1/0/41
+May  7 13:32:01 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 162c.6a00.dddc in vlan 51 is flapping between port Gi1/0/5 and port Gi1/0/43
+May  8 10:03:33 CET: %SW_MATM-4-MACFLAP_NOTIF: Host 162c.6a00.dddc in vlan 51 is flapping between port Gi1/0/41 and port Gi1/0/5
+May 15 10:48:26 CET: %SYS-5-CONFIG_I: Configured from console by lukbie on vty0 (10.0.151.6)
+
+------------------------------------------------------------
+  CMD: show interfaces status
+------------------------------------------------------------
+
+
+Port      Name               Status       Vlan       Duplex  Speed Type 
+Gi1/0/1   ***SW04-ACCESS-HAL connected    trunk      a-full a-1000 10/100/1000BaseTX
+Gi1/0/2   ***FW01-STORMSHIEL connected    trunk      a-full a-1000 10/100/1000BaseTX
+Gi1/0/3   ***SW02-ACCESS-HAL connected    trunk      a-full a-1000 10/100/1000BaseTX
+Gi1/0/4                      notconnect   10           auto   auto 10/100/1000BaseTX
+Gi1/0/5   ***SW03-ACCESS-HAL connected    trunk      a-full a-1000 10/100/1000BaseTX
+Gi1/0/6                      notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/7                      notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/8                      notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/9                      notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/10                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/11                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/12                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/13                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/14                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/15                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/16                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/17                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/18                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/19                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/20  ***SLICAN-CENTRALA connected    10         a-full  a-100 10/100/1000BaseTX
+Gi1/0/21  ***PIWDVR-HAKIVISI connected    10         a-full a-1000 10/100/1000BaseTX
+Gi1/0/22  ***SPARE           disabled     10           auto   auto 10/100/1000BaseTX
+Gi1/0/23  ***PIWSYNOLOGY01   connected    10         a-full a-1000 10/100/1000BaseTX
+Gi1/0/24  ***PIWQNAP01       connected    10         a-full a-1000 10/100/1000BaseTX
+Gi1/0/25  ***PIWESXi01-DATA0 connected    trunk      a-full a-1000 10/100/1000BaseTX
+Gi1/0/26  ***PIWESXi01-DATA0 connected    trunk      a-full a-1000 10/100/1000BaseTX
+Gi1/0/27  ***PIWESXi01-MGM   connected    100        a-full a-1000 10/100/1000BaseTX
+Gi1/0/28  ***PIWESXi01-iDRAC connected    100        a-full a-1000 10/100/1000BaseTX
+Gi1/0/29                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/30                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/31                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/32                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/33  ***PIWESXi02-DATA0 connected    trunk      a-full a-1000 10/100/1000BaseTX
+Gi1/0/34  ***PIWESXi02-DATA0 connected    trunk      a-full a-1000 10/100/1000BaseTX
+Gi1/0/35  ***PIWESXi02-MGM   connected    100        a-full a-1000 10/100/1000BaseTX
+Gi1/0/36  ***PIWESXi02-iDRAC connected    100        a-full a-1000 10/100/1000BaseTX
+Gi1/0/37                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/38                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/39                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/40                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/41  ***SW07-ACCESS-HAL connected    trunk      a-full a-1000 10/100/1000BaseTX
+Gi1/0/42                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/43  ***SW05-ACCESS-HAL connected    trunk      a-full a-1000 10/100/1000BaseTX
+Gi1/0/44                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/45  ***SW06-ACCESS-BIU connected    trunk      a-full a-1000 10/100/1000BaseTX
+Gi1/0/46                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/47  ***SW01-ACCESS-BIU connected    trunk      a-full a-1000 10/100/1000BaseTX
+Gi1/0/48                     notconnect   1            auto   auto 10/100/1000BaseTX
+Gi1/0/49                     notconnect   1            auto   auto Not Present
+Gi1/0/50                     notconnect   1            auto   auto Not Present
+Gi1/0/51                     notconnect   1            auto   auto Not Present
+Gi1/0/52                     notconnect   1            auto   auto Not Present
+Fa0                          disabled     routed       auto   auto 10/100BaseTX
+
+------------------------------------------------------------
+  CMD: show version
+------------------------------------------------------------
+
+Cisco IOS Software, C2960S Software (C2960S-UNIVERSALK9-M), Version 15.2(2)E9, RELEASE SOFTWARE (fc4)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2018 by Cisco Systems, Inc.
+Compiled Sat 08-Sep-18 14:56 by prod_rel_team
+
+ROM: Bootstrap program is C2960S board boot loader
+BOOTLDR: C2960S Boot Loader (C2960S-HBOOT-M) Version 12.2(55r)SE, RELEASE SOFTWARE (fc1)
+
+SW00-nPoE-48P-CORE uptime is 24 weeks, 1 day, 11 hours, 3 minutes
+System returned to ROM by power-on
+System restarted at 00:14:04 CET Thu Nov 27 2025
+System image file is "flash:c2960s-universalk9-mz.152-2.E9.bin"
+Last reload reason: power-on
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+cisco WS-C2960S-48TS-L (PowerPC) processor (revision G0) with 131072K bytes of memory.
+Processor board ID FOC1704W3V9
+Last reset from power-on
+3 Virtual Ethernet interfaces
+1 FastEthernet interface
+52 Gigabit Ethernet interfaces
+The password-recovery mechanism is enabled.
+
+512K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address       : 20:BB:C0:A0:56:80
+Motherboard assembly number     : 73-11909-08
+Power supply part number        : 341-0327-04
+Motherboard serial number       : FOC17043YX2
+Power supply serial number      : LIT1651048Q
+Model revision number           : G0
+Motherboard revision number     : A0
+Model number                    : WS-C2960S-48TS-L
+Daughterboard assembly number   : 73-11933-04
+Daughterboard serial number     : FOC17043TQT
+System serial number            : FOC1704W3V9
+Top Assembly Part Number        : 800-30950-05
+Top Assembly Revision Number    : A0
+Version ID                      : V05
+CLEI Code Number                : COMGF00ARE
+Daughterboard revision number   : A0
+Hardware Board Revision Number  : 0x01
+
+
+Switch Ports Model                     SW Version            SW Image                 
+------ ----- -----                     ----------            ----------               
+*    1 52    WS-C2960S-48TS-L          15.2(2)E9             C2960S-UNIVERSALK9-M     
+
+
+Configuration register is 0xF
+
+
+------------------------------------------------------------
+  CMD: show ip interface brief
+------------------------------------------------------------
+
+Interface              IP-Address      OK? Method Status                Protocol
+Vlan1                  unassigned      YES NVRAM  administratively down down    
+Vlan10                 10.0.0.245      YES NVRAM  administratively down down    
+Vlan100                10.0.100.10     YES NVRAM  up                    up      
+FastEthernet0          unassigned      YES NVRAM  administratively down down    
+GigabitEthernet1/0/1   unassigned      YES unset  up                    up      
+GigabitEthernet1/0/2   unassigned      YES unset  up                    up      
+GigabitEthernet1/0/3   unassigned      YES unset  up                    up      
+GigabitEthernet1/0/4   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/5   unassigned      YES unset  up                    up      
+GigabitEthernet1/0/6   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/7   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/8   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/9   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/10  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/11  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/12  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/13  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/14  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/15  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/16  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/17  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/18  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/19  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/20  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/21  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/22  unassigned      YES unset  administratively down down    
+GigabitEthernet1/0/23  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/24  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/25  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/26  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/27  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/28  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/29  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/30  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/31  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/32  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/33  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/34  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/35  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/36  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/37  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/38  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/39  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/40  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/41  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/42  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/43  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/44  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/45  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/46  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/47  unassigned      YES unset  up                    up      
+GigabitEthernet1/0/48  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/49  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/50  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/51  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/52  unassigned      YES unset  down                  down    
+
+============================================================
+Czas wykonania: 2.2s  |  Status: OK

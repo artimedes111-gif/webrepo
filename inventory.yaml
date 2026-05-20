@@ -1,0 +1,79 @@
+devices:
+  - name: "ESXi_01"
+    host: 10.0.100.251
+    device_type: linux
+    vendor: esxi
+    username: root
+
+  - name: "ESXi_02"
+    host: 10.0.100.252
+    device_type: linux
+    vendor: esxi
+    username: root
+
+  - name: "FW-SN310"
+    host: 10.0.0.1
+    device_type: linux
+    vendor: stormshield
+    username: claude
+
+  - name: "PIWQNAP"
+    host: 10.0.0.233
+    device_type: linux
+    vendor: qnap
+    username: admin
+
+  - name: "PIWSYNOLOGY"
+    host: 10.0.0.100
+    device_type: linux
+    vendor: synology
+    username: admin
+
+  - name: "SW00-CORE-48P-HALA-2"
+    host: 10.0.100.10
+    device_type: cisco_ios
+    vendor: cisco
+    username: claude
+
+  - name: "SW01-PoE-48P-BIURO-1"
+    host: 10.0.100.11
+    device_type: cisco_ios
+    vendor: cisco
+    username: claude
+
+  - name: "SW02-PoE-48P-HALA-2"
+    host: 10.0.100.12
+    device_type: cisco_ios
+    vendor: cisco
+    username: claude
+
+  - name: "SW03-PoE-48P-HALA-2"
+    host: 10.0.100.13
+    device_type: cisco_ios
+    vendor: cisco
+    username: claude
+
+  - name: "SW04-nPoE-24P-HALA-2"
+    host: 10.0.100.14
+    device_type: cisco_ios
+    vendor: cisco
+    username: claude
+
+  - name: "SW05-PoE-24P-HALA-1"
+    host: 10.0.100.15
+    device_type: cisco_ios
+    vendor: cisco
+    username: claude
+
+  - name: "SW06-PoE-24P-BIURO-1-P1"
+    host: 10.0.100.16
+    device_type: cisco_ios
+    vendor: cisco
+    username: claude
+
+  - name: "SW07-PoE-48P-HALA-3"
+    host: 10.0.100.17
+    device_type: cisco_ios
+    vendor: cisco
+    username: claude
+
