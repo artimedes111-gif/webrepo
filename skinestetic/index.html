@@ -124,7 +124,23 @@
     }
 
     @media (max-width: 768px) {
-      .nav-logo img { height: 56px !important; }
+      .nav { padding: .5rem 1rem; min-height: auto; }
+      .nav-logo img { height: 56px !important; width: auto; }
+      .nav-logo-fade { width: 40px; }
+      .nav-cta { display: none; }
+      .burger { display: flex; }
+
+      .hero-bg img { object-position: 60% center; opacity: .25; }
+      .hero-overlay {
+        background: linear-gradient(
+          to bottom,
+          rgba(250,250,247,0.97) 0%,
+          rgba(250,250,247,0.92) 55%,
+          rgba(250,250,247,0.75) 100%
+        );
+      }
+      .hero-content { padding: 5rem 1.25rem 2.5rem; min-height: 100svh; }
+      .hero-h1 { font-size: clamp(2.2rem, 8vw, 3rem); }
     }
 
     .nav-links { display: flex; gap: 2.25rem; list-style: none; }
