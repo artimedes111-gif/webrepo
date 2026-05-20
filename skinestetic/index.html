@@ -144,17 +144,48 @@
     /* ── HERO ──────────────────────────────────────── */
     .hero {
       min-height: 100svh;
-      display: grid; grid-template-columns: 1fr 1fr;
       position: relative;
+      overflow: hidden;
     }
-
-    .hero-left {
-      display: flex; flex-direction: column;
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background: #FAFAF7;
+    }
+    .hero-bg img {
+      object-fit: contain;
+      object-position: right center;
+      max-height: 100%;
+      max-width: 65%;
+      margin-left: auto;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(
+        to right,
+        #FAFAF7 0%,
+        #FAFAF7 30%,
+        rgba(250,250,247,0.95) 42%,
+        rgba(250,250,247,0.4) 58%,
+        rgba(250,250,247,0.1) 75%,
+        #FAFAF7 100%
+      );
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 560px;
+      padding: clamp(6rem,12vw,10rem) clamp(1.5rem,5vw,3rem) clamp(3.5rem,6vw,5rem);
+      display: flex;
+      flex-direction: column;
       justify-content: flex-end;
-      padding: clamp(5rem,10vw,9rem) var(--pad) clamp(3.5rem,6vw,5rem);
-      background: var(--white);
-      border-right: 1px solid var(--border);
-      position: relative; z-index: 1;
+      min-height: 100svh;
     }
 
     .hero-eyebrow { margin-bottom: 2rem; }
@@ -216,57 +247,6 @@
       padding-bottom: 2px; transition: color .2s, border-color .2s;
     }
     .btn-text:hover { color: var(--gold); border-color: var(--gold); }
-
-    /* KROK 3 — hero right z prawdziwym zdjęciem */
-    .hero-right {
-      display: flex; flex-direction: column;
-      background: var(--off);
-      position: relative; overflow: hidden;
-    }
-
-    .hero-photo {
-      flex: 1;
-      position: relative;
-      overflow: hidden;
-    }
-    .hero-photo img {
-      width: 100%; height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-    .hero-photo-overlay {
-      position: absolute; inset: 0;
-      background: rgba(0,0,0,0.15);
-      pointer-events: none;
-    }
-
-    /* statystyki bottom-right */
-    .hero-metrics {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 1px; background: var(--border);
-    }
-    .hm {
-      background: var(--off); padding: 1.4rem 1.25rem;
-      text-align: center;
-    }
-    .hm-n {
-      font-family: var(--serif);
-      font-size: 2rem; font-weight: 400; color: var(--dark); line-height: 1;
-    }
-    .hm-n span { color: var(--gold); }
-    .hm-l {
-      font-family: var(--mono);
-      font-size: .58rem; letter-spacing: .12em;
-      text-transform: uppercase; color: var(--muted); margin-top: .3rem;
-    }
-
-    .hero-vert {
-      position: absolute; right: 1.25rem; top: 40%;
-      transform: translateY(-50%) rotate(90deg);
-      font-family: var(--mono);
-      font-size: .52rem; letter-spacing: .2em; text-transform: uppercase;
-      color: var(--border); white-space: nowrap;
-    }
 
     /* ── THIN DIVIDER ──────────────────────────────── */
     .divider-line {
@@ -644,10 +624,15 @@
 
     /* ── RESPONSIVE ────────────────────────────────── */
     @media (max-width: 960px) {
-      /* hero — single column, zdjęcie pod tekstem, 280px height */
-      .hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero-right { height: 280px; }
-      .hero-photo { height: 100%; }
+      .hero-overlay {
+        background: linear-gradient(
+          to bottom,
+          rgba(250,250,247,0.95) 0%,
+          rgba(250,250,247,0.75) 60%,
+          rgba(250,250,247,0.4) 100%
+        );
+      }
+      .hero-content { max-width: 100%; min-height: 100svh; }
 
       .srv-grid { grid-template-columns: 1fr 1fr; }
       .about-grid { grid-template-columns: 1fr; }
@@ -711,8 +696,12 @@
   <main>
 
     <!-- HERO -->
-    <section class="hero" aria-labelledby="hero-h1">
-      <div class="hero-left">
+    <section class="hero" id="hero" aria-labelledby="hero-h1">
+      <div class="hero-bg">
+        <img src="img/5.webp" alt="Kosmetologia estetyczna Skin Estetic" loading="eager">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
         <p class="eyebrow hero-eyebrow">Kosmetologia Estetyczna · Ostrów Wlkp.</p>
         <h1 class="hero-h1" id="hero-h1">
           Piękno,<br>które zaczyna się<br>
@@ -743,21 +732,6 @@
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
         </div>
-      </div>
-
-      <!-- KROK 3 — hero photo z img/5.webp + overlay -->
-      <div class="hero-right">
-        <div class="hero-photo">
-          <img src="img/5.webp" alt="Gabinet kosmetologii estetycznej Skin Estetic — zabieg na twarz" loading="eager">
-          <div class="hero-photo-overlay" aria-hidden="true"></div>
-        </div>
-        <div class="hero-metrics">
-          <div class="hm"><div class="hm-n">5<span>.0★</span></div><div class="hm-l">Ocena Google</div></div>
-          <div class="hm"><div class="hm-n">27<span>+</span></div><div class="hm-l">Opinii</div></div>
-          <div class="hm"><div class="hm-n">100<span>%</span></div><div class="hm-l">Rekomendacji</div></div>
-          <div class="hm"><div class="hm-n">∞</div><div class="hm-l">Indywidualne podejście</div></div>
-        </div>
-        <div class="hero-vert" aria-hidden="true">Skin Estetic · ul. Szafirowa 2/12 · Ostrów Wlkp.</div>
       </div>
     </section>
 
