@@ -89,7 +89,7 @@
     /* ── NAV ───────────────────────────────────────── */
     .nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      padding: .75rem 2rem;
+      padding: .75rem 2rem .75rem 5%;
       display: flex; align-items: center; justify-content: space-between;
       overflow: visible;
       transition: background .4s, border-color .4s, box-shadow .4s;
@@ -167,11 +167,11 @@
     .nav-links { display: flex; gap: 2.25rem; list-style: none; }
     .nav-links a {
       font-family: var(--serif);
-      font-size: 1.15rem;
+      font-size: 1.28rem;
       letter-spacing: .1em;
       text-transform: uppercase;
       color: var(--gold);
-      font-weight: 400;
+      font-weight: 700;
       transition: color .2s, text-shadow .2s;
       text-shadow: 0 1px 4px rgba(255,255,255,.6);
     }
@@ -197,6 +197,7 @@
       position: relative;
       overflow: hidden;
       min-height: 100svh;
+      background: var(--cream);
     }
     .hero-bg {
       position: absolute;
@@ -208,8 +209,20 @@
       object-fit: cover;
       object-position: center center;
       display: block;
+      transform: scale(0.9);
+      transform-origin: center center;
     }
-    .hero-overlay { display: none; }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      pointer-events: none;
+      background:
+        linear-gradient(to right,  var(--cream) 0%, transparent 10%),
+        linear-gradient(to left,   var(--cream) 0%, transparent 18%),
+        linear-gradient(to bottom, var(--cream) 0%, transparent 12%),
+        linear-gradient(to top,    var(--cream) 0%, transparent 12%);
+    }
     .hero-content { display: none; }
     .hero .hero-actions {
       position: absolute;
@@ -666,41 +679,14 @@
 
     /* ── RESPONSIVE ────────────────────────────────── */
     @media (max-width: 960px) {
-      .srv-grid { grid-template-columns: 1fr 1fr; }
-      .about-grid { grid-template-columns: 1fr; }
-      .about-photo { display: none; }
-      .opinions-grid { grid-template-columns: 1fr; gap: 1rem; }
-      .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       .nav-links { display: none; }
       .burger { display: flex; }
-
-      /* galeria — 1 kolumna na mobile */
-      .gallery-strip { grid-template-columns: 1fr; }
-
-      /* promocja — zdjęcie pierwsze, potem tekst */
-      .promo-inner {
-        grid-template-columns: 1fr;
-      }
-      .promo-img { order: -1; }
     }
 
     @media (max-width: 560px) {
-      .srv-grid { grid-template-columns: 1fr; }
       .about-nums { grid-template-columns: 1fr 1fr; }
-      .hero-metrics { grid-template-columns: 1fr 1fr; }
-
-      /* KROK 6 — fonty min 14px, przyciski min 44px */
-      body { font-size: 14px; }
-      .srv-desc, .zabieg-desc, .about-text, .ci-val,
-      .opinion-text, .promo-p, .section-intro { font-size: .875rem; }
-      .nav-cta { padding: .65rem 1rem; min-height: 44px; }
       .btn-dark { padding: .875rem 1.5rem; min-height: 44px; }
       .btn-gold { padding: .875rem 1.5rem; min-height: 44px; }
-    }
-
-    @media (max-width: 375px) {
-      :root { --pad: 1.25rem; }
-      .hero-h1 { font-size: 2.6rem; }
     }
   </style>
 </head>
@@ -729,6 +715,7 @@
       <div class="hero-bg">
         <img src="img/hero4.jpg" alt="Kosmetologia estetyczna Skin Estetic" loading="eager">
       </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
       <div class="hero-actions">
         <a class="btn-dark" href="tel:+48602762180">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
