@@ -235,6 +235,11 @@
       position: absolute;
       inset: 0;
     }
+    .hero-bg picture {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
     .hero-bg img {
       width: 100%;
       height: 100%;
@@ -1064,12 +1069,24 @@
 
     const burger = document.getElementById('burger');
     const navLinks = document.getElementById('navLinks');
-    burger.addEventListener('click', () => {
+    function closeNav() {
+      burger.setAttribute('aria-expanded', 'false');
+      navLinks.style.cssText = '';
+    }
+    burger.addEventListener('click', (e) => {
+      e.stopPropagation();
       const open = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!open));
-      navLinks.style.cssText = open
-        ? ''
-        : 'display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(255,255,255,.98);padding:1.25rem var(--pad,1.5rem);gap:1.25rem;border-bottom:1px solid var(--border);z-index:99;';
+      if (open) {
+        closeNav();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        navLinks.style.cssText = 'display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(255,255,255,.98);padding:1.25rem var(--pad,1.5rem);gap:1.25rem;border-bottom:1px solid var(--border);z-index:99;';
+      }
+    });
+    document.addEventListener('click', (e) => {
+      if (burger.getAttribute('aria-expanded') === 'true' && !nav.contains(e.target)) {
+        closeNav();
+      }
     });
 
     function toggleZ(header) {
