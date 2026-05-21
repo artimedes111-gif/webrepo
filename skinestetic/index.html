@@ -683,6 +683,27 @@
       .burger { display: flex; }
     }
 
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 100svh;
+      }
+
+      .hero-bg img {
+        object-position: 20% center;
+      }
+
+      .hero-actions {
+        bottom: 1.5rem;
+        left: 1rem;
+        right: 1rem;
+      }
+
+      .btn-primary {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
     @media (max-width: 560px) {
       .about-nums { grid-template-columns: 1fr 1fr; }
       .btn-dark { padding: .875rem 1.5rem; min-height: 44px; }
