@@ -39,7 +39,7 @@
   <style>
     /* ── RESET ─────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; font-size: 16px; }
+    html { scroll-behavior: smooth; font-size: 11px; }
     body { -webkit-font-smoothing: antialiased; overflow-x: hidden; }
     img { display: block; max-width: 100%; }
     a { color: inherit; text-decoration: none; }
@@ -63,7 +63,7 @@
       --sans:  'Optima', 'Gill Sans', 'Trebuchet MS', sans-serif;
       --mono:  'Courier New', monospace;
 
-      --max: 1160px;
+      --max: 812px;
       --pad: clamp(1.5rem, 5vw, 3rem);
     }
 
@@ -113,12 +113,12 @@
       background: none;
     }
     .nav-logo img {
-      height: 120px !important;
+      height: 84px !important;
       width: auto;
       display: block;
     }
     .nav-logo-fade {
-      width: 96px;
+      width: 67px;
       background: linear-gradient(to right, #3D3B40 0%, transparent 100%);
       flex-shrink: 0;
     }
@@ -126,10 +126,10 @@
     .nav-hero-thumb { display: none; }
 
     @media (max-width: 768px) {
-      .nav { padding: 0; overflow: hidden; height: 72px; }
+      .nav { padding: 0; overflow: hidden; height: 50px; }
       .nav-logo { flex-shrink: 0; z-index: 2; }
-      .nav-logo img { height: 72px !important; width: auto; }
-      .nav-logo-fade { width: 30px; z-index: 2; position: relative; }
+      .nav-logo img { height: 50px !important; width: auto; }
+      .nav-logo-fade { width: 21px; z-index: 2; position: relative; }
       .nav-cta { display: none !important; }
       .burger {
         position: absolute; right: 1rem; z-index: 3;
@@ -145,7 +145,7 @@
         background-size: cover;
         background-position: 30% center;
         position: relative;
-        min-height: 72px;
+        min-height: 50px;
       }
       .nav-hero-thumb::before {
         content: '';
@@ -160,16 +160,18 @@
         );
       }
 
-      .hero-bg img { object-position: 60% center; opacity: .25; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-bg { position: absolute; inset: 0; grid-column: 1; }
+      .hero-bg img { object-position: 60% center; opacity: .45; }
       .hero-overlay {
         background: linear-gradient(
           to bottom,
-          rgba(250,250,247,0.97) 0%,
-          rgba(250,250,247,0.92) 55%,
-          rgba(250,250,247,0.75) 100%
+          rgba(250,250,247,0.92) 0%,
+          rgba(250,250,247,0.82) 55%,
+          rgba(250,250,247,0.60) 100%
         );
       }
-      .hero-content { padding: 5rem 1.25rem 2.5rem; min-height: 100svh; }
+      .hero-content { grid-column: 1; grid-row: 1; padding: 6rem 1.25rem; justify-content: center; min-height: 100svh; }
       .hero-h1 { font-size: clamp(2.2rem, 8vw, 3rem); }
     }
 
@@ -199,26 +201,22 @@
 
     /* ── HERO ──────────────────────────────────────── */
     .hero {
-      min-height: 100svh;
+      min-height: min(100svh, 55rem);
       position: relative;
       overflow: hidden;
+      display: grid;
+      grid-template-columns: 45% 55%;
     }
     .hero-bg {
-      position: absolute;
-      inset: 0;
-      z-index: 0;
-      overflow: hidden;
+      grid-column: 2;
+      grid-row: 1;
     }
     .hero-bg img {
-      position: absolute;
-      inset: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: 72% center;
-      max-width: none;
-      transform: scale(0.82);
-      transform-origin: right center;
+      object-position: center center;
+      display: block;
     }
     .hero-overlay {
       position: absolute;
@@ -227,22 +225,23 @@
       background: linear-gradient(
         to right,
         #FAFAF7 0%,
-        #FAFAF7 35%,
-        rgba(250,250,247,0.88) 48%,
-        rgba(250,250,247,0.2) 62%,
-        rgba(250,250,247,0.05) 78%,
+        #FAFAF7 32%,
+        rgba(250,250,247,0.9) 44%,
+        rgba(250,250,247,0.2) 60%,
+        transparent 75%,
         #FAFAF7 100%
       );
     }
     .hero-content {
+      grid-column: 1;
+      grid-row: 1;
       position: relative;
       z-index: 2;
-      max-width: 560px;
-      padding: clamp(6rem,12vw,10rem) clamp(1.5rem,5vw,3rem) clamp(3.5rem,6vw,5rem);
+      padding: 10rem clamp(1.5rem,5vw,3rem) 4rem;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      min-height: 100svh;
+      justify-content: center;
+      min-height: min(100svh, 55rem);
     }
 
     .hero-eyebrow { margin-bottom: 2rem; }
@@ -409,7 +408,7 @@
     }
     .about-photo::before {
       content: '';
-      position: absolute; top: -16px; left: -16px;
+      position: absolute; top: -11px; left: -11px;
       width: 55%; height: 55%;
       border: 1px solid var(--borderg);
       pointer-events: none;
@@ -616,7 +615,7 @@
     }
     .building-photo img {
       width: 100%;
-      max-height: 220px;
+      max-height: 154px;
       object-fit: cover;
       display: block;
     }
@@ -653,7 +652,7 @@
       line-height: 0;
       display: block;
     }
-    .footer-logo img { height: 48px; width: auto; display: block; }
+    .footer-logo img { height: 34px; width: auto; display: block; }
 
     .footer-links { display: flex; gap: 1.5rem; list-style: none; }
     .footer-links a {
@@ -689,7 +688,9 @@
           rgba(250,250,247,0.4) 100%
         );
       }
-      .hero-content { max-width: 100%; min-height: 100svh; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-bg { position: absolute; inset: 0; grid-column: 1; }
+      .hero-content { min-height: 100svh; }
 
       .srv-grid { grid-template-columns: 1fr 1fr; }
       .about-grid { grid-template-columns: 1fr; }
@@ -737,7 +738,7 @@
     <a href="/" class="nav-logo" aria-label="Skin Estetic — strona główna">
       <img src="img/logo.webp"
            alt="Skin Estetic Kosmetologia Estetyczna"
-           style="height:120px !important;width:auto;display:block;float:left;"
+           style="height:84px !important;width:auto;display:block;float:left;"
            loading="eager">
       <div class="nav-logo-fade"></div>
     </a>
@@ -1080,7 +1081,7 @@
   <footer>
     <div class="footer-inner">
       <a href="/" class="footer-logo" aria-label="Skin Estetic — strona główna">
-        <img src="img/logo.webp" alt="Skin Estetic Kosmetologia Estetyczna" style="height:48px;width:auto;display:block;" loading="lazy">
+        <img src="img/logo.webp" alt="Skin Estetic Kosmetologia Estetyczna" style="height:34px;width:auto;display:block;" loading="lazy">
       </a>
       <ul class="footer-links">
         <li><a href="/polityka-prywatnosci/">Polityka Prywatności</a></li>
