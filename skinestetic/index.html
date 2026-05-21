@@ -207,17 +207,18 @@
       position: absolute;
       inset: 0;
       z-index: 0;
-      background: #FAFAF7;
+      overflow: hidden;
     }
     .hero-bg img {
-      object-fit: contain;
-      object-position: right center;
-      max-height: 100%;
-      max-width: 65%;
-      margin-left: auto;
-      display: block;
+      position: absolute;
+      inset: 0;
       width: 100%;
       height: 100%;
+      object-fit: cover;
+      object-position: 72% center;
+      max-width: none;
+      transform: scale(0.82);
+      transform-origin: right center;
     }
     .hero-overlay {
       position: absolute;
@@ -226,11 +227,10 @@
       background: linear-gradient(
         to right,
         #FAFAF7 0%,
-        #FAFAF7 28%,
-        rgba(250,250,247,0.85) 38%,
-        rgba(250,250,247,0.15) 55%,
-        rgba(250,250,247,0.08) 75%,
-        rgba(250,250,247,0.6) 90%,
+        #FAFAF7 35%,
+        rgba(250,250,247,0.88) 48%,
+        rgba(250,250,247,0.2) 62%,
+        rgba(250,250,247,0.05) 78%,
         #FAFAF7 100%
       );
     }
