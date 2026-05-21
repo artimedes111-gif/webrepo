@@ -172,11 +172,11 @@
 
       /* HERO MOBILE */
       .hero {
-        min-height: 70vw;
+        min-height: 100svh;
       }
 
       .hero-bg img {
-        object-position: 25% center;
+        object-position: center center;
         transform: none;
       }
 
@@ -745,7 +745,10 @@
     <!-- HERO -->
     <section class="hero" id="hero" aria-label="Skin Estetic — Kosmetologia Estetyczna">
       <div class="hero-bg">
-        <img src="img/hero4.jpg" alt="Kosmetologia estetyczna Skin Estetic" loading="eager">
+        <picture>
+          <source media="(max-width: 768px)" srcset="img/hero-mobile.webp">
+          <img src="img/hero4.jpg" alt="Skin Estetic" loading="eager">
+        </picture>
       </div>
       <div class="hero-overlay" aria-hidden="true"></div>
       <div class="hero-actions">
