@@ -94,7 +94,7 @@
       overflow: visible;
       transition: background .4s, border-color .4s, box-shadow .4s;
       border-bottom: 1px solid transparent;
-      background: rgba(255,255,255,.97);
+      background: transparent;
     }
     .nav.stuck {
       background: rgba(255,255,255,.97);
@@ -160,29 +160,22 @@
         );
       }
 
-      .hero { grid-template-columns: 1fr; }
-      .hero-bg { position: absolute; inset: 0; grid-column: 1; }
-      .hero-bg img { object-position: 60% center; opacity: .45; }
-      .hero-overlay {
-        background: linear-gradient(
-          to bottom,
-          rgba(250,250,247,0.92) 0%,
-          rgba(250,250,247,0.82) 55%,
-          rgba(250,250,247,0.60) 100%
-        );
-      }
-      .hero-content { grid-column: 1; grid-row: 1; padding: 6rem 1.25rem; justify-content: center; min-height: 100svh; }
-      .hero-h1 { font-size: clamp(2.2rem, 8vw, 3rem); }
+      .hero { min-height: 60vw; }
+      .hero .hero-actions { bottom: 1rem; left: 1rem; }
     }
 
     .nav-links { display: flex; gap: 2.25rem; list-style: none; }
     .nav-links a {
-      font-size: .92rem; letter-spacing: .06em;
-      text-transform: uppercase; color: #1A1714;
-      font-weight: 500;
-      transition: color .2s;
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 400;
+      transition: color .2s, text-shadow .2s;
+      text-shadow: 0 1px 4px rgba(255,255,255,.6);
     }
-    .nav-links a:hover { color: var(--gold); }
+    .nav-links a:hover { color: var(--gold2); text-shadow: none; }
 
     .nav-cta {
       display: inline-flex; align-items: center; gap: .5rem;
@@ -201,15 +194,13 @@
 
     /* ── HERO ──────────────────────────────────────── */
     .hero {
-      min-height: min(100svh, 55rem);
       position: relative;
       overflow: hidden;
-      display: grid;
-      grid-template-columns: 45% 55%;
+      min-height: 100svh;
     }
     .hero-bg {
-      grid-column: 2;
-      grid-row: 1;
+      position: absolute;
+      inset: 0;
     }
     .hero-bg img {
       width: 100%;
@@ -218,31 +209,26 @@
       object-position: center center;
       display: block;
     }
-    .hero-overlay {
+    .hero-overlay { display: none; }
+    .hero-content { display: none; }
+    .hero .hero-actions {
       position: absolute;
-      inset: 0;
-      z-index: 1;
-      background: linear-gradient(
-        to right,
-        #FAFAF7 0%,
-        #FAFAF7 32%,
-        rgba(250,250,247,0.9) 44%,
-        rgba(250,250,247,0.2) 60%,
-        transparent 75%,
-        #FAFAF7 100%
-      );
+      bottom: 2rem;
+      left: 2rem;
+      z-index: 10;
     }
-    .hero-content {
-      grid-column: 1;
-      grid-row: 1;
-      position: relative;
-      z-index: 2;
-      padding: 10rem clamp(1.5rem,5vw,3rem) 4rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      min-height: min(100svh, 55rem);
+    .hero .btn-dark {
+      background: linear-gradient(135deg, var(--gold2) 0%, var(--gold) 100%);
+      border: none;
     }
+    .hero .btn-dark:hover {
+      background: linear-gradient(135deg, var(--gold) 0%, #9A7A48 100%);
+    }
+    .hero .btn-text {
+      color: rgba(255,255,255,0.9);
+      border-color: rgba(255,255,255,0.5);
+    }
+    .hero .btn-text:hover { color: var(--white); border-color: var(--white); }
 
     .hero-eyebrow { margin-bottom: 2rem; }
 
@@ -680,18 +666,6 @@
 
     /* ── RESPONSIVE ────────────────────────────────── */
     @media (max-width: 960px) {
-      .hero-overlay {
-        background: linear-gradient(
-          to bottom,
-          rgba(250,250,247,0.95) 0%,
-          rgba(250,250,247,0.75) 60%,
-          rgba(250,250,247,0.4) 100%
-        );
-      }
-      .hero { grid-template-columns: 1fr; }
-      .hero-bg { position: absolute; inset: 0; grid-column: 1; }
-      .hero-content { min-height: 100svh; }
-
       .srv-grid { grid-template-columns: 1fr 1fr; }
       .about-grid { grid-template-columns: 1fr; }
       .about-photo { display: none; }
@@ -734,14 +708,6 @@
 
   <!-- NAV -->
   <nav class="nav" id="nav" aria-label="Nawigacja główna">
-    <!-- KROK 2 — logo w kontenerze z ciemnym tłem -->
-    <a href="/" class="nav-logo" aria-label="Skin Estetic — strona główna">
-      <img src="img/logo.webp"
-           alt="Skin Estetic Kosmetologia Estetyczna"
-           style="height:84px !important;width:auto;display:block;float:left;"
-           loading="eager">
-      <div class="nav-logo-fade"></div>
-    </a>
     <div class="nav-hero-thumb" aria-hidden="true"></div>
     <ul class="nav-links" id="navLinks">
       <li><a href="#uslugi">Usługi</a></li>
@@ -750,7 +716,7 @@
       <li><a href="#promocja" style="color:#B8975A;">Promocja</a></li>
       <li><a href="#kontakt">Kontakt</a></li>
     </ul>
-    <a class="nav-cta" href="tel:+48602762180">Umów wizytę</a>
+
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -759,42 +725,19 @@
   <main>
 
     <!-- HERO -->
-    <section class="hero" id="hero" aria-labelledby="hero-h1">
+    <section class="hero" id="hero" aria-label="Skin Estetic — Kosmetologia Estetyczna">
       <div class="hero-bg">
-        <img src="img/5.webp" alt="Kosmetologia estetyczna Skin Estetic" loading="eager">
+        <img src="img/hero4.jpg" alt="Kosmetologia estetyczna Skin Estetic" loading="eager">
       </div>
-      <div class="hero-overlay" aria-hidden="true"></div>
-      <div class="hero-content">
-        <p class="eyebrow hero-eyebrow">Kosmetologia Estetyczna · Ostrów Wlkp.</p>
-        <h1 class="hero-h1" id="hero-h1">
-          Piękno,<br>które zaczyna się<br>
-          <em>od środka</em>
-        </h1>
-        <p class="hero-lead">
-          Profesjonalny gabinet kosmetologii estetycznej Joanny Mendery.
-          Nowoczesne zabiegi dobrane indywidualnie — dla skóry, której
-          na co dzień poświęcamy zbyt mało uwagi.
-        </p>
-        <div class="hero-stars">
-          <div class="stars-row" aria-label="Ocena 5 gwiazdek">
-            <span class="star" aria-hidden="true">★</span>
-            <span class="star" aria-hidden="true">★</span>
-            <span class="star" aria-hidden="true">★</span>
-            <span class="star" aria-hidden="true">★</span>
-            <span class="star" aria-hidden="true">★</span>
-          </div>
-          <span class="stars-txt">5.0 · 27 opinii · 100% rekomendacji</span>
-        </div>
-        <div class="hero-actions">
-          <a class="btn-dark" href="tel:+48602762180">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Umów wizytę
-          </a>
-          <a class="btn-text" href="#zabiegi">
-            Zobacz zabiegi
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
-        </div>
+      <div class="hero-actions">
+        <a class="btn-dark" href="tel:+48602762180">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Umów wizytę
+        </a>
+        <a class="btn-text" href="#zabiegi">
+          Zobacz zabiegi
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
       </div>
     </section>
 
