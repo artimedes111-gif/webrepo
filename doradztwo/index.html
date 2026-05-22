@@ -1091,7 +1091,20 @@
             <label class="form-label" for="message">Wiadomość</label>
             <textarea class="form-textarea" id="message" name="message" placeholder="Opisz krótko swoją sprawę..."></textarea>
           </div>
-          <p class="form-rodo">Przesyłając formularz, wyrażasz zgodę na przetwarzanie danych osobowych w celu udzielenia odpowiedzi na zapytanie, zgodnie z ustawą o ochronie danych osobowych.</p>
+          <div style="margin-top:1rem">
+            <label style="display:flex;align-items:flex-start;gap:.75rem;cursor:pointer">
+              <input type="checkbox" name="zgoda" required
+                     style="margin-top:4px;flex-shrink:0;accent-color:#C9A652">
+              <span style="font-size:.78rem;color:var(--muted);line-height:1.6">
+                Wyrażam zgodę na przetwarzanie moich danych osobowych przez
+                Natalię Pietruchę (ul. Polna 32/6d, 62-800 Kalisz) w celu
+                udzielenia odpowiedzi na zapytanie, zgodnie z art. 6 ust. 1
+                lit. b RODO. Przysługuje mi prawo dostępu, sprostowania
+                i usunięcia danych. Więcej informacji w
+                <a href="polityka-prywatnosci/" style="color:var(--emerald);text-decoration:underline">Polityce Prywatności</a>.
+              </span>
+            </label>
+          </div>
           <button type="submit" class="form-submit">
             Wyślij wiadomość
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
@@ -1117,6 +1130,7 @@
             <li><a href="#o-kancelarii">O kancelarii</a></li>
             <li><a href="#mediacje">Mediacje</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="polityka-prywatnosci/">Polityka Prywatności</a></li>
           </ul>
         </div>
         <div>

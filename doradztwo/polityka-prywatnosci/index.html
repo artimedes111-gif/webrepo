@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polityka Prywatności — Doradztwo Prawne i Mediacja</title>
+  <meta name="description" content="Polityka Prywatności kancelarii Natalii Pietruchy — Doradztwo Prawne i Mediacja, Kalisz.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body { font-family: 'Inter', sans-serif; background: #FAF6F0; color: #1A1A16; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    a { color: #1B3A2A; text-decoration: underline; }
+    a:hover { color: #C5A253; }
+
+    :root {
+      --emerald: #1B3A2A;
+      --gold:    #C5A253;
+      --cream:   #FAF6F0;
+      --ivory:   #F2EDE3;
+      --border:  #DDD8CC;
+      --muted:   #7A7A70;
+      --mid:     #3A3A35;
+      --serif:   'Cormorant Garamond', Georgia, serif;
+      --pad:     clamp(1.5rem, 5vw, 4rem);
+    }
+
+    /* ── NAV ── */
+    .nav {
+      background: rgba(250,246,240,.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 1.1rem var(--pad);
+      display: flex; align-items: center; justify-content: space-between;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .nav-back {
+      display: inline-flex; align-items: center; gap: .5rem;
+      font-size: .78rem; letter-spacing: .1em; text-transform: uppercase;
+      font-weight: 500; color: var(--emerald); text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-back:hover { color: var(--gold); }
+    .nav-brand {
+      font-family: var(--serif); font-size: 1rem; font-weight: 500;
+      color: var(--emerald); letter-spacing: .02em;
+    }
+
+    /* ── HERO ── */
+    .pp-hero {
+      background: var(--emerald);
+      padding: clamp(3rem, 8vw, 6rem) var(--pad) clamp(2.5rem, 6vw, 4.5rem);
+      border-bottom: 3px solid var(--gold);
+    }
+    .pp-eyebrow {
+      font-size: .68rem; letter-spacing: .22em; text-transform: uppercase;
+      color: rgba(197,162,83,.7); font-family: 'Inter', sans-serif;
+      font-weight: 400; margin-bottom: 1rem;
+    }
+    .pp-title {
+      font-family: var(--serif); font-size: clamp(2.2rem, 5vw, 3.6rem);
+      font-weight: 400; color: #FAF6F0; line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+    .pp-title em { color: var(--gold); font-style: italic; }
+    .pp-meta {
+      font-size: .78rem; color: rgba(250,246,240,.45); letter-spacing: .04em;
+    }
+
+    /* ── CONTENT ── */
+    .pp-wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: clamp(3rem, 7vw, 5rem) var(--pad);
+    }
+
+    .pp-section { margin-bottom: 3rem; }
+    .pp-section:last-child { margin-bottom: 0; }
+
+    .pp-h2 {
+      font-family: var(--serif); font-size: 1.55rem; font-weight: 500;
+      color: var(--emerald); margin-bottom: 1rem;
+      padding-bottom: .6rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .pp-h2 span {
+      display: inline-block;
+      background: var(--gold);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: .62rem; font-weight: 600;
+      letter-spacing: .1em; text-transform: uppercase;
+      padding: .15rem .55rem; border-radius: 2px;
+      margin-right: .65rem; vertical-align: middle;
+      position: relative; top: -2px;
+    }
+
+    .pp-p {
+      font-size: .92rem; color: var(--mid);
+      margin-bottom: 1rem; line-height: 1.75;
+    }
+    .pp-p:last-child { margin-bottom: 0; }
+
+    .pp-list {
+      list-style: none; margin: .75rem 0 1rem 0;
+    }
+    .pp-list li {
+      font-size: .92rem; color: var(--mid);
+      padding: .35rem 0 .35rem 1.4rem;
+      position: relative; line-height: 1.6;
+      border-bottom: 1px solid var(--ivory);
+    }
+    .pp-list li:last-child { border-bottom: none; }
+    .pp-list li::before {
+      content: '';
+      position: absolute; left: 0; top: .85rem;
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--gold);
+    }
+
+    .pp-card {
+      background: var(--ivory);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+      border-radius: 3px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.25rem 0;
+    }
+    .pp-card p { font-size: .88rem; color: var(--mid); line-height: 1.7; margin: 0; }
+    .pp-card strong { color: var(--emerald); }
+
+    /* ── FOOTER ── */
+    .pp-footer {
+      background: var(--emerald);
+      padding: 2.5rem var(--pad);
+      text-align: center;
+    }
+    .pp-footer p { font-size: .78rem; color: rgba(250,246,240,.4); margin-bottom: .4rem; }
+    .pp-footer a { color: rgba(197,162,83,.7); }
+    .pp-footer a:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav-back" href="../">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 5-7 7 7 7"/></svg>
+      Powrót do strony głównej
+    </a>
+    <span class="nav-brand">Doradztwo Prawne i Mediacja</span>
+  </nav>
+
+  <div class="pp-hero">
+    <p class="pp-eyebrow">Ochrona danych osobowych</p>
+    <h1 class="pp-title">Polityka<br><em>Prywatności</em></h1>
+    <p class="pp-meta">Ostatnia aktualizacja: maj 2025 &nbsp;·&nbsp; Wersja 1.0</p>
+  </div>
+
+  <main class="pp-wrap">
+
+    <div class="pp-section">
+      <h2 class="pp-h2"><span>1</span>Administrator danych</h2>
+      <div class="pp-card">
+        <p>
+          <strong>Natalia Pietrucha</strong><br>
+          ul. Polna 32/6d, 62-800 Kalisz<br>
+          E-mail: <a href="mailto:biuro.pietrucha@gmail.com">biuro.pietrucha@gmail.com</a><br>
+          Telefon: <a href="tel:+48571217033">571-217-033</a>
+        </p>
+      </div>
+      <p class="pp-p">
+        Administratorem Twoich danych osobowych jest Natalia Pietrucha prowadząca działalność
+        w zakresie doradztwa prawnego i mediacji pod adresem ul. Polna 32/6d, 62-800 Kalisz
+        (dalej: „Administrator").
+      </p>
+    </div>
+
+    <div class="pp-section">
+      <h2 class="pp-h2"><span>2</span>Zakres zbieranych danych</h2>
+      <p class="pp-p">Administrator przetwarza dwa rodzaje danych osobowych:</p>
+      <ul class="pp-list">
+        <li><strong>Dane z formularza kontaktowego:</strong> imię i nazwisko, adres e-mail, numer telefonu (opcjonalnie) oraz treść wiadomości przekazanej przez użytkownika.</li>
+        <li><strong>Dane techniczne (logi serwera):</strong> adres IP, typ przeglądarki, system operacyjny, data i godzina wizyty, adres URL strony — zbierane automatycznie przez serwer w celach technicznych i bezpieczeństwa.</li>
+      </ul>
+    </div>
+
+    <div class="pp-section">
+      <h2 class="pp-h2"><span>3</span>Cel i podstawa prawna przetwarzania</h2>
+      <ul class="pp-list">
+        <li>
+          <strong>Formularz kontaktowy</strong> — udzielenie odpowiedzi na przesłane zapytanie.
+          Podstawa prawna: art. 6 ust. 1 lit. b RODO (podjęcie działań przed zawarciem umowy
+          lub wykonanie umowy) oraz art. 6 ust. 1 lit. a RODO (zgoda osoby, której dane dotyczą).
+        </li>
+        <li>
+          <strong>Logi serwera</strong> — zapewnienie bezpieczeństwa i poprawnego działania
+          serwisu. Podstawa prawna: art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes
+          Administratora).
+        </li>
+      </ul>
+    </div>
+
+    <div class="pp-section">
+      <h2 class="pp-h2"><span>4</span>Czas przechowywania danych</h2>
+      <ul class="pp-list">
+        <li><strong>Dane z formularza:</strong> przez czas niezbędny do udzielenia odpowiedzi na zapytanie, a następnie do czasu upływu ewentualnych roszczeń — nie dłużej niż 3 lata od ostatniego kontaktu.</li>
+        <li><strong>Logi serwera:</strong> przez okres do 12 miesięcy, po którym są automatycznie usuwane lub anonimizowane.</li>
+      </ul>
+    </div>
+
+    <div class="pp-section">
+      <h2 class="pp-h2"><span>5</span>Prawa użytkownika</h2>
+      <p class="pp-p">Na podstawie przepisów RODO przysługują Ci następujące prawa:</p>
+      <ul class="pp-list">
+        <li><strong>Prawo dostępu</strong> — możesz uzyskać informację o tym, czy i jakie dane Administrator przetwarza.</li>
+        <li><strong>Prawo do sprostowania</strong> — możesz żądać poprawienia nieprawidłowych lub uzupełnienia niekompletnych danych.</li>
+        <li><strong>Prawo do usunięcia</strong> — możesz żądać usunięcia danych („prawo do bycia zapomnianym"), gdy nie są już niezbędne do celów, w których zostały zebrane.</li>
+        <li><strong>Prawo do ograniczenia przetwarzania</strong> — możesz żądać wstrzymania przetwarzania danych w określonych sytuacjach przewidzianych przez RODO.</li>
+        <li><strong>Prawo do przenoszenia danych</strong> — możesz otrzymać dane w formacie nadającym się do odczytu maszynowego.</li>
+        <li><strong>Prawo do cofnięcia zgody</strong> — w każdej chwili możesz cofnąć wyrażoną zgodę; cofnięcie zgody nie wpływa na zgodność z prawem przetwarzania dokonanego przed jej cofnięciem.</li>
+        <li><strong>Prawo do wniesienia skargi</strong> — możesz wnieść skargę do organu nadzorczego — Prezesa Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa).</li>
+      </ul>
+    </div>
+
+    <div class="pp-section">
+      <h2 class="pp-h2"><span>6</span>Odbiorcy danych</h2>
+      <p class="pp-p">
+        Dane osobowe mogą być przekazywane podmiotom świadczącym usługi na rzecz Administratora,
+        w szczególności dostawcom usług hostingowych i pocztowych, wyłącznie w zakresie niezbędnym
+        do realizacji wskazanych celów. Administrator nie sprzedaje ani nie udostępnia danych
+        osobowych podmiotom trzecim w celach marketingowych.
+      </p>
+      <p class="pp-p">
+        Dane nie są przekazywane do państw trzecich poza Europejskim Obszarem Gospodarczym.
+      </p>
+    </div>
+
+    <div class="pp-section">
+      <h2 class="pp-h2"><span>7</span>Pliki cookies</h2>
+      <p class="pp-p">
+        Strona może wykorzystywać techniczne pliki cookies niezbędne do prawidłowego
+        funkcjonowania serwisu (np. sesja). Strona nie stosuje analitycznych ani marketingowych
+        plików cookies bez wyraźnej zgody użytkownika.
+      </p>
+    </div>
+
+    <div class="pp-section">
+      <h2 class="pp-h2"><span>8</span>Kontakt w sprawie danych osobowych</h2>
+      <p class="pp-p">
+        W sprawach dotyczących przetwarzania danych osobowych oraz korzystania z przysługujących
+        praw prosimy o kontakt:
+      </p>
+      <div class="pp-card">
+        <p>
+          <strong>E-mail:</strong> <a href="mailto:biuro.pietrucha@gmail.com">biuro.pietrucha@gmail.com</a><br>
+          <strong>Telefon:</strong> <a href="tel:+48571217033">571-217-033</a><br>
+          <strong>Adres korespondencyjny:</strong> ul. Polna 32/6d, 62-800 Kalisz
+        </p>
+      </div>
+      <p class="pp-p">
+        Administrator odpowiada na zgłoszenia bez zbędnej zwłoki — najpóźniej w ciągu 30 dni
+        od otrzymania wniosku.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="pp-footer">
+    <p>© 2025 Doradztwo Prawne i Mediacja — Natalia Pietrucha</p>
+    <p><a href="../">Strona główna</a> &nbsp;·&nbsp; <a href="mailto:biuro.pietrucha@gmail.com">biuro.pietrucha@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>
