@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adwokat Ostrów Wielkopolski — Kancelaria adw. Maciej Pawłowski</title>
+  <meta name="description" content="Kancelaria Adwokacka adw. Maciej Pawłowski — adwokat Ostrów Wielkopolski. Prawo cywilne, karne, gospodarcze, rodzinne. Profesjonalna pomoc prawna dla osób i firm.">
+  <link rel="canonical" href="https://adwokat-pawlowski.netlify.app/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,400;1,700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Kancelaria Adwokacka adw. Maciej Pawłowski",
+    "description": "Profesjonalne usługi prawne — prawo cywilne, karne, gospodarcze, rodzinne, pracy i administracyjne.",
+    "url": "https://adwokat-pawlowski.netlify.app/",
+    "telephone": "+48575988990",
+    "email": "kancelaria@adwokat-pawlowski.pl",
+    "taxID": "6222634501",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Gimnazjalna 6 lok. 208",
+      "addressLocality": "Ostrów Wielkopolski",
+      "postalCode": "63-400",
+      "addressCountry": "PL"
+    },
+    "founder": { "@type": "Person", "name": "Maciej Pawłowski", "jobTitle": "Adwokat" },
+    "areaServed": { "@type": "Place", "name": "Ostrów Wielkopolski" }
+  }
+  </script>
+
+  <style>
+    /* ── RESET ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+    body {
+      font-family: 'Optima', 'Trebuchet MS', sans-serif;
+      background: #F7F3EC;
+      color: #1A1610;
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; border: none; background: none; font: inherit; }
+
+    /* ── TOKENS ── */
+    :root {
+      --dark:    #0D1810;
+      --green:   #1B5C35;
+      --green2:  #0E1F12;
+      --gold:    #C9A652;
+      --gold2:   #E0BE6A;
+      --accent:  #7A6A50;
+      --cream:   #F7F3EC;
+      --white:   #FFFFFF;
+      --ink:     #1A1610;
+      --body:    #4A4540;
+      --muted:   #8A857C;
+      --border:  rgba(0,0,0,.09);
+      --borderg: rgba(201,166,82,.25);
+      --serif:   'Palatino Linotype', Georgia, serif;
+      --display: 'Playfair Display', Georgia, serif;
+      --nav:     'Raleway', 'Trebuchet MS', sans-serif;
+      --mono:    'Courier New', monospace;
+      --pad:     clamp(1.5rem, 5vw, 3rem);
+      --max:     1200px;
+    }
+
+    /* ── NAV ── */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px var(--pad);
+      background: transparent;
+      border-bottom: 1px solid transparent;
+      backdrop-filter: blur(0px);
+      -webkit-backdrop-filter: blur(0px);
+      transition: background .4s, padding .3s, border-color .4s, backdrop-filter .4s;
+    }
+    .nav.stuck {
+      background: rgba(6,10,6,.96);
+      border-bottom-color: rgba(201,166,82,.30);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 18px var(--pad);
+    }
+    .nav-links { display: flex; list-style: none; gap: 2.5rem; }
+    .nav-links a {
+      font-family: var(--nav);
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.90);
+      transition: color .25s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-cta {
+      position: absolute;
+      right: var(--pad);
+      font-family: var(--nav);
+      font-size: .88rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: rgba(201,166,82,.18);
+      border: 1.5px solid rgba(255,255,255,.75);
+      padding: .7rem 2rem;
+      flex-shrink: 0;
+      transition: background .2s, color .2s, border-color .2s;
+    }
+    .nav-cta:hover { background: var(--white); color: var(--dark); border-color: var(--white); }
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: .4rem;
+      position: absolute;
+      right: var(--pad);
+    }
+    .burger span {
+      display: block;
+      width: 22px; height: 1px;
+      background: rgba(255,255,255,.8);
+    }
+
+    /* ── MOBILE MENU ── */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: var(--dark);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-family: var(--serif); font-size: 1.3rem; color: var(--cream); transition: color .2s; }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-close {
+      position: absolute;
+      top: 1.25rem; right: var(--pad);
+      font-family: var(--mono);
+      font-size: .85rem;
+      color: rgba(247,243,236,.4);
+      transition: color .2s;
+    }
+    .mobile-close:hover { color: var(--gold); }
+    .mobile-cta {
+      font-family: var(--mono) !important;
+      font-size: .78rem !important;
+      color: var(--gold) !important;
+      border: 1px solid rgba(201,166,82,.35);
+      padding: .75rem 2.25rem;
+      margin-top: .5rem;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      background: var(--dark);
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 15%;
+      opacity: 1;
+      animation: kenBurns 2.8s cubic-bezier(.25,.46,.45,.94) forwards;
+    }
+    @keyframes kenBurns {
+      from { transform: scale(1.09); }
+      to   { transform: scale(1); }
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to right, rgba(0,0,0,.72) 0%, rgba(0,0,0,.40) 42%, transparent 70%),
+        linear-gradient(to top, rgba(0,0,0,.25) 0%, transparent 35%);
+    }
+    .hero-topbar {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+    .corner {
+      position: absolute;
+      width: 40px; height: 40px;
+      opacity: .2;
+    }
+    .corner-tl { top: 58px; left: 20px;   border-top: 1px solid var(--gold); border-left:  1px solid var(--gold); }
+    .corner-tr { top: 58px; right: 20px;  border-top: 1px solid var(--gold); border-right: 1px solid var(--gold); }
+    .corner-bl { bottom: 20px; left: 20px;  border-bottom: 1px solid var(--gold); border-left:  1px solid var(--gold); }
+    .corner-br { bottom: 20px; right: 20px; border-bottom: 1px solid var(--gold); border-right: 1px solid var(--gold); }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      min-height: 100svh;
+      padding: 5rem var(--pad) 3rem;
+      max-width: 680px;
+      margin-left: clamp(2rem, 8vw, 10rem);
+    }
+    .hero-tag {
+      font-family: var(--mono);
+      font-size: .7rem;
+      letter-spacing: .26em;
+      text-transform: uppercase;
+      color: rgba(212,194,140,.80);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+    }
+    .hero-tag::before {
+      content: '';
+      display: block;
+      width: 32px; height: 1px;
+      background: rgba(212,194,140,.55);
+    }
+    .hero-h1 {
+      font-family: var(--display);
+      font-size: clamp(3rem, 5.5vw, 5.2rem);
+      font-weight: 800;
+      line-height: 1.06;
+      margin-bottom: 1.25rem;
+      text-shadow: 0 2px 28px rgba(0,0,0,.55);
+    }
+    .hero-h1 span { display: block; color: #fff; }
+    .hero-h1 em   { display: block; font-style: italic; font-weight: 700; color: #D4C28C; }
+    .hero-desc {
+      font-size: .95rem;
+      color: rgba(247,243,236,.72);
+      line-height: 1.85;
+      max-width: 400px;
+      margin-bottom: 2rem;
+      text-shadow: 0 1px 8px rgba(0,0,0,.5);
+    }
+    .hero-divider { width: 44px; height: 1px; background: rgba(212,194,140,.50); margin: 1rem 0; }
+    .hero-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--mono);
+      font-size: .68rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+    }
+    .hero-eyebrow::before, .hero-eyebrow::after {
+      content: ''; display: block;
+      width: 32px; height: 1px;
+      background: var(--gold);
+    }
+    .hero-logo {
+      width: 100px; height: 100px;
+      background: var(--ink);
+      border-radius: 50%;
+      border: 1px solid rgba(201,166,82,.3);
+      box-shadow: 0 0 50px rgba(201,166,82,.1);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--serif);
+      font-size: 2rem;
+      color: var(--gold);
+    }
+    .hero-h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 400;
+      line-height: 1.15;
+      margin-bottom: .75rem;
+    }
+    .hero-divider { width: 48px; height: 1px; background: var(--gold); margin: .9rem auto; }
+    .hero-sub {
+      font-family: var(--mono);
+      font-size: .82rem;
+      color: rgba(247,243,236,.5);
+      max-width: 500px;
+      line-height: 1.75;
+      margin-bottom: 2rem;
+    }
+    .hero-cta {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+    }
+    .btn-gold {
+      font-family: var(--mono);
+      font-size: .74rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      background: #D4C28C;
+      color: var(--dark);
+      padding: .9rem 2.2rem;
+      transition: background .2s, transform .2s;
+    }
+    .btn-gold:hover { background: #DED0A0; transform: translateY(-2px); }
+    .btn-ghost-light {
+      font-family: var(--mono);
+      font-size: .72rem;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+      border: 1px solid rgba(201,166,82,.35);
+      color: rgba(247,243,236,.7);
+      padding: .9rem 2rem;
+      transition: border-color .2s, color .2s;
+    }
+    .btn-ghost-light:hover { border-color: var(--gold); color: var(--gold); }
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      border: 1px solid rgba(201,166,82,.14);
+      max-width: 640px;
+      width: 100%;
+    }
+    .stat-item { padding: 1.1rem .85rem; text-align: center; }
+    .stat-item + .stat-item { border-left: 1px solid rgba(201,166,82,.14); }
+    .stat-num { font-family: var(--serif); font-size: 1.1rem; color: var(--cream); margin-bottom: .3rem; }
+    .stat-num span { color: var(--gold); }
+    .stat-label { font-family: var(--mono); font-size: .58rem; text-transform: uppercase; letter-spacing: .1em; color: rgba(247,243,236,.4); }
+    .hero-scroll { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: .5rem; }
+    .hero-scroll-line { width: 1px; height: 40px; background: linear-gradient(to bottom, var(--gold), transparent); }
+    .hero-scroll-text { font-family: var(--mono); font-size: .6rem; letter-spacing: .2em; text-transform: uppercase; color: rgba(247,243,236,.3); }
+
+    /* ── TICKER ── */
+    .ticker { background: #D4C28C; padding: .9rem 0; overflow: hidden; white-space: nowrap; }
+    .ticker-track { display: inline-block; white-space: nowrap; will-change: transform; }
+    .ticker-text {
+      font-family: var(--nav);
+      font-size: .82rem;
+      font-weight: 600;
+      letter-spacing: .38em;
+      text-transform: uppercase;
+      color: rgba(26,22,16,.65);
+      white-space: nowrap;
+    }
+
+    /* ── SHARED ── */
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: .68rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: .65rem;
+    }
+    .section-h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.18;
+      margin-bottom: 1rem;
+    }
+    .section-h2 em { font-style: italic; color: var(--accent); }
+    .section-intro { font-size: .92rem; color: var(--body); max-width: 480px; line-height: 1.8; }
+    .section-header { margin-bottom: clamp(2.5rem,5vw,4rem); }
+
+    /* ── SERVICE CARDS STRIP ── */
+    .srv-strip {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+    .srv-strip-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+    }
+    .srv-strip-card {
+      padding: 2.75rem 2.25rem;
+      border-right: 1px solid var(--border);
+      transition: background .25s;
+      position: relative;
+    }
+    .srv-strip-card:last-child { border-right: none; }
+    .srv-strip-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .35s cubic-bezier(.4,0,.2,1);
+    }
+    .srv-strip-card:hover { background: var(--cream); }
+    .srv-strip-card:hover::after { transform: scaleX(1); }
+    .srv-strip-icon {
+      width: 48px; height: 48px;
+      background: rgba(122,106,80,.07);
+      border: 1px solid rgba(122,106,80,.18);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.35rem;
+    }
+    .srv-strip-icon svg { width: 22px; height: 22px; stroke: var(--accent); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .srv-strip-title {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      color: var(--ink);
+      margin-bottom: .6rem;
+    }
+    .srv-strip-desc { font-size: .88rem; color: var(--body); line-height: 1.75; }
+    .srv-strip-link {
+      display: inline-flex; align-items: center; gap: .45rem;
+      font-family: var(--mono);
+      font-size: .65rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-top: 1.25rem;
+      transition: gap .2s, color .2s;
+    }
+    .srv-strip-card:hover .srv-strip-link { gap: .7rem; color: var(--gold); }
+
+    /* ── ABOUT ── */
+    .about {
+      background: var(--cream);
+      padding: clamp(5rem,9vw,8rem) var(--pad);
+    }
+    .about-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem,6vw,6rem);
+      align-items: center;
+    }
+    .about-gallery { position: relative; }
+    .about-gallery::before {
+      content: '';
+      position: absolute;
+      top: -16px; right: -16px;
+      width: calc(100% - 16px);
+      height: calc(100% - 16px);
+      border: 1px solid var(--borderg);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .about-img-main {
+      position: relative; z-index: 1;
+      aspect-ratio: 4/5;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,.08);
+    }
+    .about-img-main img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+    .about-img-main:hover img { transform: scale(1.03); }
+    .about-badge {
+      position: absolute;
+      bottom: 2rem; right: -1.5rem;
+      z-index: 2;
+      background: var(--ink);
+      color: var(--white);
+      padding: 1.25rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0,0,0,.18);
+    }
+    .about-badge-num {
+      font-family: var(--serif);
+      font-size: 2.2rem;
+      color: var(--gold);
+      line-height: 1;
+      display: block;
+    }
+    .about-badge-label {
+      font-family: var(--mono);
+      font-size: .6rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.6);
+      display: block;
+      margin-top: .35rem;
+    }
+    .about-img-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 8px;
+      position: relative; z-index: 1;
+    }
+    .about-img-sub { aspect-ratio: 4/3; overflow: hidden; border: 1px solid rgba(0,0,0,.08); }
+    .about-img-sub img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+    .about-img-sub:hover img { transform: scale(1.04); }
+    .about-text { }
+    .about-text .section-h2 { margin-bottom: 1.5rem; }
+    .about-text .section-h2 em { display: block; font-size: .78em; margin-top: .2rem; }
+    .about-desc { font-size: .92rem; color: var(--body); line-height: 1.85; margin-bottom: 2rem; }
+    .about-values { list-style: none; display: flex; flex-direction: column; gap: .9rem; margin-bottom: 2.25rem; }
+    .about-values li {
+      display: flex; align-items: flex-start; gap: .85rem;
+      font-size: .9rem; color: var(--body); line-height: 1.55;
+    }
+    .about-values li::before {
+      content: '';
+      display: block;
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--gold);
+      margin-top: .42rem;
+      flex-shrink: 0;
+    }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: .6rem;
+      font-family: var(--mono);
+      font-size: .74rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      background: var(--accent);
+      color: var(--white);
+      padding: .9rem 2.2rem;
+      transition: background .2s, transform .2s;
+    }
+    .btn-primary:hover { background: var(--ink); transform: translateY(-2px); }
+
+    /* ── PRACTICE AREAS ── */
+    .practice {
+      background: var(--white);
+      padding: clamp(5rem,9vw,8rem) var(--pad);
+      border-top: 1px solid var(--border);
+    }
+    .practice-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: clamp(3rem,6vw,6rem);
+      align-items: start;
+    }
+    .practice-left .section-intro { max-width: 340px; margin-bottom: 2rem; }
+    .practice-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+    }
+    .practice-item {
+      background: var(--white);
+      padding: 1.35rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      transition: background .2s;
+      cursor: default;
+    }
+    .practice-item:hover { background: var(--cream); }
+    .practice-item-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+    .practice-item-name {
+      font-family: var(--serif);
+      font-size: .98rem;
+      color: var(--ink);
+      line-height: 1.3;
+    }
+    .practice-item-arrow {
+      margin-left: auto;
+      font-size: .75rem;
+      color: var(--muted);
+      transition: color .2s, transform .2s;
+    }
+    .practice-item:hover .practice-item-arrow { color: var(--accent); transform: translateX(3px); }
+
+    /* ── PROCESS ── */
+    .process {
+      background: var(--cream);
+      padding: clamp(5rem,9vw,8rem) var(--pad);
+      border-top: 1px solid var(--border);
+    }
+    .process-inner { max-width: var(--max); margin: 0 auto; }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      margin-top: clamp(2.5rem,5vw,4rem);
+      border: 1px solid var(--border);
+      background: var(--border);
+      gap: 1px;
+    }
+    .process-step {
+      background: var(--white);
+      padding: 2.25rem 1.75rem;
+      transition: background .25s;
+    }
+    .process-step:hover { background: var(--cream); }
+    .process-num {
+      font-family: var(--mono);
+      font-size: .65rem;
+      letter-spacing: .2em;
+      color: var(--gold);
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .process-title { font-family: var(--serif); font-size: 1.15rem; color: var(--ink); margin-bottom: .55rem; }
+    .process-desc { font-size: .88rem; color: var(--body); line-height: 1.75; }
+
+    /* ── STATS ── */
+    .stats {
+      background: var(--green2);
+      padding: clamp(4rem,7vw,6rem) var(--pad);
+      border-top: 2px solid var(--gold);
+    }
+    .stats-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 1px;
+      background: rgba(201,166,82,.1);
+    }
+    .stats-item {
+      background: var(--green2);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    .stats-num {
+      font-family: var(--serif);
+      font-size: clamp(2.4rem,4vw,3.2rem);
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: .6rem;
+    }
+    .stats-num span { font-style: italic; }
+    .stats-label {
+      font-family: var(--mono);
+      font-size: .65rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(247,243,236,.4);
+    }
+
+    /* ── WHY US ── */
+    .why {
+      background: var(--white);
+      padding: clamp(5rem,9vw,8rem) var(--pad);
+      border-top: 1px solid var(--border);
+    }
+    .why-inner { max-width: var(--max); margin: 0 auto; }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 2rem;
+      margin-top: clamp(2.5rem,5vw,4rem);
+    }
+    .why-card {
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: border-color .25s, box-shadow .25s, transform .25s;
+    }
+    .why-card:hover {
+      border-color: var(--borderg);
+      box-shadow: 0 8px 32px rgba(0,0,0,.08);
+      transform: translateY(-4px);
+    }
+    .why-card-img {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
+    .why-card-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform .6s ease;
+      display: block;
+    }
+    .why-card:hover .why-card-img img { transform: scale(1.04); }
+    .why-card-body {
+      padding: 1.75rem 1.75rem 2rem;
+    }
+    .why-title { font-family: var(--serif); font-size: 1.15rem; color: var(--ink); margin-bottom: .6rem; }
+    .why-desc { font-size: .88rem; color: var(--body); line-height: 1.75; }
+
+    /* ── CTA STRIP ── */
+    .cta-strip {
+      background: var(--ink);
+      padding: clamp(3.5rem,7vw,5.5rem) var(--pad);
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-strip::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+    .cta-strip-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .cta-strip h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem,3vw,2.5rem);
+      font-weight: 400;
+      color: var(--white);
+      line-height: 1.2;
+    }
+    .cta-strip h2 em { font-style: italic; color: var(--gold); }
+    .btn-dark {
+      font-family: var(--mono);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      background: var(--dark);
+      color: var(--gold);
+      padding: 1rem 2.5rem;
+      white-space: nowrap;
+      transition: background .2s;
+    }
+    .btn-dark:hover { background: #0a0f0a; }
+
+    /* ── CONTACT ── */
+    .contact {
+      background: var(--cream);
+      padding: clamp(5rem,9vw,8rem) var(--pad);
+      border-top: 1px solid var(--border);
+    }
+    .contact-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem,6vw,5rem);
+      margin-top: clamp(2rem,4vw,3.5rem);
+    }
+    .contact-left { display: flex; flex-direction: column; gap: 1.5rem; }
+    .contact-item { display: flex; flex-direction: column; gap: .3rem; }
+    .contact-label {
+      font-family: var(--mono);
+      font-size: .62rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .contact-value { font-size: .95rem; color: var(--body); line-height: 1.55; }
+    .contact-value a { transition: color .2s; }
+    .contact-value a:hover { color: var(--accent); }
+    .contact-rodo {
+      border-left: 2px solid var(--borderg);
+      padding-left: 1.25rem;
+      margin-top: .5rem;
+    }
+    .contact-rodo p { font-size: .8rem; color: var(--muted); line-height: 1.75; }
+    .contact-photo { overflow: hidden; border: 1px solid var(--border); }
+    .contact-photo img { width: 100%; max-height: 220px; object-fit: cover; transition: transform .6s ease; }
+    .contact-photo:hover img { transform: scale(1.03); }
+    .contact-photo-caption {
+      font-family: var(--mono);
+      font-size: .62rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: .6rem .9rem;
+      background: var(--white);
+      border-top: 1px solid var(--border);
+    }
+    .hours-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 2.25rem;
+    }
+    .hours-title {
+      font-family: var(--mono);
+      font-size: .65rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      padding-bottom: .85rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: .65rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: .9rem;
+    }
+    .hours-row:last-child { border-bottom: none; }
+    .hours-day { color: var(--body); }
+    .hours-time { font-family: var(--mono); font-size: .78rem; color: var(--ink); }
+    .hours-time.closed { color: var(--muted); font-style: italic; }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials {
+      background: var(--white);
+      padding: clamp(5rem,9vw,8rem) var(--pad);
+    }
+    .testimonials-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+    .testimonials-header {
+      margin-bottom: clamp(2.5rem,5vw,4rem);
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.75rem;
+    }
+    .t-card {
+      background: var(--white);
+      border: 1px solid rgba(122,106,80,.18);
+      border-radius: 0 2rem 0 0;
+      padding: 2rem 2rem 2rem 2rem;
+      position: relative;
+      transition: box-shadow .3s;
+    }
+    .t-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,.07);
+    }
+    .t-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.35rem;
+    }
+    .t-author {
+      display: flex;
+      align-items: center;
+      gap: .85rem;
+    }
+    .t-avatar {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: var(--cream);
+      border: 2px solid rgba(212,194,140,.4);
+      overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+    .t-name {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: .15rem;
+    }
+    .t-role {
+      font-family: var(--mono);
+      font-size: .62rem;
+      letter-spacing: .08em;
+      color: var(--muted);
+    }
+    .t-stars {
+      display: flex;
+      gap: 2px;
+      color: #D4C28C;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      flex-shrink: 0;
+    }
+    .t-text {
+      font-size: .88rem;
+      color: var(--body);
+      line-height: 1.8;
+      font-style: italic;
+    }
+    .t-quote {
+      font-family: var(--serif);
+      font-size: 3.5rem;
+      line-height: 1;
+      color: rgba(212,194,140,.25);
+      position: absolute;
+      bottom: 1rem; right: 1.5rem;
+      pointer-events: none;
+    }
+    .t-fb-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-family: var(--mono);
+      font-size: .62rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 2.5rem;
+      transition: color .2s;
+    }
+    .t-fb-link:hover { color: var(--accent); }
+    .t-fb-link svg { width: 14px; height: 14px; fill: currentColor; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink);
+      border-top: 2px solid #D4C28C;
+      padding: 2.5rem var(--pad) 1.75rem;
+    }
+    .footer-inner { max-width: var(--max); margin: 0 auto; }
+    .footer-main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(247,243,236,.06);
+      margin-bottom: 1.25rem;
+    }
+    .footer-brand { display: flex; align-items: center; gap: .9rem; }
+    .footer-monogram {
+      width: 34px; height: 34px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--serif);
+      font-size: .9rem;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+    .footer-name { font-family: var(--serif); font-size: .92rem; color: rgba(247,243,236,.45); }
+    .footer-links { display: flex; gap: 2rem; list-style: none; }
+    .footer-links a {
+      font-family: var(--mono);
+      font-size: .6rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(247,243,236,.35);
+      transition: color .2s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy {
+      font-family: var(--mono);
+      font-size: .6rem;
+      color: rgba(247,243,236,.18);
+      letter-spacing: .04em;
+    }
+
+    /* ── REVEAL ── */
+    @media (prefers-reduced-motion: no-preference) {
+      .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity .65s ease, transform .65s ease;
+      }
+      .reveal.visible { opacity: 1; transform: none; }
+
+      .hero-logo { animation: logoIn .8s ease .2s both; }
+      @keyframes logoIn {
+        from { opacity: 0; transform: scale(.85); }
+        to   { opacity: 1; transform: scale(1); }
+      }
+      .ticker-track { animation: tickerRoll 38s linear infinite; }
+      @keyframes tickerRoll {
+        from { transform: translateX(0); }
+        to   { transform: translateX(-25%); }
+      }
+      .hero-scroll-line { animation: scrollPulse 2s ease-in-out infinite; }
+      @keyframes scrollPulse {
+        0%, 100% { opacity: .2; }
+        50%       { opacity: .9; }
+      }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .nav-links, .nav-cta { display: none; }
+      .burger { display: flex; }
+      .practice-inner { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .srv-strip-inner { grid-template-columns: 1fr; }
+      .srv-strip-card { border-right: none; border-bottom: 1px solid var(--border); }
+      .srv-strip-card:last-child { border-bottom: none; }
+      .about-inner { grid-template-columns: 1fr; }
+      .about-gallery { display: none; }
+      .practice-grid { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: 1fr 1fr; }
+      .stats-inner { grid-template-columns: 1fr 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .cta-strip-inner { flex-direction: column; align-items: flex-start; }
+      .footer-main { flex-direction: column; align-items: flex-start; }
+      .hero-stats { grid-template-columns: repeat(2,1fr); }
+      .hero-stats .stat-item:nth-child(3) { border-left: none; }
+      .hero-stats .stat-item:nth-child(3),
+      .hero-stats .stat-item:nth-child(4) { border-top: 1px solid rgba(201,166,82,.14); }
+      .hero-overlay {
+        background:
+          linear-gradient(to bottom, rgba(0,0,0,.60) 0%, rgba(0,0,0,.35) 55%, rgba(0,0,0,.20) 100%);
+      }
+      .hero-content { max-width: 100%; margin-left: 0; }
+      .hero-desc { max-width: 100%; }
+    }
+    @media (max-width: 480px) {
+      .hero-cta { flex-direction: column; align-items: center; }
+      .process-steps { grid-template-columns: 1fr; }
+      .stats-inner { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true">
+    <button class="mobile-close" id="mobileClose" aria-label="Zamknij menu">✕ Zamknij</button>
+    <a href="#uslugi">Usługi</a>
+    <a href="#o-kancelarii">O kancelarii</a>
+    <a href="#dziedziny">Dziedziny prawa</a>
+    <a href="#kontakt">Kontakt</a>
+    <a href="tel:+48575988990" class="mobile-cta">Skontaktuj się</a>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" aria-label="Nawigacja główna">
+
+    <ul class="nav-links">
+      <li><a href="#uslugi">Usługi</a></li>
+      <li><a href="#o-kancelarii">O kancelarii</a></li>
+      <li><a href="#dziedziny">Dziedziny prawa</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a class="nav-cta" href="tel:+48575988990">Skontaktuj się</a>
+    <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="start">
+    <img class="hero-bg" src="img/hero_pawlowski.png"
+         alt="adw. Maciej Pawłowski — Kancelaria Adwokacka Ostrów Wielkopolski"
+         loading="eager">
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-tag">Kancelaria Adwokacka · Ostrów Wielkopolski</p>
+      <h1 class="hero-h1">
+        <span>Skuteczna</span>
+        <em>obrona Twoich</em>
+        <span>praw</span>
+      </h1>
+      <div class="hero-divider"></div>
+      <p class="hero-desc">Profesjonalna pomoc prawna dla osób fizycznych i przedsiębiorstw. Prawo cywilne, karne, gospodarcze, rodzinne.</p>
+      <a class="btn-gold" href="#kontakt" style="font-size:.78rem;letter-spacing:.14em;font-weight:800">Umów konsultację →</a>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="hero-scroll-line"></div>
+      <span class="hero-scroll-text">scroll</span>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-text">Prawo Cywilne &nbsp;✦&nbsp; Prawo Karne &nbsp;✦&nbsp; Prawo Gospodarcze &nbsp;✦&nbsp; Prawo Rodzinne &nbsp;✦&nbsp; Prawo Pracy &nbsp;✦&nbsp; Prawo Administracyjne &nbsp;✦&nbsp; </span>
+      <span class="ticker-text">Prawo Cywilne &nbsp;✦&nbsp; Prawo Karne &nbsp;✦&nbsp; Prawo Gospodarcze &nbsp;✦&nbsp; Prawo Rodzinne &nbsp;✦&nbsp; Prawo Pracy &nbsp;✦&nbsp; Prawo Administracyjne &nbsp;✦&nbsp; </span>
+      <span class="ticker-text">Prawo Cywilne &nbsp;✦&nbsp; Prawo Karne &nbsp;✦&nbsp; Prawo Gospodarcze &nbsp;✦&nbsp; Prawo Rodzinne &nbsp;✦&nbsp; Prawo Pracy &nbsp;✦&nbsp; Prawo Administracyjne &nbsp;✦&nbsp; </span>
+      <span class="ticker-text">Prawo Cywilne &nbsp;✦&nbsp; Prawo Karne &nbsp;✦&nbsp; Prawo Gospodarcze &nbsp;✦&nbsp; Prawo Rodzinne &nbsp;✦&nbsp; Prawo Pracy &nbsp;✦&nbsp; Prawo Administracyjne &nbsp;✦&nbsp; </span>
+    </div>
+  </div>
+
+  <!-- SERVICE STRIP -->
+  <section id="uslugi">
+    <div class="srv-strip">
+      <div class="srv-strip-inner">
+
+        <div class="srv-strip-card reveal">
+          <div class="srv-strip-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3v18M5 8l7-5 7 5M6 12H2l4 7h-.5M18 12h4l-4 7h.5"/></svg>
+          </div>
+          <h3 class="srv-strip-title">Prawo Cywilne i Karne</h3>
+          <p class="srv-strip-desc">Umowy, odszkodowania, obrona w postępowaniach karnych i karnoskarbowych — skuteczna reprezentacja na każdym etapie.</p>
+          <span class="srv-strip-link">Dowiedz się więcej →</span>
+        </div>
+
+        <div class="srv-strip-card reveal">
+          <div class="srv-strip-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          </div>
+          <h3 class="srv-strip-title">Prawo Gospodarcze</h3>
+          <p class="srv-strip-desc">Kompleksowa obsługa prawna firm, spółek prawa handlowego, negocjacje kontraktów i wsparcie w sporach biznesowych.</p>
+          <span class="srv-strip-link">Dowiedz się więcej →</span>
+        </div>
+
+        <div class="srv-strip-card reveal">
+          <div class="srv-strip-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="srv-strip-title">Prawo Rodzinne i Pracy</h3>
+          <p class="srv-strip-desc">Rozwody, alimenty, podział majątku, spory pracownicze — z indywidualnym podejściem i empatią dla każdego klienta.</p>
+          <span class="srv-strip-link">Dowiedz się więcej →</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="o-kancelarii" aria-labelledby="about-h">
+    <div class="about-inner">
+
+      <div class="about-gallery">
+        <div class="about-img-main reveal">
+          <img src="img/2.jpg" alt="adw. Maciej Pawłowski — Kancelaria Adwokacka Ostrów Wielkopolski" loading="lazy">
+          <div class="about-badge">
+            <span class="about-badge-num">10+</span>
+            <span class="about-badge-label">Lat praktyki</span>
+          </div>
+        </div>
+        <div class="about-img-grid">
+          <div class="about-img-sub reveal">
+            <img src="img/3.jpg" alt="Sala narad kancelarii adwokackiej" loading="lazy">
+          </div>
+          <div class="about-img-sub reveal">
+            <img src="img/4.jpg" alt="Biblioteka prawnicza kancelarii" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text reveal">
+        <p class="eyebrow">O kancelarii</p>
+        <h2 class="section-h2" id="about-h">
+          adw. Maciej Pawłowski
+          <em>Adwokat z pasją do prawa</em>
+        </h2>
+        <p class="about-desc">
+          Kancelaria świadczy profesjonalne usługi prawne na rzecz osób fizycznych,
+          przedsiębiorstw i spółek prawa handlowego. adw. Maciej Pawłowski jest absolwentem
+          Wydziału Prawa i Administracji Uniwersytetu im. Adama Mickiewicza w Poznaniu.
+          Wyróżniony w prestiżowym plebiscycie <strong>Orły Prawa</strong>.
+        </p>
+        <ul class="about-values">
+          <li>Indywidualne podejście do każdej sprawy</li>
+          <li>Wieloletnie doświadczenie w różnych dziedzinach prawa</li>
+          <li>Kompleksowa obsługa prawna firm i osób prywatnych</li>
+          <li>Wyróżnienie Orły Prawa — Ostrów Wielkopolski</li>
+        </ul>
+        <a class="btn-primary" href="tel:+48575988990">
+          Bezpłatna konsultacja →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRACTICE AREAS -->
+  <section class="practice" id="dziedziny" aria-labelledby="practice-h">
+    <div class="practice-inner">
+      <div class="practice-left reveal">
+        <p class="eyebrow">Dziedziny prawa</p>
+        <h2 class="section-h2" id="practice-h">Zakres<br><em>praktyki</em></h2>
+        <p class="section-intro">Kancelaria oferuje kompleksową pomoc prawną w sześciu kluczowych dziedzinach — dla osób fizycznych i przedsiębiorstw.</p>
+        <a class="btn-primary" href="#kontakt" style="margin-top: 2rem">Skontaktuj się →</a>
+      </div>
+      <div class="practice-grid reveal">
+        <div class="practice-item">
+          <div class="practice-item-dot"></div>
+          <span class="practice-item-name">Prawo Cywilne</span>
+          <span class="practice-item-arrow">→</span>
+        </div>
+        <div class="practice-item">
+          <div class="practice-item-dot"></div>
+          <span class="practice-item-name">Prawo Karne</span>
+          <span class="practice-item-arrow">→</span>
+        </div>
+        <div class="practice-item">
+          <div class="practice-item-dot"></div>
+          <span class="practice-item-name">Prawo Gospodarcze</span>
+          <span class="practice-item-arrow">→</span>
+        </div>
+        <div class="practice-item">
+          <div class="practice-item-dot"></div>
+          <span class="practice-item-name">Prawo Rodzinne</span>
+          <span class="practice-item-arrow">→</span>
+        </div>
+        <div class="practice-item">
+          <div class="practice-item-dot"></div>
+          <span class="practice-item-name">Prawo Pracy</span>
+          <span class="practice-item-arrow">→</span>
+        </div>
+        <div class="practice-item">
+          <div class="practice-item-dot"></div>
+          <span class="practice-item-name">Prawo Administracyjne</span>
+          <span class="practice-item-arrow">→</span>
+        </div>
+        <div class="practice-item">
+          <div class="practice-item-dot"></div>
+          <span class="practice-item-name">Spory sądowe</span>
+          <span class="practice-item-arrow">→</span>
+        </div>
+        <div class="practice-item">
+          <div class="practice-item-dot"></div>
+          <span class="practice-item-name">Obsługa firm</span>
+          <span class="practice-item-arrow">→</span>
+        </div>
+        <div class="practice-item">
+          <div class="practice-item-dot"></div>
+          <span class="practice-item-name">Odszkodowania</span>
+          <span class="practice-item-arrow">→</span>
+        </div>
+        <div class="practice-item">
+          <div class="practice-item-dot"></div>
+          <span class="practice-item-name">Prawo karnoskarbowe</span>
+          <span class="practice-item-arrow">→</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" aria-labelledby="process-h">
+    <div class="process-inner">
+      <div class="section-header reveal">
+        <p class="eyebrow">Jak pracujemy</p>
+        <h2 class="section-h2" id="process-h">Przejrzysty proces<br><em>krok po kroku</em></h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step reveal">
+          <span class="process-num">01</span>
+          <h3 class="process-title">Konsultacja</h3>
+          <p class="process-desc">Omówienie sprawy i oczekiwań klienta. Wstępna ocena sytuacji prawnej.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">02</span>
+          <h3 class="process-title">Analiza</h3>
+          <p class="process-desc">Szczegółowe zbadanie dokumentów i ocena wszystkich dostępnych środków prawnych.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">03</span>
+          <h3 class="process-title">Strategia</h3>
+          <p class="process-desc">Opracowanie optymalnego planu działania dostosowanego do indywidualnej sprawy.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">04</span>
+          <h3 class="process-title">Rozwiązanie</h3>
+          <p class="process-desc">Aktywna reprezentacja klienta przed sądem i organami oraz finalizacja sprawy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stats-inner">
+      <div class="stats-item reveal">
+        <div class="stats-num">10<span>+</span></div>
+        <div class="stats-label">Lat praktyki</div>
+      </div>
+      <div class="stats-item reveal">
+        <div class="stats-num">500<span>+</span></div>
+        <div class="stats-label">Zakończonych spraw</div>
+      </div>
+      <div class="stats-item reveal">
+        <div class="stats-num">6</div>
+        <div class="stats-label">Dziedzin prawa</div>
+      </div>
+      <div class="stats-item reveal">
+        <div class="stats-num">UAM</div>
+        <div class="stats-label">Absolwent Poznań</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHY US -->
+  <section class="why" aria-labelledby="why-h">
+    <div class="why-inner">
+      <div class="section-header reveal">
+        <p class="eyebrow">Dlaczego my</p>
+        <h2 class="section-h2" id="why-h">Doświadczenie i zaangażowanie<br><em>w każdej sprawie</em></h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-card-img">
+            <img src="img/3.jpg" alt="Kancelaria adwokacka" loading="lazy">
+          </div>
+          <div class="why-card-body">
+            <h3 class="why-title">Wykwalifikowany adwokat</h3>
+            <p class="why-desc">Absolwent Wydziału Prawa UAM w Poznaniu z ponad 10-letnim doświadczeniem w różnych dziedzinach prawa.</p>
+          </div>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card-img">
+            <img src="img/4.jpg" alt="Orły Prawa — wyróżnienie" loading="lazy">
+          </div>
+          <div class="why-card-body">
+            <h3 class="why-title">Orły Prawa</h3>
+            <p class="why-desc">Wyróżniony w prestiżowym plebiscycie Orły Prawa — potwierdzenie jakości świadczonych usług przez klientów.</p>
+          </div>
+        </div>
+        <div class="why-card reveal">
+          <div class="why-card-img">
+            <img src="img/5.jpg" alt="Indywidualne podejście do klienta" loading="lazy">
+          </div>
+          <div class="why-card-body">
+            <h3 class="why-title">Indywidualne podejście</h3>
+            <p class="why-desc">Każdą sprawę traktujemy wyjątkowo. Pełna dyskrecja, objęcie tajemnicą adwokacką i osobisty kontakt z adwokatem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" aria-labelledby="reviews-h">
+    <div class="testimonials-inner">
+
+      <div class="testimonials-header reveal">
+        <p class="eyebrow">Opinie klientów</p>
+        <h2 class="section-h2">Co mówią<br><em>nasi klienci.</em></h2>
+        <p class="section-intro">Zaufanie klientów jest dla nas najważniejsze. Poniżej kilka opinii osób, którym pomogliśmy.</p>
+        <a class="t-fb-link" href="https://www.facebook.com/KancelariaPawlowski/reviews" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+          Wszystkie opinie na Facebooku →
+        </a>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="t-card reveal">
+          <div class="t-card-top">
+            <div class="t-author">
+              <div class="t-avatar">AK</div>
+              <div>
+                <p class="t-name">Anna K.</p>
+                <p class="t-role">Klientka kancelarii</p>
+              </div>
+            </div>
+            <div class="t-stars">★★★★★</div>
+          </div>
+          <p class="t-text">„Pan mecenas Pawłowski poprowadził moją sprawę rozwodową z ogromnym profesjonalizmem i empatią. Zawsze dostępny, wyjaśniał każdy krok postępowania. Polecam z całego serca."</p>
+          <span class="t-quote">"</span>
+        </div>
+
+        <div class="t-card reveal">
+          <div class="t-card-top">
+            <div class="t-author">
+              <div class="t-avatar">MT</div>
+              <div>
+                <p class="t-name">Marek T.</p>
+                <p class="t-role">Przedsiębiorca</p>
+              </div>
+            </div>
+            <div class="t-stars">★★★★★</div>
+          </div>
+          <p class="t-text">„Korzystam z usług kancelarii w zakresie obsługi prawnej mojej firmy od kilku lat. Rzetelność, terminowość i skuteczność — mecenas Pawłowski to adwokat, któremu można zaufać."</p>
+          <span class="t-quote">"</span>
+        </div>
+
+        <div class="t-card reveal">
+          <div class="t-card-top">
+            <div class="t-author">
+              <div class="t-avatar">EW</div>
+              <div>
+                <p class="t-name">Ewa W.</p>
+                <p class="t-role">Klientka kancelarii</p>
+              </div>
+            </div>
+            <div class="t-stars">★★★★★</div>
+          </div>
+          <p class="t-text">„Sprawa karna wymagała doświadczonego obrońcy — trafiłam na mecenasa Pawłowskiego i nie żałuję. Pełne zaangażowanie, szybka reakcja i doskonała znajomość prawa. Dziękuję!"</p>
+          <span class="t-quote">"</span>
+        </div>
+
+        <div class="t-card reveal">
+          <div class="t-card-top">
+            <div class="t-author">
+              <div class="t-avatar">PJ</div>
+              <div>
+                <p class="t-name">Piotr J.</p>
+                <p class="t-role">Klient kancelarii</p>
+              </div>
+            </div>
+            <div class="t-stars">★★★★★</div>
+          </div>
+          <p class="t-text">„Polecam kancelarię adwokata Pawłowskiego każdemu, kto potrzebuje pomocy prawnej. Sprawa o odszkodowanie zakończona sukcesem. Profesjonalizm na najwyższym poziomie."</p>
+          <span class="t-quote">"</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <div class="cta-strip">
+    <div class="cta-strip-inner">
+      <h2>Potrzebujesz pomocy prawnej? <em>Zadzwoń dziś.</em></h2>
+      <a class="btn-dark" href="tel:+48575988990">575 988 990</a>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact" id="kontakt" aria-labelledby="contact-h">
+    <div class="contact-inner">
+      <div class="section-header reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2 class="section-h2" id="contact-h">Skontaktuj się<br><em>z kancelarią</em></h2>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-left">
+          <div class="contact-items reveal">
+            <div class="contact-item">
+              <span class="contact-label">Adres</span>
+              <span class="contact-value">ul. Gimnazjalna 6 lok. 208<br>63-400 Ostrów Wielkopolski</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Telefon</span>
+              <span class="contact-value"><a href="tel:+48575988990">+48 575 988 990</a></span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">E-mail</span>
+              <span class="contact-value"><a href="mailto:kancelaria@adwokat-pawlowski.pl">kancelaria@adwokat-pawlowski.pl</a></span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">NIP</span>
+              <span class="contact-value">6222634501</span>
+            </div>
+          </div>
+
+          <div class="contact-rodo reveal">
+            <p>Kontakt wyłącznie telefoniczny i mailowy — objęty tajemnicą adwokacką. Strona nie przetwarza danych osobowych przez formularze.</p>
+          </div>
+
+          <div class="contact-photo reveal">
+            <img src="img/1.jpg" alt="Budynek przy ul. Gimnazjalnej 6 w Ostrowie Wielkopolskim — siedziba kancelarii" loading="lazy">
+            <p class="contact-photo-caption">ul. Gimnazjalna 6, Ostrów Wielkopolski</p>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="hours-card">
+            <p class="hours-title">Godziny przyjęć</p>
+            <div class="hours-row"><span class="hours-day">Poniedziałek</span><span class="hours-time">{{GODZ}}</span></div>
+            <div class="hours-row"><span class="hours-day">Wtorek</span><span class="hours-time">{{GODZ}}</span></div>
+            <div class="hours-row"><span class="hours-day">Środa</span><span class="hours-time">{{GODZ}}</span></div>
+            <div class="hours-row"><span class="hours-day">Czwartek</span><span class="hours-time">{{GODZ}}</span></div>
+            <div class="hours-row"><span class="hours-day">Piątek</span><span class="hours-time">{{GODZ}}</span></div>
+            <div class="hours-row"><span class="hours-day">Sobota</span><span class="hours-time">{{GODZ}}</span></div>
+            <div class="hours-row"><span class="hours-day">Niedziela</span><span class="hours-time closed">Nieczynne</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-monogram" aria-hidden="true">MP</div>
+          <span class="footer-name">Kancelaria Adwokacka adw. Maciej Pawłowski</span>
+        </div>
+        <ul class="footer-links">
+          <li><a href="polityka-prywatnosci/">Polityka prywatności</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <p class="footer-copy">© 2026 Kancelaria Adwokacka adw. Maciej Pawłowski · ul. Gimnazjalna 6/208, 63-400 Ostrów Wielkopolski</p>
+    </div>
+  </footer>
+
+  <script>
+    // Nav stuck
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('stuck', window.scrollY > 60);
+    }, { passive: true });
+
+    // Hamburger
+    const burger     = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+    const openMenu  = () => { mobileMenu.classList.add('open'); burger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; };
+    const closeMenu = () => { mobileMenu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; };
+    burger.addEventListener('click', openMenu);
+    mobileClose.addEventListener('click', closeMenu);
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+    // Reveal
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    }
+  </script>
+</body>
+</html>
