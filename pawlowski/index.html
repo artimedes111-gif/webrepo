@@ -942,8 +942,24 @@
         background:
           linear-gradient(to bottom, rgba(0,0,0,.60) 0%, rgba(0,0,0,.35) 55%, rgba(0,0,0,.20) 100%);
       }
-      .hero-content { max-width: 100%; margin-left: 0; }
-      .hero-desc { max-width: 100%; }
+      .hero-content {
+        max-width: 100%;
+        margin-left: 0;
+        justify-content: flex-end;
+        padding-bottom: 3rem;
+        align-items: center;
+        text-align: center;
+      }
+      .hero-tag { display: none; }
+      .hero-divider { display: none; }
+      .hero-desc { display: none; }
+      .hero-h1 {
+        font-size: clamp(2.2rem, 8vw, 3rem);
+        margin-bottom: 1.5rem;
+      }
+      .hero-overlay {
+        background: linear-gradient(to top, rgba(0,0,0,.75) 0%, rgba(0,0,0,.25) 45%, rgba(0,0,0,.10) 100%);
+      }
     }
     @media (max-width: 480px) {
       .hero-cta { flex-direction: column; align-items: center; }
@@ -1007,14 +1023,7 @@
   </section>
 
   <!-- TICKER -->
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker-track">
-      <span class="ticker-text">Prawo Cywilne &nbsp;✦&nbsp; Prawo Karne &nbsp;✦&nbsp; Prawo Gospodarcze &nbsp;✦&nbsp; Prawo Rodzinne &nbsp;✦&nbsp; Prawo Pracy &nbsp;✦&nbsp; Prawo Administracyjne &nbsp;✦&nbsp; </span>
-      <span class="ticker-text">Prawo Cywilne &nbsp;✦&nbsp; Prawo Karne &nbsp;✦&nbsp; Prawo Gospodarcze &nbsp;✦&nbsp; Prawo Rodzinne &nbsp;✦&nbsp; Prawo Pracy &nbsp;✦&nbsp; Prawo Administracyjne &nbsp;✦&nbsp; </span>
-      <span class="ticker-text">Prawo Cywilne &nbsp;✦&nbsp; Prawo Karne &nbsp;✦&nbsp; Prawo Gospodarcze &nbsp;✦&nbsp; Prawo Rodzinne &nbsp;✦&nbsp; Prawo Pracy &nbsp;✦&nbsp; Prawo Administracyjne &nbsp;✦&nbsp; </span>
-      <span class="ticker-text">Prawo Cywilne &nbsp;✦&nbsp; Prawo Karne &nbsp;✦&nbsp; Prawo Gospodarcze &nbsp;✦&nbsp; Prawo Rodzinne &nbsp;✦&nbsp; Prawo Pracy &nbsp;✦&nbsp; Prawo Administracyjne &nbsp;✦&nbsp; </span>
-    </div>
-  </div>
+  <div class="ticker" aria-hidden="true"></div>
 
   <!-- SERVICE STRIP -->
   <section id="uslugi">
