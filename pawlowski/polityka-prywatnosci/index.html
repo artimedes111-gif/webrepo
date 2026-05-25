@@ -7,40 +7,45 @@
   <meta name="description" content="Polityka prywatności Kancelarii Adwokackiej adw. Macieja Pawłowskiego — Ostrów Wielkopolski.">
   <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="https://adwokat-pawlowski.netlify.app/polityka-prywatnosci/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,400;1,700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; overflow-x: hidden; }
     body {
       font-family: 'Optima', 'Trebuchet MS', sans-serif;
-      background: #0D1810;
-      color: #F5F0E5;
+      background: #F7F3EC;
+      color: #1A1610;
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
     }
-    a { color: #C9A652; text-decoration: underline; }
-    a:hover { color: #E0BE6A; }
+    a { color: #7A6A50; text-decoration: underline; }
+    a:hover { color: #1A1610; }
 
     :root {
-      --dark:    #0D1810;
-      --green:   #1B5C35;
-      --green2:  #0E1F12;
-      --gold:    #C9A652;
-      --gold2:   #E0BE6A;
-      --cream:   #F5F0E5;
-      --muted:   rgba(245,240,229,.45);
-      --borderg: rgba(201,166,82,.18);
-      --borderw: rgba(245,240,229,.08);
+      --ink:     #1A1610;
+      --body:    #4A4540;
+      --muted:   #8A857C;
+      --cream:   #F7F3EC;
+      --white:   #FFFFFF;
+      --accent:  #7A6A50;
+      --gold:    #D4C28C;
+      --border:  rgba(0,0,0,.09);
+      --borderg: rgba(122,106,80,.20);
       --serif:   'Palatino Linotype', Georgia, serif;
+      --display: 'Playfair Display', Georgia, serif;
+      --nav:     'Raleway', 'Trebuchet MS', sans-serif;
       --mono:    'Courier New', monospace;
       --pad:     clamp(1.5rem, 5vw, 3rem);
     }
 
     /* NAV */
     .nav {
-      background: rgba(13,24,16,.97);
-      border-bottom: 1px solid var(--borderw);
-      padding: 1rem var(--pad);
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 1.1rem var(--pad);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -52,24 +57,25 @@
       display: inline-flex;
       align-items: center;
       gap: .5rem;
-      font-family: var(--mono);
+      font-family: var(--nav);
       font-size: .72rem;
-      letter-spacing: .1em;
+      letter-spacing: .12em;
       text-transform: uppercase;
       color: var(--muted);
       text-decoration: none;
       transition: color .2s;
     }
-    .nav-back:hover { color: var(--gold); }
+    .nav-back:hover { color: var(--accent); }
     .nav-brand {
       font-family: var(--serif);
-      font-size: .95rem;
-      color: rgba(245,240,229,.6);
+      font-size: .9rem;
+      color: var(--muted);
+      text-decoration: none;
     }
 
     /* HERO */
     .pp-hero {
-      background: var(--green2);
+      background: var(--cream);
       border-bottom: 2px solid var(--gold);
       padding: clamp(3rem,8vw,5.5rem) var(--pad) clamp(2.5rem,6vw,4rem);
       position: relative;
@@ -78,27 +84,27 @@
     .pp-hero::before {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0;
+      bottom: 0; left: 0; right: 0;
       height: 2px;
       background: linear-gradient(to right, transparent, var(--gold), transparent);
     }
     .pp-eyebrow {
-      font-family: var(--mono);
+      font-family: var(--nav);
       font-size: .68rem;
       letter-spacing: .22em;
       text-transform: uppercase;
-      color: var(--gold);
+      color: var(--accent);
       margin-bottom: .85rem;
     }
     .pp-title {
-      font-family: var(--serif);
-      font-size: clamp(2rem,4.5vw,3.2rem);
-      font-weight: 400;
-      color: var(--cream);
-      line-height: 1.15;
+      font-family: var(--display);
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1.12;
       margin-bottom: 1rem;
     }
-    .pp-title em { color: var(--gold); font-style: italic; }
+    .pp-title em { color: var(--accent); font-style: italic; font-weight: 700; }
     .pp-meta {
       font-family: var(--mono);
       font-size: .68rem;
@@ -117,12 +123,12 @@
     .pp-section:last-child { margin-bottom: 0; }
 
     .pp-h2 {
-      font-family: var(--serif);
-      font-size: 1.45rem;
-      font-weight: 400;
-      color: var(--cream);
+      font-family: var(--display);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--ink);
       padding-bottom: .6rem;
-      border-bottom: 1px solid var(--borderw);
+      border-bottom: 1px solid var(--border);
       margin-bottom: 1.1rem;
       display: flex;
       align-items: center;
@@ -130,10 +136,10 @@
     }
     .pp-h2 .num {
       font-family: var(--mono);
-      font-size: .62rem;
+      font-size: .6rem;
       letter-spacing: .14em;
-      color: var(--gold);
-      background: rgba(201,166,82,.1);
+      color: var(--accent);
+      background: rgba(122,106,80,.08);
       border: 1px solid var(--borderg);
       padding: .2rem .55rem;
       flex-shrink: 0;
@@ -141,7 +147,7 @@
 
     .pp-p {
       font-size: .9rem;
-      color: rgba(245,240,229,.65);
+      color: var(--body);
       margin-bottom: .9rem;
       line-height: 1.8;
     }
@@ -153,11 +159,11 @@
     }
     .pp-list li {
       font-size: .9rem;
-      color: rgba(245,240,229,.65);
+      color: var(--body);
       padding: .4rem 0 .4rem 1.4rem;
       position: relative;
       line-height: 1.65;
-      border-bottom: 1px solid var(--borderw);
+      border-bottom: 1px solid var(--border);
     }
     .pp-list li:last-child { border-bottom: none; }
     .pp-list li::before {
@@ -169,27 +175,29 @@
       border-radius: 50%;
       background: var(--gold);
     }
-    .pp-list li strong { color: var(--cream); }
+    .pp-list li strong { color: var(--ink); }
 
     .pp-card {
-      background: var(--green2);
-      border: 1px solid var(--borderw);
+      background: var(--white);
+      border: 1px solid var(--border);
       border-left: 2px solid var(--gold);
       padding: 1.25rem 1.5rem;
       margin: 1.25rem 0;
     }
     .pp-card p {
       font-size: .88rem;
-      color: rgba(245,240,229,.7);
+      color: var(--body);
       line-height: 1.75;
       margin: 0;
     }
-    .pp-card strong { color: var(--cream); }
+    .pp-card strong { color: var(--ink); }
+    .pp-card a { color: var(--accent); }
+    .pp-card a:hover { color: var(--ink); }
 
     /* FOOTER */
     .pp-footer {
-      background: #0A0F0A;
-      border-top: 1px solid var(--borderw);
+      background: var(--ink);
+      border-top: 2px solid var(--gold);
       padding: 1.75rem var(--pad);
       display: flex;
       justify-content: space-between;
@@ -199,11 +207,11 @@
     }
     .pp-footer p {
       font-family: var(--mono);
-      font-size: .62rem;
-      color: rgba(245,240,229,.2);
+      font-size: .6rem;
+      color: rgba(247,243,236,.25);
       letter-spacing: .04em;
     }
-    .pp-footer a { color: rgba(201,166,82,.5); text-decoration: none; }
+    .pp-footer a { color: rgba(212,194,140,.55); text-decoration: none; }
     .pp-footer a:hover { color: var(--gold); }
   </style>
 </head>
