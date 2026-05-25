@@ -386,49 +386,43 @@
 
     /* ── SERVICE CARDS STRIP ── */
     .srv-strip {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
+      background: var(--cream);
+      padding: clamp(3rem,6vw,5rem) var(--pad);
     }
     .srv-strip-inner {
       max-width: var(--max);
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(3,1fr);
+      gap: 2rem;
     }
     .srv-strip-card {
-      padding: 2.75rem 2.25rem;
-      border-right: 1px solid var(--border);
-      transition: background .25s;
+      background: var(--white);
+      padding: 2.75rem 2.25rem 2.5rem;
+      text-align: center;
+      box-shadow: 0 4px 24px rgba(0,0,0,.07), 0 1px 4px rgba(0,0,0,.04);
+      transition: box-shadow .3s, transform .3s;
       position: relative;
     }
-    .srv-strip-card:last-child { border-right: none; }
-    .srv-strip-card::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 2px;
-      background: var(--gold);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform .35s cubic-bezier(.4,0,.2,1);
+    .srv-strip-card:hover {
+      box-shadow: 0 12px 40px rgba(0,0,0,.11), 0 2px 8px rgba(0,0,0,.05);
+      transform: translateY(-5px);
     }
-    .srv-strip-card:hover { background: var(--cream); }
-    .srv-strip-card:hover::after { transform: scaleX(1); }
-    .srv-strip-icon {
+    .srv-strip-card::after { display: none; }
+    .srv-strip-icon { display: none; }
+    .srv-strip-svg {
       width: 48px; height: 48px;
-      background: rgba(122,106,80,.07);
-      border: 1px solid rgba(122,106,80,.18);
-      display: flex; align-items: center; justify-content: center;
-      margin-bottom: 1.35rem;
+      margin: 0 auto 1.6rem;
+      color: var(--accent);
     }
-    .srv-strip-icon svg { width: 22px; height: 22px; stroke: var(--accent); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .srv-strip-svg svg { width: 48px; height: 48px; stroke: var(--accent); fill: none; stroke-width: 1; stroke-linecap: round; stroke-linejoin: round; }
     .srv-strip-title {
       font-family: var(--serif);
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       color: var(--ink);
-      margin-bottom: .6rem;
+      margin-bottom: .75rem;
     }
-    .srv-strip-desc { font-size: .88rem; color: var(--body); line-height: 1.75; }
+    .srv-strip-desc { font-size: .88rem; color: var(--body); line-height: 1.8; text-align: center; }
     .srv-strip-link {
       display: inline-flex; align-items: center; gap: .45rem;
       font-family: var(--mono);
@@ -436,7 +430,7 @@
       letter-spacing: .1em;
       text-transform: uppercase;
       color: var(--accent);
-      margin-top: 1.25rem;
+      margin-top: 1.4rem;
       transition: gap .2s, color .2s;
     }
     .srv-strip-card:hover .srv-strip-link { gap: .7rem; color: var(--gold); }
@@ -467,7 +461,7 @@
     }
     .about-img-main {
       position: relative; z-index: 1;
-      aspect-ratio: 4/5;
+      aspect-ratio: 4/3;
       overflow: hidden;
       border: 1px solid rgba(0,0,0,.08);
     }
@@ -553,42 +547,46 @@
       display: grid;
       grid-template-columns: 1fr 1.6fr;
       gap: clamp(3rem,6vw,6rem);
-      align-items: start;
+      align-items: center;
     }
-    .practice-left .section-intro { max-width: 340px; margin-bottom: 2rem; }
+    .practice-left .section-intro { max-width: 340px; }
     .practice-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1px;
-      background: var(--border);
+      gap: .85rem;
     }
     .practice-item {
       background: var(--white);
-      padding: 1.35rem 1.5rem;
+      padding: 1.1rem 1.4rem;
       display: flex;
       align-items: center;
-      gap: 1rem;
-      transition: background .2s;
+      gap: .85rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,.06), 0 1px 3px rgba(0,0,0,.04);
+      transition: box-shadow .25s, transform .25s;
       cursor: default;
     }
-    .practice-item:hover { background: var(--cream); }
+    .practice-item:hover {
+      box-shadow: 0 6px 22px rgba(0,0,0,.10), 0 2px 6px rgba(0,0,0,.05);
+      transform: translateY(-2px);
+    }
     .practice-item-dot {
-      width: 8px; height: 8px;
+      width: 7px; height: 7px;
       border-radius: 50%;
       background: var(--gold);
       flex-shrink: 0;
     }
     .practice-item-name {
       font-family: var(--serif);
-      font-size: .98rem;
+      font-size: .95rem;
       color: var(--ink);
       line-height: 1.3;
     }
     .practice-item-arrow {
       margin-left: auto;
-      font-size: .75rem;
+      font-size: .7rem;
       color: var(--muted);
       transition: color .2s, transform .2s;
+      flex-shrink: 0;
     }
     .practice-item:hover .practice-item-arrow { color: var(--accent); transform: translateX(3px); }
 
@@ -603,16 +601,18 @@
       display: grid;
       grid-template-columns: repeat(4,1fr);
       margin-top: clamp(2.5rem,5vw,4rem);
-      border: 1px solid var(--border);
-      background: var(--border);
-      gap: 1px;
+      gap: 1.25rem;
     }
     .process-step {
       background: var(--white);
       padding: 2.25rem 1.75rem;
-      transition: background .25s;
+      box-shadow: 0 2px 14px rgba(0,0,0,.06), 0 1px 3px rgba(0,0,0,.04);
+      transition: box-shadow .25s, transform .25s;
     }
-    .process-step:hover { background: var(--cream); }
+    .process-step:hover {
+      box-shadow: 0 8px 28px rgba(0,0,0,.10), 0 2px 6px rgba(0,0,0,.05);
+      transform: translateY(-3px);
+    }
     .process-num {
       font-family: var(--mono);
       font-size: .65rem;
@@ -624,40 +624,6 @@
     .process-title { font-family: var(--serif); font-size: 1.15rem; color: var(--ink); margin-bottom: .55rem; }
     .process-desc { font-size: .88rem; color: var(--body); line-height: 1.75; }
 
-    /* ── STATS ── */
-    .stats {
-      background: var(--green2);
-      padding: clamp(4rem,7vw,6rem) var(--pad);
-      border-top: 2px solid var(--gold);
-    }
-    .stats-inner {
-      max-width: var(--max);
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(4,1fr);
-      gap: 1px;
-      background: rgba(201,166,82,.1);
-    }
-    .stats-item {
-      background: var(--green2);
-      padding: 2.5rem 1.5rem;
-      text-align: center;
-    }
-    .stats-num {
-      font-family: var(--serif);
-      font-size: clamp(2.4rem,4vw,3.2rem);
-      color: var(--gold);
-      line-height: 1;
-      margin-bottom: .6rem;
-    }
-    .stats-num span { font-style: italic; }
-    .stats-label {
-      font-family: var(--mono);
-      font-size: .65rem;
-      letter-spacing: .18em;
-      text-transform: uppercase;
-      color: rgba(247,243,236,.4);
-    }
 
     /* ── WHY US ── */
     .why {
@@ -701,54 +667,10 @@
     .why-title { font-family: var(--serif); font-size: 1.15rem; color: var(--ink); margin-bottom: .6rem; }
     .why-desc { font-size: .88rem; color: var(--body); line-height: 1.75; }
 
-    /* ── CTA STRIP ── */
-    .cta-strip {
-      background: var(--ink);
-      padding: clamp(3.5rem,7vw,5.5rem) var(--pad);
-      position: relative;
-      overflow: hidden;
-    }
-    .cta-strip::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      background: linear-gradient(to right, transparent, var(--gold), transparent);
-    }
-    .cta-strip-inner {
-      max-width: var(--max);
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-    .cta-strip h2 {
-      font-family: var(--serif);
-      font-size: clamp(1.6rem,3vw,2.5rem);
-      font-weight: 400;
-      color: var(--white);
-      line-height: 1.2;
-    }
-    .cta-strip h2 em { font-style: italic; color: var(--gold); }
-    .btn-dark {
-      font-family: var(--mono);
-      font-size: .78rem;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      background: var(--dark);
-      color: var(--gold);
-      padding: 1rem 2.5rem;
-      white-space: nowrap;
-      transition: background .2s;
-    }
-    .btn-dark:hover { background: #0a0f0a; }
 
     /* ── CONTACT ── */
     .contact {
-      background: var(--cream);
+      background: var(--white);
       padding: clamp(5rem,9vw,8rem) var(--pad);
       border-top: 1px solid var(--border);
     }
@@ -823,7 +745,7 @@
 
     /* ── TESTIMONIALS ── */
     .testimonials {
-      background: var(--white);
+      background: var(--cream);
       padding: clamp(5rem,9vw,8rem) var(--pad);
     }
     .testimonials-inner {
@@ -1004,17 +926,13 @@
     }
     @media (max-width: 768px) {
       .srv-strip-inner { grid-template-columns: 1fr; }
-      .srv-strip-card { border-right: none; border-bottom: 1px solid var(--border); }
-      .srv-strip-card:last-child { border-bottom: none; }
       .about-inner { grid-template-columns: 1fr; }
       .about-gallery { display: none; }
       .practice-grid { grid-template-columns: 1fr; }
       .process-steps { grid-template-columns: 1fr 1fr; }
-      .stats-inner { grid-template-columns: 1fr 1fr; }
       .why-grid { grid-template-columns: 1fr; }
       .contact-grid { grid-template-columns: 1fr; }
       .testimonials-grid { grid-template-columns: 1fr; }
-      .cta-strip-inner { flex-direction: column; align-items: flex-start; }
       .footer-main { flex-direction: column; align-items: flex-start; }
       .hero-stats { grid-template-columns: repeat(2,1fr); }
       .hero-stats .stat-item:nth-child(3) { border-left: none; }
@@ -1030,7 +948,6 @@
     @media (max-width: 480px) {
       .hero-cta { flex-direction: column; align-items: center; }
       .process-steps { grid-template-columns: 1fr; }
-      .stats-inner { grid-template-columns: 1fr 1fr; }
     }
   </style>
 </head>
@@ -1102,8 +1019,14 @@
       <div class="srv-strip-inner">
 
         <div class="srv-strip-card reveal">
-          <div class="srv-strip-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 3v18M5 8l7-5 7 5M6 12H2l4 7h-.5M18 12h4l-4 7h.5"/></svg>
+          <div class="srv-strip-svg" aria-hidden="true">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <line x1="24" y1="6" x2="24" y2="42"/>
+              <line x1="10" y1="16" x2="24" y2="8"/><line x1="38" y1="16" x2="24" y2="8"/>
+              <line x1="6" y1="24" x2="18" y2="24"/><line x1="6" y1="24" x2="10" y2="33"/><line x1="18" y1="24" x2="14" y2="33"/><line x1="10" y1="33" x2="14" y2="33"/>
+              <line x1="30" y1="24" x2="42" y2="24"/><line x1="30" y1="24" x2="34" y2="33"/><line x1="42" y1="24" x2="38" y2="33"/><line x1="34" y1="33" x2="38" y2="33"/>
+              <line x1="18" y1="42" x2="30" y2="42"/>
+            </svg>
           </div>
           <h3 class="srv-strip-title">Prawo Cywilne i Karne</h3>
           <p class="srv-strip-desc">Umowy, odszkodowania, obrona w postępowaniach karnych i karnoskarbowych — skuteczna reprezentacja na każdym etapie.</p>
@@ -1111,8 +1034,13 @@
         </div>
 
         <div class="srv-strip-card reveal">
-          <div class="srv-strip-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          <div class="srv-strip-svg" aria-hidden="true">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="20" width="36" height="22" rx="1"/>
+              <path d="M14 20v-4a10 10 0 0 1 20 0v4"/>
+              <line x1="24" y1="28" x2="24" y2="34"/>
+              <circle cx="24" cy="27" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
           </div>
           <h3 class="srv-strip-title">Prawo Gospodarcze</h3>
           <p class="srv-strip-desc">Kompleksowa obsługa prawna firm, spółek prawa handlowego, negocjacje kontraktów i wsparcie w sporach biznesowych.</p>
@@ -1120,8 +1048,13 @@
         </div>
 
         <div class="srv-strip-card reveal">
-          <div class="srv-strip-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <div class="srv-strip-svg" aria-hidden="true">
+            <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="14" r="7"/>
+              <path d="M4 42v-4a10 10 0 0 1 10-10h8a10 10 0 0 1 10 10v4"/>
+              <path d="M32 8a7 7 0 0 1 0 13"/>
+              <path d="M44 42v-4a10 10 0 0 0-7-9.5"/>
+            </svg>
           </div>
           <h3 class="srv-strip-title">Prawo Rodzinne i Pracy</h3>
           <p class="srv-strip-desc">Rozwody, alimenty, podział majątku, spory pracownicze — z indywidualnym podejściem i empatią dla każdego klienta.</p>
@@ -1187,58 +1120,47 @@
         <p class="eyebrow">Dziedziny prawa</p>
         <h2 class="section-h2" id="practice-h">Zakres<br><em>praktyki</em></h2>
         <p class="section-intro">Kancelaria oferuje kompleksową pomoc prawną w sześciu kluczowych dziedzinach — dla osób fizycznych i przedsiębiorstw.</p>
-        <a class="btn-primary" href="#kontakt" style="margin-top: 2rem">Skontaktuj się →</a>
       </div>
       <div class="practice-grid reveal">
         <div class="practice-item">
           <div class="practice-item-dot"></div>
           <span class="practice-item-name">Prawo Cywilne</span>
-          <span class="practice-item-arrow">→</span>
         </div>
         <div class="practice-item">
           <div class="practice-item-dot"></div>
           <span class="practice-item-name">Prawo Karne</span>
-          <span class="practice-item-arrow">→</span>
         </div>
         <div class="practice-item">
           <div class="practice-item-dot"></div>
           <span class="practice-item-name">Prawo Gospodarcze</span>
-          <span class="practice-item-arrow">→</span>
         </div>
         <div class="practice-item">
           <div class="practice-item-dot"></div>
           <span class="practice-item-name">Prawo Rodzinne</span>
-          <span class="practice-item-arrow">→</span>
         </div>
         <div class="practice-item">
           <div class="practice-item-dot"></div>
           <span class="practice-item-name">Prawo Pracy</span>
-          <span class="practice-item-arrow">→</span>
         </div>
         <div class="practice-item">
           <div class="practice-item-dot"></div>
           <span class="practice-item-name">Prawo Administracyjne</span>
-          <span class="practice-item-arrow">→</span>
         </div>
         <div class="practice-item">
           <div class="practice-item-dot"></div>
           <span class="practice-item-name">Spory sądowe</span>
-          <span class="practice-item-arrow">→</span>
         </div>
         <div class="practice-item">
           <div class="practice-item-dot"></div>
           <span class="practice-item-name">Obsługa firm</span>
-          <span class="practice-item-arrow">→</span>
         </div>
         <div class="practice-item">
           <div class="practice-item-dot"></div>
           <span class="practice-item-name">Odszkodowania</span>
-          <span class="practice-item-arrow">→</span>
         </div>
         <div class="practice-item">
           <div class="practice-item-dot"></div>
           <span class="practice-item-name">Prawo karnoskarbowe</span>
-          <span class="practice-item-arrow">→</span>
         </div>
       </div>
     </div>
@@ -1276,27 +1198,6 @@
     </div>
   </section>
 
-  <!-- STATS -->
-  <div class="stats">
-    <div class="stats-inner">
-      <div class="stats-item reveal">
-        <div class="stats-num">10<span>+</span></div>
-        <div class="stats-label">Lat praktyki</div>
-      </div>
-      <div class="stats-item reveal">
-        <div class="stats-num">500<span>+</span></div>
-        <div class="stats-label">Zakończonych spraw</div>
-      </div>
-      <div class="stats-item reveal">
-        <div class="stats-num">6</div>
-        <div class="stats-label">Dziedzin prawa</div>
-      </div>
-      <div class="stats-item reveal">
-        <div class="stats-num">UAM</div>
-        <div class="stats-label">Absolwent Poznań</div>
-      </div>
-    </div>
-  </div>
 
   <!-- WHY US -->
   <section class="why" aria-labelledby="why-h">
@@ -1416,14 +1317,6 @@
       </div>
     </div>
   </section>
-
-  <!-- CTA STRIP -->
-  <div class="cta-strip">
-    <div class="cta-strip-inner">
-      <h2>Potrzebujesz pomocy prawnej? <em>Zadzwoń dziś.</em></h2>
-      <a class="btn-dark" href="tel:+48575988990">575 988 990</a>
-    </div>
-  </div>
 
   <!-- CONTACT -->
   <section class="contact" id="kontakt" aria-labelledby="contact-h">
